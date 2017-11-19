@@ -40,11 +40,13 @@ return [
         ],
         'mongodb' => [
             'driver'   => 'mongodb',
-            'host'     => env('DB_HOST', 'localhost'),
-            'port'     => 27017,
-            'database' => 'MyTree',
+            'host'     => 'ds259865.mlab.com',
+            'username' => 'admin',
+            'password' => 'admin',
+            'port'     => 59865,
+            'database' => 'mytree',
             'options'  => [
-                'database' => 'admin' // sets the authentication database required by mongo 3
+                'database' => 'mytree' // sets the authentication database required by mongo 3
             ]
         ],
 
