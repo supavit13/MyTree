@@ -1,0 +1,69 @@
+.A4{
+				margin: 0 auto !important;
+				width: 28cm !important;
+				height: 29.7cm !important;
+				width: 100%;
+				height: 100%;
+				line-height: 168%;
+			}
+			
+			.hideme{
+				border: 0;
+			    font-weight: normal;
+			    font-family: 'THSarabunNew', sans-serif;
+			    font-size: 15px;
+			    height: 0.5cm;
+			}
+
+			#input{
+				text-align:center; 
+				border-bottom: 1px solid; 
+				padding-bottom: 2px; 
+			}
+
+			#tab{
+   				padding-left: 0.5cm;
+			}
+
+			.bigtable_wordwrap1{
+				border: 0;
+			    font-weight: normal;
+			    font-family: 'THSarabunNew', sans-serif;
+			    font-size: 14px;
+			    /*height: 5cm;*/
+			    width: 2cm;
+			    text-align: center;
+    			word-wrap: break-word;
+			}
+
+			.input_bigtable_2{
+				border: 0;
+			    font-weight: normal;
+			    font-family: 'THSarabunNew', sans-serif;
+			    font-size: 13px;
+			    height: 3cm;
+			    width: 1cm;
+			}
+
+			.rotate1{
+			  	transform: 
+			 
+			    rotate(270deg);
+			  	width: 10px;
+			  	height: 400px;
+  				white-space: nowrap;
+  				text-align: right;
+			}
+
+			.rotate2{
+			  	transform: 
+			    rotate(270deg);
+			  	width: 10px;
+			  	height: 160px;
+  				white-space: nowrap;
+  				text-align: right;
+			}
+
+			table,td,th{
+    			border: 1px solid black;
+			}
