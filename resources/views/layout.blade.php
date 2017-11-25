@@ -613,7 +613,7 @@ $(document).ready(function(){
 		}
 	</script>
 	<script type="text/javascript">
-            var i = 0 ;
+            var i = 1 ;
             $("#add_table").click(function(event){
               event.preventDefault();
 
