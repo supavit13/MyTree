@@ -88,6 +88,7 @@
                       หากคุณไม่ปฏิบัติตามข้อกำหนดนี้ และเราไม่ได้ดำเนินการใดโดยทันที จะไม่ถือว่าเราสละสิทธิ์ใด ๆ ที่มี
                     </textarea>
                   </div>
+                  <input type="checkbox" id="policycheck" name="policycheck"><span>ยอมรับ</span>
 
                   <div align="center" >
                     <center id="divSubmit">
