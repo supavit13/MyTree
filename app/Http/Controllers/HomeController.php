@@ -138,6 +138,7 @@ class HomeController extends Controller
 
         // part 1
 
+        $trees->ownerarea=$request->input('ownerarea');
         $trees->Tree_name=$request->input('Tree_name');
         $trees->Tree_sci_name=$request->input('Tree_sci_name');
         $trees->Tree_type=$request->input('Tree_type');
@@ -147,42 +148,46 @@ class HomeController extends Controller
         $trees->Tree_height=$request->input('Tree_height');
         $trees->Tree_sequence=$request->input('Tree_sequence');
         $trees->Tree_date=$request->input('Tree_date');
+        $trees->Tree_time=$request->input('Tree_time');
         $trees->Tree_lat=$request->input('Tree_lat');
         $trees->Tree_long=$request->input('Tree_long');
         $trees->User_name=$request->input('User_name');
         $trees->UserID=$request->input('UserID');
-        $trees->hire=$request->input('hire');
+        $trees->Tree_phone=$request->input('Tree_phone');
+        // $trees->hire=$request->input('hire');
         $trees->agency=$request->input('agency');
+
+
         // part 2
 
-        $trees->vehicle=$request->input('vehicle');
-        $trees->vehCh1=$request->input('vehCh1');
-        $trees->vehCh2=$request->input('vehCh2');
-        $trees->vehCh3=$request->input('vehCh3');
-        $trees->vehDamageAppear=$request->input('vehDamageAppear');
-        $trees->vehMoveArea=$request->input('vehMoveArea');
-        $trees->vehNoEntry=$request->input('vehNoEntry');
-        $trees->building=$request->input('building');
-        $trees->builCh1=$request->input('builCh1');
-        $trees->builCh2=$request->input('builCh2');
-        $trees->builCh3=$request->input('builCh3');
-        $trees->builDamageAppear=$request->input('builDamageAppear');
-        $trees->builMoveArea=$request->input('builMoveArea');
-        $trees->builNoEntry=$request->input('builNoEntry');
-        $trees->man=$request->input('man');
-        $trees->manCh1=$request->input('manCh1');
-        $trees->manCh2=$request->input('manCh2');
-        $trees->manCh3=$request->input('manCh3');
-        $trees->manDamangeArea=$request->input('manDamangeArea');
-        $trees->manMoveArea=$request->input('manMoveArea');
-        $trees->manNoEntry=$request->input('manNoEntry');
-        $trees->pillar=$request->input('pillar');
-        $trees->pillCh1=$request->input('pillCh1');
-        $trees->pillCh2=$request->input('pillCh2');
-        $trees->pillCh3=$request->input('pillCh3');
-        $trees->pillDamageAppear=$request->input('pillDamageAppear');
-        $trees->pillMoveArea=$request->input('pillMoveArea');
-        $trees->pillNoEntry=$request->input('pillNoEntry');
+        // $trees->vehicle=$request->input('vehicle');
+        // $trees->vehCh1=$request->input('vehCh1');
+        // $trees->vehCh2=$request->input('vehCh2');
+        // $trees->vehCh3=$request->input('vehCh3');
+        // $trees->vehDamageAppear=$request->input('vehDamageAppear');
+        // $trees->vehMoveArea=$request->input('vehMoveArea');
+        // $trees->vehNoEntry=$request->input('vehNoEntry');
+        // $trees->building=$request->input('building');
+        // $trees->builCh1=$request->input('builCh1');
+        // $trees->builCh2=$request->input('builCh2');
+        // $trees->builCh3=$request->input('builCh3');
+        // $trees->builDamageAppear=$request->input('builDamageAppear');
+        // $trees->builMoveArea=$request->input('builMoveArea');
+        // $trees->builNoEntry=$request->input('builNoEntry');
+        // $trees->man=$request->input('man');
+        // $trees->manCh1=$request->input('manCh1');
+        // $trees->manCh2=$request->input('manCh2');
+        // $trees->manCh3=$request->input('manCh3');
+        // $trees->manDamangeArea=$request->input('manDamangeArea');
+        // $trees->manMoveArea=$request->input('manMoveArea');
+        // $trees->manNoEntry=$request->input('manNoEntry');
+        // $trees->pillar=$request->input('pillar');
+        // $trees->pillCh1=$request->input('pillCh1');
+        // $trees->pillCh2=$request->input('pillCh2');
+        // $trees->pillCh3=$request->input('pillCh3');
+        // $trees->pillDamageAppear=$request->input('pillDamageAppear');
+        // $trees->pillMoveArea=$request->input('pillMoveArea');
+        // $trees->pillNoEntry=$request->input('pillNoEntry');
 
         if($request->listDamage!=NULL){
             $listDamage=[];
@@ -238,12 +243,12 @@ class HomeController extends Controller
         //  part3
 
         $trees->damageInArea=$request->input('damageInArea');
-        $trees->topographyStats=$request->input('topographyStats');
+        $trees->radioSlope=$request->input('radioSlope');
         $trees->slope=$request->input('slope');
         $trees->slopeDirection=$request->input('slopeDirection');
         $trees->changeArea=$request->input('changeArea');
         $trees->changeAreaDetail=$request->input('changeAreaDetail');
-        $trees->soilCh1=$request->input('soilCh1');
+        // $trees->soilCh1=$request->input('soilCh1');
         $trees->soilCh2=$request->input('soilCh2');
         $trees->soilCh3=$request->input('soilCh3');
         $trees->soilCh4=$request->input('soilCh4');
@@ -251,6 +256,10 @@ class HomeController extends Controller
         $trees->soilCh6=$request->input('soilCh6');
         $trees->soilCh7=$request->input('soilCh7');
         $trees->soilDetail=$request->input('soilDetail');
+        $trees->weather1=$request->input('weather1');
+        $trees->weather2=$request->input('weather2');
+        $trees->weather3=$request->input('weather3');
+        $trees->weather_other=$request->input('weather_other');
 
         // part4
 
@@ -259,23 +268,30 @@ class HomeController extends Controller
         $trees->leafCh2=$request->input('leafCh2');
         $trees->leafCh3=$request->input('leafCh3');
         $trees->leafCh4=$request->input('leafCh4');
+        $trees->leafCh4_text=$request->input('leafCh4_text');
         $trees->leafCh5=$request->input('leafCh5');
+        $trees->leafCh5_text=$request->input('leafCh5_text');
         $trees->leafCh6=$request->input('leafCh6');
-        $trees->leafCh7=$request->input('leafCh7');
-        $trees->leafCh8=$request->input('leafCh8');
-        $trees->foundArea=$request->input('foundArea');
-        $trees->symptom=$request->input('symptom');
-        $trees->percenSymptom=$request->input('percenSymptom');
-        $trees->causeType=$request->input('causeType');
-        $trees->Enermy1=$request->input('Enermy1');
-        $trees->Enermy2=$request->input('Enermy2');
-        $trees->Enermy3=$request->input('Enermy3');
-        $trees->Enermy4=$request->input('Enermy4');
-        $trees->Enermy5=$request->input('Enermy5');
-        $trees->Enermy6=$request->input('Enermy6');
-        $trees->Enermy7=$request->input('Enermy7');
-        $trees->Enermy8=$request->input('Enermy8');
-        $trees->enermyDetail=$request->input('enermyDetail');
+        $trees->leafCh6_text=$request->input('leafCh6_text');
+        $trees->monster1=$request->input('monster1');
+        $trees->symptom1=$request->input('symptom1');
+        $trees->monster2=$request->input('monster2');
+        $trees->symptom2=$request->input('symptom2');
+
+        
+        // $trees->foundArea=$request->input('foundArea');
+        // $trees->symptom=$request->input('symptom');
+        // $trees->percenSymptom=$request->input('percenSymptom');
+        // $trees->causeType=$request->input('causeType');
+        // $trees->Enermy1=$request->input('Enermy1');
+        // $trees->Enermy2=$request->input('Enermy2');
+        // $trees->Enermy3=$request->input('Enermy3');
+        // $trees->Enermy4=$request->input('Enermy4');
+        // $trees->Enermy5=$request->input('Enermy5');
+        // $trees->Enermy6=$request->input('Enermy6');
+        // $trees->Enermy7=$request->input('Enermy7');
+        // $trees->Enermy8=$request->input('Enermy8');
+        // $trees->enermyDetail=$request->input('enermyDetail');
 
         // part 5
 
@@ -284,10 +300,16 @@ class HomeController extends Controller
         $trees->topSize=$request->input('topSize');
         $trees->topThick=$request->input('topThick');
         $trees->parasite=$request->input('parasite');
+        $trees->amount_of_branch=$request->input('amount_of_branch');
+        $trees->changeAreaFuture=$request->input('changeAreaFuture');
+
+        // part 6
+
         $trees->topBalance=$request->input('topBalance');
-        $trees->limbDie=$request->input('limbDie');
+        $trees->liveCrownPercen=$request->input('liveCrownPercen');
+        $trees->dryBranches=$request->input('dryBranches');
         $trees->limbDieSize=$request->input('limbDieSize');
-        $trees->limbBroke=$request->input('limbBroke');
+        $trees->brokenBranches=$request->input('brokenBranches');
         $trees->limbBrokeSize=$request->input('limbBrokeSize');
         $trees->limbLesion=$request->input('limbLesion');
         $trees->limbHole=$request->input('limbHole');
@@ -295,69 +317,70 @@ class HomeController extends Controller
         $trees->limbDie=$request->input('limbDie');
         $trees->limbFungus=$request->input('limbFungus');
         $trees->limbLit=$request->input('limbLit');
-        $trees->limbTop=$request->input('limbTop');
-        $trees->limbLion=$request->input('limbLion');
-        $trees->limbFlush=$request->input('limbFlush');
-        $trees->limbOther=$request->input('limbOther');
-        $trees->limbDetail=$request->input('limbDetail');
-        $trees->topHarmChance=$request->input('topHarmChance');
-        $trees->liveCrownPercen=$request->input('liveCrownPercen');
+        $trees->limbLitOther=$request->input('limbLitOther');
         $trees->topStayAlert=$request->input('topStayAlert');
-        $trees->trunkNormal=$request->input('trunkNormal');
-        $trees->trunkBroke=$request->input('trunkBroke');
-        $trees->trunkNode=$request->input('trunkNode');
-        $trees->trunkDecay=$request->input('trunkDecay');
-        $trees->trunkFungus=$request->input('trunkFungus');
-        $trees->trunkHole=$request->input('trunkHole');
-        $trees->trunkLiquid=$request->input('trunkLiquid');
+        $trees->topHarmChance=$request->input('topHarmChance');
+        $trees->trunkTwin=$request->input('trunkTwin');
+        $trees->trunkTogather=$request->input('trunkTogather');
         $trees->trunkDie=$request->input('trunkDie');
         $trees->trunkAbnormal=$request->input('trunkAbnormal');
+        $trees->trunkBroke=$request->input('trunkBroke');
+        $trees->trunkHole=$request->input('trunkHole');
+        $trees->trunkDecay=$request->input('trunkDecay');
+        $trees->trunkLiquid=$request->input('trunkLiquid');
+        $trees->trunkNode=$request->input('trunkNode');
+        $trees->trunkDecayDamage=$request->input('trunkDecayDamage');
+        $trees->trunkFungus=$request->input('trunkFungus');
         $trees->trunkThin=$request->input('trunkThin');
+        $trees->trunkSlope_checkbox=$request->input('trunkSlope_checkbox');
         $trees->trunkSlope=$request->input('trunkSlope');
-        $trees->trunkHarmChance=$request->input('trunkHarmChance');
         $trees->trunkStayAlert=$request->input('trunkStayAlert');
+        $trees->trunkHarmChance=$request->input('trunkHarmChance');
+        $trees->rootDown=$request->input('rootDown');
+        $trees->rootWrap=$request->input('rootWrap');
         $trees->rootUp=$request->input('rootUp');
-        $trees->rootDecay=$request->input('rootDecay');
-        $trees->rootFungus=$request->input('rootFungus');
-        $trees->rootWater=$request->input('rootWater');
-        $trees->rootLesion=$request->input('rootLesion');
         $trees->rootBroke=$request->input('rootBroke');
+        $trees->rootLesion=$request->input('rootLesion');
         $trees->rootLiquid=$request->input('rootLiquid');
         $trees->rootNode=$request->input('rootNode');
-        $trees->rootHarmChance=$request->input('rootHarmChance');
+        $trees->rootDecay=$request->input('rootDecay');
+        $trees->rootCavity=$request->input('rootCavity');
+        $trees->rootFungus=$request->input('rootFungus');
+        $trees->rootWater=$request->input('rootWater');
         $trees->rootStayAlert=$request->input('rootStayAlert');
+        $trees->rootHarmChance=$request->input('rootHarmChance');
 
-        // part6
-        $trees->damangeRiskFactorPill=$request->input('damangeRiskFactorPill');
-        $trees->riskPillSize=$request->input('riskPillSize');
-        $trees->riskPillTime=$request->input('riskPillTime');
-        $trees->riskPillAmount=$request->input('riskPillAmount');
-        $trees->riskPillProtect=$request->input('riskPillProtect');
-        $trees->damangeRiskFactorTrunk=$request->input('damangeRiskFactorTrunk');
-        $trees->riskTrunkSize=$request->input('riskTrunkSize');
-        $trees->riskTrunkTime=$request->input('riskTrunkTime');
-        $trees->riskTrunkAmount=$request->input('riskTrunkAmount');
-        $trees->riskTrunkProtect=$request->input('riskTrunkProtect');
-        $trees->damangeRiskFactorRoot=$request->input('damangeRiskFactorRoot');
-        $trees->riskRootSize=$request->input('riskRootSize');
-        $trees->riskRootTime=$request->input('riskRootTime');
-        $trees->riskRootAmount=$request->input('riskRootAmount');
-        $trees->riskRootProtect=$request->input('riskRootProtect');
-        $trees->pillDamageRate=$request->input('pillDamageRate');
-        $trees->pillDamageEffect=$request->input('pillDamageEffect');
-        $trees->pillDamageEffectRate=$request->input('pillDamageEffectRate');
-        $trees->pillLevelDamage=$request->input('pillLevelDamage');
-        $trees->pillLevelDanger=$request->input('pillLevelDanger');
-        $trees->trunkDamageRate=$request->input('trunkDamageRate');
-        $trees->trunkDamageEffect=$request->input('trunkDamageEffect');
-        $trees->trunkDamageEffectRate=$request->input('trunkDamageEffectRate');
-        $trees->trunkLevelDamage=$request->input('trunkLevelDamage');
-        $trees->trunkLevelDanger=$request->input('trunkLevelDanger');
-        $trees->rootDamageRate=$request->input('rootDamageRate');
-        $trees->rootDamageEffect=$request->input('rootDamageEffect');
-        $trees->rootDamageEffectRate=$request->input('rootDamageEffectRate');
-        $trees->rootLevelDamage=$request->input('rootLevelDamage');
-        $trees->rootLevelDanger=$request->input('rootLevelDanger');
+        // part 7
+        // $trees->damangeRiskFactorPill=$request->input('damangeRiskFactorPill');
+        // $trees->riskPillSize=$request->input('riskPillSize');
+        // $trees->riskPillTime=$request->input('riskPillTime');
+        // $trees->riskPillAmount=$request->input('riskPillAmount');
+        // $trees->riskPillProtect=$request->input('riskPillProtect');
+        // $trees->damangeRiskFactorTrunk=$request->input('damangeRiskFactorTrunk');
+        // $trees->riskTrunkSize=$request->input('riskTrunkSize');
+        // $trees->riskTrunkTime=$request->input('riskTrunkTime');
+        // $trees->riskTrunkAmount=$request->input('riskTrunkAmount');
+        // $trees->riskTrunkProtect=$request->input('riskTrunkProtect');
+        // $trees->damangeRiskFactorRoot=$request->input('damangeRiskFactorRoot');
+        // $trees->riskRootSize=$request->input('riskRootSize');
+        // $trees->riskRootTime=$request->input('riskRootTime');
+        // $trees->riskRootAmount=$request->input('riskRootAmount');
+        // $trees->riskRootProtect=$request->input('riskRootProtect');
+        // $trees->pillDamageRate=$request->input('pillDamageRate');
+        // $trees->pillDamageEffect=$request->input('pillDamageEffect');
+        // $trees->pillDamageEffectRate=$request->input('pillDamageEffectRate');
+        // $trees->pillLevelDamage=$request->input('pillLevelDamage');
+        // $trees->pillLevelDanger=$request->input('pillLevelDanger');
+        // $trees->trunkDamageRate=$request->input('trunkDamageRate');
+        // $trees->trunkDamageEffect=$request->input('trunkDamageEffect');
+        // $trees->trunkDamageEffectRate=$request->input('trunkDamageEffectRate');
+        // $trees->trunkLevelDamage=$request->input('trunkLevelDamage');
+        // $trees->trunkLevelDanger=$request->input('trunkLevelDanger');
+        // $trees->rootDamageRate=$request->input('rootDamageRate');
+        // $trees->rootDamageEffect=$request->input('rootDamageEffect');
+        // $trees->rootDamageEffectRate=$request->input('rootDamageEffectRate');
+        // $trees->rootLevelDamage=$request->input('rootLevelDamage');
+        // $trees->rootLevelDanger=$request->input('rootLevelDanger');
         if($request->treePartName!=NULL){
             $treePartSeq=[];
             $treePartName=[];
@@ -447,13 +470,17 @@ class HomeController extends Controller
         }
         
         $trees->moreDetail=$request->input('moreDetail');
+        $trees->Solution1=$request->input('Solution1');
+        $trees->problem1=$request->input('problem1');
+        $trees->Solution2=$request->input('Solution2');
+        $trees->problem2=$request->input('problem2');
         $trees->totalDamage=$request->input('totalDamage');
-        $trees->timeDamage=$request->input('timeDamage');
         $trees->operateTime=$request->input('operateTime');
         $trees->moreEvaluate=$request->input('moreEvaluate');
         $trees->needMore=$request->input('needMore');
+
         
-        // part7
+        // part 8
 
         $fileListFull=$request->Tree_imgFull;
         $fileListTruck=$request->Tree_imgTruck;
