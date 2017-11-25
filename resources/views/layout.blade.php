@@ -269,7 +269,7 @@
 			    font-weight: normal;
 			    font-family: 'THSarabunNew', sans-serif;
 			    font-size: 15px;
-			    height: 0.5cm;
+			    height: 0.7cm;
 			}
 
 			/*.verticalTableHeader{
@@ -618,7 +618,7 @@ $(document).ready(function(){
               event.preventDefault();
 
               var data_dam = '<tr>'+
-                            '<td><input class="hideme" value="'+i+'" name="listDamage['+i+']" type="text"></td>'+'<td><input class="form-control" name="listDamage['+i+']" type="text"></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">มี</option><option value="2">ไม่มี</option></select></center></td>'+'<td><input class="form-control" name="listDamage['+i+']" type="checkbox"></td>'+'<td><input class="form-control" name="listDamage['+i+']" type="checkbox"></td>'+'<td><input class="form-control" name="listDamage['+i+']" type="checkbox"></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">1-ไม่ค่อยปรากฎ</option><option value="2">2-อยู่เป็นบางครั้ง</option><option value="3">3-ค่อนข้างบ่อย</option><option value="4">4-อยู่ตลอด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><input type="button" class="ui red button delete_tr" id="delete_tr" data-id="'+n+'" value="ลบ"></td>'+'</tr>';
+                            '<td><input class="hideme" type="text" value="'+i+'" name="listDamage['+i+']"></td>'+'<td><input class="form-control" type="text" name="listDamage['+i+']"></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">มี</option><option value="2">ไม่มี</option></select></center></td>'+'<td><input class="form-control" name="listDamage['+i+']" type="checkbox"></td>'+'<td><input class="form-control" name="listDamage['+i+']" type="checkbox"></td>'+'<td><input class="form-control" name="listDamage['+i+']" type="checkbox"></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">1-ไม่ค่อยปรากฎ</option><option value="2">2-อยู่เป็นบางครั้ง</option><option value="3">3-ค่อนข้างบ่อย</option><option value="4">4-อยู่ตลอด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><input type="button" class="ui red button delete_tr" id="delete_tr" data-id="'+n+'" value="ลบ"></td>'+'</tr>';
               $('#table_damage').append(data_dam);
               i++;
 
