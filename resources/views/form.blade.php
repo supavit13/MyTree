@@ -721,22 +721,22 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                   <div class="three wide column">
-                    <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','parasite','มี'); ?> value="มี">
+                    <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','มี'); ?> value="มี">
                     <span>มี</span>
                   </div>
 
                   <div class="three wide column">
-                    <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','parasite','มาก'); ?> value="มาก">
+                    <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','มาก'); ?> value="มาก">
                     <span>มาก</span>
                   </div>
                   
                   <div class="three wide column">
-                    <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','parasite','ปานกลาง'); ?> value="ปานกลาง">
+                    <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','ปานกลาง'); ?> value="ปานกลาง">
                     <span>ปานกลาง</span>
                   </div>
                   
                   <div class="three wide column">
-                    <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','parasite','น้อย'); ?> value="น้อย">
+                    <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','น้อย'); ?> value="น้อย">
                     <span>น้อย</span>
                   </div>
 
@@ -747,12 +747,12 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                   <div class="three wide column">
-                    <input type="radio" name="changeAreaFuture" <?php getData($tree,'radio','parasite','มี'); ?> value="มี">
+                    <input type="radio" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','มี'); ?> value="มี">
                     <span>มี</span>
                   </div>
 
                   <div class="three wide column">
-                    <input type="radio" name="changeAreaFuture" <?php getData($tree,'radio','parasite','ไม่มี'); ?> value="ไม่มี">
+                    <input type="radio" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','ไม่มี'); ?> value="ไม่มี">
                     <span>ไม่มี</span>
                   </div>
 
@@ -847,7 +847,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                   <div class="three wide column">
-                    <input type="checkbox" name="limbDie" <?php getData($tree,'checkbox','limbDie');?> >
+                    <input type="checkbox" name="limbRotten" <?php getData($tree,'checkbox','limbRotten');?> >
                     <span>เน่า</span>  
                   </div>
 
@@ -969,7 +969,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                   <div class="three wide column">
-                    <input type="checkbox" name="trunkDecayDamage" <?php getData($tree,'checkbox','trunkDecay');?> >
+                    <input type="checkbox" name="trunkDecayDamage" <?php getData($tree,'checkbox','trunkDecayDamage');?> >
                     <span>เนื้อไม้ผุเสียหาย</span>
                   </div>
  
@@ -1124,7 +1124,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                   <div class="three wide column">
-                    <input type="radio" name="rootHarmChance" <?php getData($tree,'radio','strong','มากที่สุด'); ?> value="มากที่สุด">
+                    <input type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','มากที่สุด'); ?> value="มากที่สุด">
                     <span>มากที่สุด</span>
                   </div>
 
@@ -1170,22 +1170,11 @@ function getData($tree,$type='',$name='',$var=NULL){
                   
                 </thead>
                 <tbody>
-                  
-                  
-                  
+              
                 </tbody>
               </table>
               <br>
               <br>
-
-
-              
-
-
-
-
-
-
 
               <br>
               <!--  - - - -  - - - - - - - - - - - - - - - - - - - - - - - -  - -->
@@ -1197,7 +1186,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                 <!--  - - - - - - - - - - - - - - - - - - -  - -->
-                  
+                  <button class="ui teal button" id="add_edit">เพิ่ม</button>
                   <div class="eight wide column">
                     <span">วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution1" value="<?php getData($tree,'text','Solution1'); ?>" >
@@ -1287,12 +1276,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <span>ต้องการ เรื่อง</span>
                     <input type="text" name="needMore" value="<?php getData($tree,'text','needMore'); ?>" class="form-control" >
                   </div>
-
-
-
                 </div>
-
-
           </div>
         </div>
       </div>

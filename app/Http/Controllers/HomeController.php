@@ -315,6 +315,7 @@ class HomeController extends Controller
         $trees->limbHole=$request->input('limbHole');
         $trees->limbNode=$request->input('limbNode');
         $trees->limbDie=$request->input('limbDie');
+        $trees->limbRotten=$request->input('limbRotten');
         $trees->limbFungus=$request->input('limbFungus');
         $trees->limbLit=$request->input('limbLit');
         $trees->limbLitOther=$request->input('limbLitOther');
