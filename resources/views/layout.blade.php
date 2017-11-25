@@ -677,8 +677,13 @@ $(document).ready(function(){
 
               $('#edit_div').append(data_edit);    
 
-			});
+		});
               
+        $(document).on('click', '#delete_edit', function() {
+      
+	     $(this).closest('div').remove();
+
+	    });
     </script>
 
    

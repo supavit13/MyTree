@@ -1192,7 +1192,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                 <div id="edit_div" class="sixteen wide column">
                   <button class="ui teal button" id="add_edit">เพิ่ม</button> 
                   <div class="ten wide column">
-                    <span">วิธีแก้ไข</span>
+                    <span>วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution1" value="<?php getData($tree,'text','Solution1'); ?>" >
                     <span">ปัญหาที่อาจหลงเหลือ</span>
                     <input type="text" class="form-control" name="problem1" value="<?php getData($tree,'text','problem1'); ?>" >
@@ -1205,6 +1205,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <input type="text" class="form-control" name="problem2" value="<?php getData($tree,'text','problem2'); ?>" >
                   </div>
                 </div>
+                <button class="ui red button" id="delete_edit">ลบ</button> 
 
 
 
