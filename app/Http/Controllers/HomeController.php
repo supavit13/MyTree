@@ -479,6 +479,7 @@ class HomeController extends Controller
         $trees->operateTime=$request->input('operateTime');
         $trees->moreEvaluate=$request->input('moreEvaluate');
         $trees->needMore=$request->input('needMore');
+        $trees->validTime=$request->input('validTime');
 
         
         // part 8

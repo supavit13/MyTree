@@ -1187,7 +1187,8 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                 <!--  - - - - - - - - - - - - - - - - - - -  - -->
                   <button class="ui teal button" id="add_edit">เพิ่ม</button>
-                  <div class="eight wide column">
+                  <br>
+                  <div class="eight wide column" id="edit_div">
                     <span">วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution1" value="<?php getData($tree,'text','Solution1'); ?>" >
                   </div>
@@ -1275,6 +1276,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <input type="radio" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ต้องการ เรื่อง'); ?> value="ต้องการ เรื่อง">
                     <span>ต้องการ เรื่อง</span>
                     <input type="text" name="needMore" value="<?php getData($tree,'text','needMore'); ?>" class="form-control" >
+                  </div>
+                  <div class="five wide column">
+                    <span>ระยะเวลาที่ควรมีการตรวจสอบ(ทุกๆ)</span>
+                    <input type="text" name="validTime" value="<?php getData($tree,'text','validTime'); ?>" class="form-control" >
                   </div>
                 </div>
           </div>
