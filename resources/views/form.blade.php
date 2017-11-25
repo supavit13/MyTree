@@ -1189,7 +1189,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                 <!--  - - - - - - - - - - - - - - - - - - -  - -->
                   
                   <br>
-                <div id="edit_div" class="sixteen wide column">
+                <div id="edit_div" class="forteen wide column">
                   <button class="ui teal button" id="add_edit">เพิ่ม</button> 
                   <div class="ten wide column">
                     <span">วิธีแก้ไข</span>
