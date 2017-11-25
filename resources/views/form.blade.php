@@ -1172,6 +1172,8 @@ function getData($tree,$type='',$name='',$var=NULL){
                       <td></td>
                       <td></td>
                       <td></td>
+                      <td></td>
+                      <td></td>
                   </tr>
                   
                   
