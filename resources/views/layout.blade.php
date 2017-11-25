@@ -675,7 +675,7 @@ $(document).ready(function(){
 
               var data_edit = '<span">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">';
 
-              $('#edit_div').append(data_dam);    
+              $('#edit_div').append(data_edit);    
 
 			
               
