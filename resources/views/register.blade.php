@@ -90,7 +90,9 @@
                   </div>
                   <input type="checkbox" class="ui checkbox" id="policycheck" name="policycheck"><span>&nbsp;ยอมรับ</span>
 
-                  <div align="center" >
+                  
+
+                  <div align="center" id="divsave" style="display: none;">
                     <center id="divSubmit">
                       <button class='ui blue button' id='submit' type='submit'>บันทึก</button>
                     </center>
@@ -98,6 +100,12 @@
                   
                   
                 </form>
+
+                <script type="text/javascript">
+                    if(document.getElementById("policycheck").value == "on"){
+                      document.getElementById("divsave").style.display = 'block';
+                    }
+                </script>
 
 
 
