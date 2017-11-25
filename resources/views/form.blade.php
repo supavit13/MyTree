@@ -283,6 +283,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <th rowspan="2" class="center aligned">การปรากฎอยู่ของเป้าหมาย</th>
                     <th rowspan="2" class="center aligned">การเคลือนย้าย</th>
                     <th rowspan="2" class="center aligned">การกันพื้นที่</th>
+                    <th rowspan="2"></th>
                   </tr>
                   <tr>
                     <th id="five_per">ใต้เรือนยอด</th>
