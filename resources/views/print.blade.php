@@ -142,54 +142,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </thead>
                 
     <tbody>
-      <tr>
-        <td style="text-align: center;">1</td>
-
-        <td >รถยนต์/รถจักรยานยนต์</td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
-        
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','vehCh1');?>> <!-- ใต้เรือนยอด -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','vehCh2');?>> <!-- 1 เท่าของความสูง -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','vehCh3');?>> <!-- 1.5เท่าของความสูง -->
-          </div>
-        </td>                          
-                    
- 
-        <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
-          <select id="arrow">   
-            <option value="0">โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','vehDamageAppear','1');?>>1-พบน้อยมาก</option>
-            <option value="2" <?php getData($tree,'select','vehDamageAppear','2');?>>2-พบบางครั้ง</option>
-            <option value="3" <?php getData($tree,'select','vehDamageAppear','3');?>>3-พบบ่อย</option>
-            <option value="4" <?php getData($tree,'select','vehDamageAppear','4');?>>4-อยู่บริเวณนั้น</option>
-          </select>
-        </td> 
-
-        <td style="text-align: center;">  <!-- การเคลื่อนย้ายออกจากพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','vehMoveArea','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','vehMoveArea','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','vehMoveArea','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-                    
-        <td style="text-align: center;">  <!-- ห้ามเข้าพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','vehNoEntry','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','vehNoEntry','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','vehNoEntry','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-      </tr> <!-- end รถยนต์ -->
+      
       <?php 
                     if($tree!=NULL && $tree['listDamage']!=NULL){
                       $i=0;
