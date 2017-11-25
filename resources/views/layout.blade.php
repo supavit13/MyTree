@@ -673,7 +673,7 @@ $(document).ready(function(){
         $("#add_edit").click(function(event){
               event.preventDefault();
 
-              var data_edit = '<span">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">'+'<span">ปัญหาที่อาจหลงเหลือ</span>'+'<input type="text" class="form-control" name="problem2">';
+              var data_edit = '<span id="edit_span">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">'+'<span">ปัญหาที่อาจหลงเหลือ</span>'+'<input type="text" class="form-control" name="problem2">';
 
               $('#edit_div').append(data_edit);    
 
@@ -681,7 +681,7 @@ $(document).ready(function(){
               
         $(document).on('click', '#delete_edit', function() {
       
-	     $(this).closest('div#edit_div').remove();
+	     $(this).closest('span#edit_span').remove();
 
 	    });
     </script>
