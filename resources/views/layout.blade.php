@@ -669,19 +669,23 @@ $(document).ready(function(){
               });
 
 
+
+        var y = 0;
         
         $("#add_edit").click(function(event){
               event.preventDefault();
 
-              var data_edit = '<span id="edit_span">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">'+'<span">ปัญหาที่อาจหลงเหลือ</span>'+'<input type="text" class="form-control" name="problem2">';
+              var data_edit = '<span id="edit_span" class="spanedit" data-id="'+y+'">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">'+'<span>ปัญหาที่อาจหลงเหลือ</span>'+'<input type="text" class="form-control" name="problem2">';
 
               $('#edit_div').append(data_edit);    
+              y++;
 
 		});
               
         $(document).on('click', '#delete_edit', function() {
+        	var spanId = $(this).data('id');
       
-	     $(this).closest('span#edit_span').remove();
+	     $('.spanedit[data-id="'+spanId+'"]').remove();
 
 	    });
     </script>
