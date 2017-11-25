@@ -292,9 +292,7 @@
       position: 'topleft',
       content : '<button id="desbut" type="button" style="border-style:solid; border-color:#BEBEBE; border-width: 2px;" class="btn btn-default">'+
                 '    <font size="4"><i class="fa fa-question"></i></font>'+
-                '</button>'+
-                '    <font size="4"><i class="fa fa-search"></i></font>'+
-                '</button>',
+                '</button>'
       classes : 'btn-group-vertical btn-group-sm',
       style   :
       {
