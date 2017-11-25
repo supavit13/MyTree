@@ -276,7 +276,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <thead>
                   <tr>
            
-                    <th rowspan="2" class="center aligned">ลำดับ</th>
+                    <th rowspan="2" class="center aligned" style="width: 1em;">ลำดับ</th>
                     <th rowspan="2" class="center aligned">เป้าหมายของความเสียหาย</th>
                     <th rowspan="2" class="center aligned">มาตรการป้องกันเป้าหมาย</th>
                     <th colspan="3" class="center aligned">บริเวณที่อาจเกิดความเสียหาย</th>
