@@ -272,6 +272,7 @@ function getData($tree,$type='',$name='',$var=NULL){
           
           <div class="panel-collapse collapse" id="panel-2">
             <div class="panel-body">
+              <button class="ui green button" id="add_table">เพิ่ม</button>
                 <table class="ui basic celled structured table" id="table_damage">
                   <thead>
                   <tr>
