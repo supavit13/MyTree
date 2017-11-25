@@ -127,12 +127,12 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>วันที่</span>
-                      <input type="date" id="dateform" value="" class="form-control" name="Tree_date" min="1990-01-02">
+                      <input type="date" id="dateform" value="<?php echo date("m/d/Y");?>" class="form-control" name="Tree_date" min="1990-01-02">
                   </div>
 
                   <div class="three wide column">
                     <span>เวลา</span>
-                    <input class="form-control timestamp" type="text" value="" name="Tree_time" id="example-time-input" disabled> 
+                    <input class="form-control timestamp" type="text" value="<?php echo date("H:i:s");?>" name="Tree_time" id="example-time-input" disabled> 
                   </div>
 
 
@@ -203,27 +203,7 @@ function getData($tree,$type='',$name='',$var=NULL){
              
 
                   <script type="text/javascript">
-                    var d = new Date();
-                    var str = d.toString();
-                    document.getElementsByClassName("timestamp").value = d.toUTCString().split(' ')[4];
-                    document.getElementById("dateform").value = month()+'/'+str.split(' ')[2]+'/'+str.split(' ')[3];
-
-                    function month(){
-                      switch(str.split(' ')[1]){
-                          case "Jan" : return "01";
-                            case "Feb" : return "02";
-                            case "Mar" : return "03";
-                            case "Apr" : return "04";
-                            case "May" : return "05";
-                            case "Jun" : return "06";
-                            case "Jul" : return "07";
-                            case "Aug" : return "08";
-                            case "Sep" : return "09";
-                            case "Oct" : return "10";
-                            case "Nov" : return "11";
-                            case "Dec" : return "12";
-                        }
-                    }
+                   
        
                       $(document).on('change', '#TreeName', function() {
                         var $Tname = document.getElementById("TreeName").value;
