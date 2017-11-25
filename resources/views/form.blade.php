@@ -1157,6 +1157,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <th rowspan="2" class="rotate">รายละเอียดของความเสี่ยง</th>
                     <th colspan="3" style="text-align: center;">โอกาสในการเกิด</th>
                     <th rowspan="2" class="rotate">ระดับความรุนแรงของผลกระทบ</th>
+                    <th></th>
                   </tr>
                   <tr>
                     <th>ความล้มเหลวของต้นไม้</th>
@@ -1166,15 +1167,6 @@ function getData($tree,$type='',$name='',$var=NULL){
                   
                 </thead>
                 <tbody>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
                   
                   
                   
