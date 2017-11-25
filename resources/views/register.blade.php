@@ -92,7 +92,7 @@
 
                   
 
-                  <div align="center" id="divsave" style="display: none;">
+                  <div align="center" style="display:none;">
                     <center id="divSubmit">
                       <button class='ui blue button' id='submit' type='submit'>บันทึก</button>
                     </center>
@@ -103,7 +103,7 @@
 
                 <script type="text/javascript">
                     if(document.getElementById("policycheck").value == "on"){
-                      document.getElementById("divsave").style.display = 'block';
+                      document.getElementById("submit").style.display = 'block';
                     }
                 </script>
 
