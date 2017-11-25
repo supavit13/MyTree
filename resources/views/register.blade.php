@@ -108,7 +108,9 @@
                         var pFun = document.getElementById('savediv');
                         if (pFun.style.display == 'none') {
                             pFun.style.display = 'block';
-                        } 
+                        } else {
+                            pFun.style.display = 'none';
+                        }
                     }
                 </script>
 
