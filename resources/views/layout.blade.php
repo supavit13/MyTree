@@ -680,7 +680,7 @@ $(document).ready(function(){
         $("#add_edit").click(function(event){
               event.preventDefault();
 
-              var data_edit = '<div class="divedit" data-id="'+y+'">'+'<span id="edit_span">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">'+'<span>ปัญหาที่อาจหลงเหลือ</span>'+'<input type="text" class="form-control" name="problem2">'+'<br>'+'<button class="ui red button" id="delete_edit">ลบ</button>'+'</div>';
+              var data_edit = '<div class="divedit" data-div="'+y+'">'+'<span id="edit_span">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">'+'<span>ปัญหาที่อาจหลงเหลือ</span>'+'<input type="text" class="form-control" name="problem2">'+'<br>'+'<button class="ui red button" id="delete_edit">ลบ</button>'+'</div>';
 
               $('#edit_div').append(data_edit);    
               y++;
@@ -688,9 +688,9 @@ $(document).ready(function(){
 		});
               
         $(document).on('click', '#delete_edit', function() {
-        	var divID = $(this).data('id');
+        	var divID = $(this).data('div');
       
-	     $('.divedit[data-id="'+divID+'"]').remove();
+	     $('.divedit[data-div="'+divID+'"]').remove();
 
 	    });
     </script>
