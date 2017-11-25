@@ -127,12 +127,14 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>วันที่</span>
-                      <input type="date" id="dateform" value="<?php getData($tree,'text','Tree_date'); ?>" class="form-control" name="Tree_date" min="1990-01-02">
+                    <input type="date" id="dateform" value="" class="form-control" name="Tree_date" min="1990-01-02">
+
                   </div>
 
                   <div class="three wide column">
                     <span>เวลา</span>
-                    <input class="form-control timestamp" type="text" value="<?php getData($tree,'text','Tree_time'); ?>" name="Tree_time" id="example-time-input" disabled> 
+                    <input class="form-control timestamp" type="text" value="" name="Tree_time" id="example-time-input" disabled> 
+
                   </div>
 
 
