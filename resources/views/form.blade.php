@@ -277,10 +277,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <tr>
            
                     <th rowspan="2" style="width: 1em;">ลำดับ</th>
-                    <th rowspan="2">เป้าหมายของความเสียหาย</th>
-                    <th rowspan="2">มาตรการป้องกันเป้าหมาย</th>
+                    <th rowspan="2" style="width: 4em;">เป้าหมายของความเสียหาย</th>
+                    <th rowspan="2" style="width: 2em;">มาตรการป้องกันเป้าหมาย</th>
                     <th colspan="3">บริเวณที่อาจเกิดความเสียหาย</th>
-                    <th rowspan="2">การปรากฎอยู่ของเป้าหมาย</th>
+                    <th rowspan="2" style="width: 2em;>การปรากฎอยู่ของเป้าหมาย</th>
                     <th rowspan="2">การเคลือนย้าย</th>
                     <th rowspan="2">การกันพื้นที่</th>
                     <th rowspan="2"></th>
