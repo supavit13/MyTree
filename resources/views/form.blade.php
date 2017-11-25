@@ -1184,6 +1184,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <span style="font-weight: bold;">คำอธิบายเพิ่มเติม</span>
                     <input type="text" name="moreDetail" value="<?php getData($tree,'text','moreDetail'); ?>" class="form-control" >
                   </div>
+                  <br>
 
                 <!--  - - - - - - - - - - - - - - - - - - -  - -->
                   <button class="ui teal button" id="add_edit">เพิ่ม</button>
@@ -1191,9 +1192,6 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <div class="eight wide column" id="edit_div">
                     <span">วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution1" value="<?php getData($tree,'text','Solution1'); ?>" >
-                  </div>
-
-                  <div class="eight wide column">
                     <span">ปัญหาที่อาจหลงเหลือ</span>
                     <input type="text" class="form-control" name="problem1" value="<?php getData($tree,'text','problem1'); ?>" >
                   </div>
