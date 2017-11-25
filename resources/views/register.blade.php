@@ -102,7 +102,7 @@
                 </form>
 
                 <script type="text/javascript">
-                    function provinceFun() {
+                    function showsave() {
                         var pFun = document.getElementById('savediv');
                         if (pFun.style.display == 'none') {
                             pFun.style.display = 'block';
