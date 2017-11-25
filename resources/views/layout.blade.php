@@ -670,12 +670,17 @@ $(document).ready(function(){
 
 
 
+    </script>
+
+
+    <script type="text/javascript">
+    	
         var y = 0;
         
         $("#add_edit").click(function(event){
               event.preventDefault();
 
-              var data_edit = '<span id="edit_span" class="spanedit" data-id="'+y+'">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">'+'<span>ปัญหาที่อาจหลงเหลือ</span>'+'<input type="text" class="form-control" name="problem2">';
+              var data_edit = '<span id="edit_span" class="spanedit" data-id="'+y+'">วิธีแก้ไข</span>'+'<input type="text" class="form-control" name="Solution1">'+'<span>ปัญหาที่อาจหลงเหลือ</span>'+'<input type="text" class="form-control" name="problem2">'+'<button class="ui red button" id="delete_edit">ลบ</button>';
 
               $('#edit_div').append(data_edit);    
               y++;

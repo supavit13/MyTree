@@ -1207,7 +1207,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                 </div>
                 <div id="edit_div" class="sixteen wide column">
                   
-                 <button class="ui red button" id="delete_edit">ลบ</button>  
+                 
                 </div>
                 
 
