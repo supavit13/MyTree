@@ -681,7 +681,7 @@ $(document).ready(function(){
               
         $(document).on('click', '#delete_edit', function() {
       
-	     $(this).closest('div').remove();
+	     $(this).closest('div#edit_div').remove();
 
 	    });
     </script>
