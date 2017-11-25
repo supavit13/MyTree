@@ -224,26 +224,26 @@ function getData($tree,$type='',$name='',$var=NULL){
                           }
                         })
                       });
-                      // $(document).on('change',".anti-Minus",function(){
-                      //   if(document.getElementById("Tree_sequence").value<0){
-                      //     document.getElementById("Tree_sequence").value=0;
-                      //   }
-                      //   if(document.getElementById("Tree_lat").value<0){
-                      //     document.getElementById("Tree_lat").value=0;
-                      //   }
-                      //   if(document.getElementById("Tree_long").value<0){
-                      //     document.getElementById("Tree_long").value=0;
-                      //   }
-                      //   if(document.getElementById("Tree_diameter_Trunk").value<0){
-                      //     document.getElementById("Tree_diameter_Trunk").value=0;
-                      //   }
-                      //   if(document.getElementById("Tree_diameter_Top").value<0){
-                      //     document.getElementById("Tree_diameter_Top").value=0;
-                      //   }
-                      //   if(document.getElementById("Tree_height").value<0){
-                      //     document.getElementById("Tree_height").value=0;
-                      //   }
-                      // });
+                      $(document).on('change',".anti-Minus",function(){
+                        if(document.getElementById("Tree_sequence").value<0){
+                          document.getElementById("Tree_sequence").value=0;
+                        }
+                        if(document.getElementById("Tree_lat").value<0){
+                          document.getElementById("Tree_lat").value=0;
+                        }
+                        if(document.getElementById("Tree_long").value<0){
+                          document.getElementById("Tree_long").value=0;
+                        }
+                        if(document.getElementById("Tree_diameter_Trunk").value<0){
+                          document.getElementById("Tree_diameter_Trunk").value=0;
+                        }
+                        if(document.getElementById("Tree_diameter_Top").value<0){
+                          document.getElementById("Tree_diameter_Top").value=0;
+                        }
+                        if(document.getElementById("Tree_height").value<0){
+                          document.getElementById("Tree_height").value=0;
+                        }
+                      });
                     </script>           
 
 
@@ -1157,7 +1157,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <th rowspan="2" class="rotate">รายละเอียดของความเสี่ยง</th>
                     <th colspan="3" style="text-align: center;">โอกาสในการเกิด</th>
                     <th rowspan="2" class="rotate">ระดับความรุนแรงของผลกระทบ</th>
-                    <th rowspan="2" class="rotate">ระดับความเสี่ยงอันตราย<br>(matrix2)</th>
+                    <th rowspan="2" class="rotate">ระดับความเสี่ยงอันตราย(matrix2)</th>
                     <th></th>
                   </tr>
                   <tr>
