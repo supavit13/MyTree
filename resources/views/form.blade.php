@@ -138,17 +138,17 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="two wide column">
                     <span>ต้นที่</span>
-                    <input id="Tree_sequence" type="number" min="1"> value="<?php getData($tree,'text','Tree_sequence'); ?>" class="form-control anti-Minus" name="Tree_sequence" >
+                    <input id="Tree_sequence" type="number" min="1" value="<?php getData($tree,'text','Tree_sequence'); ?>" class="form-control anti-Minus" name="Tree_sequence" >
                   </div>
 
                   <div class="three wide column">
                     <span>พิกัดละติจูด</span>
-                    <input id="Tree_lat" type="number" min="0"> step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" required>
+                    <input id="Tree_lat" type="number" min="0" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" required>
                   </div>
 
                   <div class="three wide column">
                     <span>พิกัดลองจิจูด</span>
-                    <input id="Tree_long" type="number" min="0"> step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" required>
+                    <input id="Tree_long" type="number" min="0" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" required>
                   </div>
 
                   <div class="two wide column">
@@ -169,18 +169,18 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="five wide column">
                     <span>เส้นผ่านศูนย์กลางเพียงอก (ซม.)</span>
-                    <input id="Tree_diameter_Trunk" type="number" min="0"> step="0.01" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>" class="form-control anti-Minus" name="Tree_diameter_Trunk" required>
+                    <input id="Tree_diameter_Trunk" type="number" min="0" step="0.01" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>" class="form-control anti-Minus" name="Tree_diameter_Trunk" required>
                     <span id="miss_diameter_trunk" style="color: red;"></span>
                   </div>
 
                   <div class="five wide column">
                     <span>ความสูงทั้งหมด (ม.)</span>
-                    <input id="Tree_height" type="number" min="0"> step="0.01" value="<?php getData($tree,'text','Tree_height'); ?>" class="form-control anti-Minus" name="Tree_height" >
+                    <input id="Tree_height" type="number" min="0" step="0.01" value="<?php getData($tree,'text','Tree_height'); ?>" class="form-control anti-Minus" name="Tree_height" >
                   </div>
 
                   <div class="five wide column">
                     <span>เส้นผ่านศูนย์กลางเรือนยอด (ม.)</span>
-                    <input id="Tree_diameter_Top" type="number" min="0"> step="0.01" value="<?php getData($tree,'text','Tree_diameter_Top'); ?>" class="form-control anti-Minus" name="Tree_diameter_Top" >
+                    <input id="Tree_diameter_Top" type="number" min="0" step="0.01" value="<?php getData($tree,'text','Tree_diameter_Top'); ?>" class="form-control anti-Minus" name="Tree_diameter_Top" >
                     
                   </div>
 
