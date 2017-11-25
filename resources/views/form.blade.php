@@ -1191,14 +1191,14 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <br>
                 <div id="edit_div" class="sixteen wide column">
                   <button class="ui teal button" id="add_edit">เพิ่ม</button> 
-                  <div class="fifteen wide column">
+                  <div class="ten wide column">
                     <span">วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution1" value="<?php getData($tree,'text','Solution1'); ?>" >
                     <span">ปัญหาที่อาจหลงเหลือ</span>
                     <input type="text" class="form-control" name="problem1" value="<?php getData($tree,'text','problem1'); ?>" >
                   </div>
 
-                  <div class="fifteen wide column">
+                  <div class="ten wide column">
                     <span">วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution2" value="<?php getData($tree,'text','Solution2'); ?>" >
                     <span">ปัญหาที่อาจหลงเหลือ</span>
