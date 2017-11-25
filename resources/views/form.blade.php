@@ -1152,12 +1152,12 @@ function getData($tree,$type='',$name='',$var=NULL){
               <table class="ui basic celled structured table" id="table1_risk">
                 <thead>
                   <tr>
-                    <th rowspan="2" class="rotate" style="width: 2em;">ลำดับที่</th>
-                    <th rowspan="2">ส่วนของต้นไม้ที่เป็นอันตราย</th>
-                    <th rowspan="2" class="rotate">รายละเอียดของความเสี่ยง</th>
+                    <th rowspan="2" style="width: 2em;">ลำดับที่</th>
+                    <th rowspan="2" style="width: 2em;">ส่วนของต้นไม้ที่เป็นอันตราย</th>
+                    <th rowspan="2" style="width: 2em;">รายละเอียดของความเสี่ยง</th>
                     <th colspan="3" style="text-align: center;">โอกาสในการเกิด</th>
-                    <th rowspan="2" class="rotate">ระดับความรุนแรงของผลกระทบ</th>
-                    <th rowspan="2" class="rotate">ระดับความเสี่ยงอันตราย(matrix2)</th>
+                    <th rowspan="2" style="width: 2em;">ระดับความรุนแรงของผลกระทบ</th>
+                    <th rowspan="2" style="width: 2em;">ระดับความเสี่ยงอันตราย(matrix2)</th>
                     <th></th>
                   </tr>
                   <tr>
