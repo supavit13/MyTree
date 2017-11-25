@@ -191,6 +191,7 @@ class HomeController extends Controller
 
         if($request->listDamage!=NULL){
             $listDamage=[];
+            $protectTarget[];
             $ch1=[];
             $ch2=[];
             $ch3=[];
