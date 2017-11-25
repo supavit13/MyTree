@@ -127,7 +127,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>วันที่</span>
-                      <input type="date" id="date" value="<?php getData($tree,'text','Tree_date'); ?>" class="form-control" name="Tree_date" min="1990-01-02">
+                      <input type="date" id="dateform" value="<?php getData($tree,'text','Tree_date'); ?>" class="form-control" name="Tree_date" min="1990-01-02">
                   </div>
 
                   <div class="three wide column">
@@ -143,12 +143,12 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>พิกัดละติจูด</span>
-                    <input id="Tree_lat" type="number" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" require>
+                    <input id="Tree_lat" type="number" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" require="">
                   </div>
 
                   <div class="three wide column">
                     <span>พิกัดลองจิจูด</span>
-                    <input id="Tree_long" type="number" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" require>
+                    <input id="Tree_long" type="number" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" require="">
                   </div>
 
                   <div class="two wide column">
@@ -159,7 +159,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="five wide column">
                     <span>ชนิด</span>
-                    <input id="TreeName" type="text" value="<?php getData($tree,'text','Tree_name'); ?>" class="form-control" name="Tree_name" require>
+                    <input id="TreeName" type="text" value="<?php getData($tree,'text','Tree_name'); ?>" class="form-control" name="Tree_name" require="">
                   </div>
 
                   <div class="five wide column">
@@ -169,7 +169,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="five wide column">
                     <span>เส้นผ่านศูนย์กลางเพียงอก (ซม.)</span>
-                    <input id="Tree_diameter_Trunk" type="number" step="0.01" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>" class="form-control anti-Minus" name="Tree_diameter_Trunk" require>
+                    <input id="Tree_diameter_Trunk" type="number" step="0.01" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>" class="form-control anti-Minus" name="Tree_diameter_Trunk" require="">
                     <span id="miss_diameter_trunk" style="color: red;"></span>
                   </div>
 
@@ -186,7 +186,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="five wide column">
                     <span>ผู้ประเมิน</span>
-                    <input type="text" value="<?php echo $userlogin['username'] ?>" class="form-control" name="User_name" require>
+                    <input type="text" value="<?php echo $userlogin['username'] ?>" class="form-control" name="User_name" require="">
                     <input type="hidden" name="UserID" value="<?php echo $userlogin['_id'] ?>">
                   </div>
 
@@ -197,12 +197,33 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                  <div class="five wide column">
                     <span>โทรศัพท์</span>
-                    <input  type="number"  class="form-control input-md" value="<?php getData($tree,'text','Tree_phone'); ?>" name="Tree_phone" require>
+                    <input  type="number"  class="form-control input-md" value="<?php getData($tree,'text','Tree_phone'); ?>" name="Tree_phone" require="">
                   </div>
 
              
 
                   <script type="text/javascript">
+                    var d = new Date();
+                    var str = d.toString();
+                    document.getElementsByClassName("timestamp").innerHTML = d.toUTCString().split(' ')[4];
+                    document.getElementById("dateform").innerHTML = month()+'/'+str.split(' ')[2]+'/'+str.split(' ')[3];
+
+                    function month(){
+                      switch(str.split(' ')[1]){
+                          case "Jan" : return "01";
+                            case "Feb" : return "02";
+                            case "Mar" : return "03";
+                            case "Apr" : return "04";
+                            case "May" : return "05";
+                            case "Jun" : return "06";
+                            case "Jul" : return "07";
+                            case "Aug" : return "08";
+                            case "Sep" : return "09";
+                            case "Oct" : return "10";
+                            case "Nov" : return "11";
+                            case "Dec" : return "12";
+                        }
+                    }
        
                       $(document).on('change', '#TreeName', function() {
                         var $Tname = document.getElementById("TreeName").value;
@@ -1970,27 +1991,7 @@ function getData($tree,$type='',$name='',$var=NULL){
   <h4></h4>
 </div>
 <script type="text/javascript">
-var d = new Date();
-var str = d.toString();
-document.getElementsByClassName("timestamp").innerHTML = d.toUTCString().split(' ')[4];
-document.getElementById("date").innerHTML = month()+'/'+str.split(' ')[2]+'/'+str.split(' ')[3];
 
-function month(){
-	switch(str.split(' ')[1]){
-    	case "Jan" : return "01";
-        case "Feb" : return "02";
-        case "Mar" : return "03";
-        case "Apr" : return "04";
-        case "May" : return "05";
-        case "Jun" : return "06";
-        case "Jul" : return "07";
-        case "Aug" : return "08";
-        case "Sep" : return "09";
-        case "Oct" : return "10";
-        case "Nov" : return "11";
-        case "Dec" : return "12";
-    }
-}
 
 </script>
 
