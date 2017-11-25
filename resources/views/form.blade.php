@@ -1187,9 +1187,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   
                 </thead>
                 <tbody>
-                    <!-- loop table 2 -->
-
-                  <?php  if($tree!=NULL && $tree['treePartName']!=NULL){
+                     <?php  if($tree!=NULL && $tree['treePartName']!=NULL){
                         $i=0;
                         foreach ($tree['treePartName'] as $value) {
                         
@@ -1268,7 +1266,6 @@ function getData($tree,$type='',$name='',$var=NULL){
                       }
                       ?>
                     </tr>
-                    <!-- end loop table 2 -->
                 </tbody>
               </table>
               <br>
