@@ -127,12 +127,12 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>วันที่</span>
-                      <input type="date" id="dateform" value="<?php echo date("m/d/Y");?>" class="form-control" name="Tree_date" min="1990-01-02">
+                      <input type="date" value="<?php getData($tree,'text','Tree_date'); ?>" class="form-control" name="Tree_date" min="1990-01-02">
                   </div>
 
                   <div class="three wide column">
                     <span>เวลา</span>
-                    <input class="form-control timestamp" type="text" value="<?php echo date("H:i:s");?>" name="Tree_time" id="example-time-input" disabled> 
+                    <input class="form-control" type="text" value="<?php getData($tree,'text','Tree_time'); ?>" name="Tree_time" id="example-time-input" > 
                   </div>
 
 
@@ -203,7 +203,6 @@ function getData($tree,$type='',$name='',$var=NULL){
              
 
                   <script type="text/javascript">
-                   
        
                       $(document).on('change', '#TreeName', function() {
                         var $Tname = document.getElementById("TreeName").value;
@@ -1970,10 +1969,7 @@ function getData($tree,$type='',$name='',$var=NULL){
   
   <h4></h4>
 </div>
-<script type="text/javascript">
 
-
-</script>
 
 
 
