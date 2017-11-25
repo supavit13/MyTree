@@ -142,199 +142,67 @@ function getData($tree,$type='',$name='',$var=NULL){
     </thead>
                 
     <tbody>
-      <tr>
-        <td style="text-align: center;">1</td>
 
-        <td >รถยนต์/รถจักรยานยนต์</td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
-        
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','vehCh1');?>> <!-- ใต้เรือนยอด -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','vehCh2');?>> <!-- 1 เท่าของความสูง -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','vehCh3');?>> <!-- 1.5เท่าของความสูง -->
-          </div>
-        </td>                          
-                    
- 
-        <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
-          <select id="arrow">   
-            <option value="0">โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','vehDamageAppear','1');?>>1-พบน้อยมาก</option>
-            <option value="2" <?php getData($tree,'select','vehDamageAppear','2');?>>2-พบบางครั้ง</option>
-            <option value="3" <?php getData($tree,'select','vehDamageAppear','3');?>>3-พบบ่อย</option>
-            <option value="4" <?php getData($tree,'select','vehDamageAppear','4');?>>4-อยู่บริเวณนั้น</option>
-          </select>
-        </td> 
-
-        <td style="text-align: center;">  <!-- การเคลื่อนย้ายออกจากพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','vehMoveArea','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','vehMoveArea','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','vehMoveArea','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-                    
-        <td style="text-align: center;">  <!-- ห้ามเข้าพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','vehNoEntry','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','vehNoEntry','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','vehNoEntry','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-      </tr> <!-- end รถยนต์ -->
-
-      <tr>
-        <td style="text-align: center;">2</td>
-        <td >อาคาร</td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
-        
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','builCh1');?>> <!-- ใต้เรือนยอด -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','builCh2');?>> <!-- 1 เท่าของความสูง -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','builCh3');?>> <!-- 1.5เท่าของความสูง -->
-          </div>
-        </td>                          
-                    
- 
-        <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','builDamageAppear','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','builDamageAppear','1');?>>1-พบน้อยมาก</option>
-            <option value="2" <?php getData($tree,'select','builDamageAppear','2');?>>2-พบบางครั้ง</option>
-            <option value="3" <?php getData($tree,'select','builDamageAppear','3');?>>3-พบบ่อย</option>
-            <option value="4" <?php getData($tree,'select','builDamageAppear','4');?>>4-อยู่บริเวณนั้น</option>
-          </select>
-        </td> 
-
-        <td style="text-align: center;">  <!-- การเคลื่อนย้ายออกจากพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','builMoveArea','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','builMoveArea','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','builMoveArea','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-                    
-        <td style="text-align: center;">  <!-- ห้ามเข้าพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','builNoEntry','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','builNoEntry','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','builNoEntry','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-      </tr> <!-- end อาคาร -->
-
-      <tr>
-        <td style="text-align: center;">3</td>
-
-        <td >คน</td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
-        
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','manCh1');?>> <!-- ใต้เรือนยอด -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','manCh2');?>> <!-- 1 เท่าของความสูง -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','manCh3');?>> <!-- 1.5เท่าของความสูง -->
-          </div>
-        </td>                          
-                    
- 
-        <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','manDamangeArea','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','manDamangeArea','1');?>>1-พบน้อยมาก</option>
-            <option value="2" <?php getData($tree,'select','manDamangeArea','2');?>>2-พบบางครั้ง</option>
-            <option value="3" <?php getData($tree,'select','manDamangeArea','3');?>>3-พบบ่อย</option>
-            <option value="4" <?php getData($tree,'select','manDamangeArea','4');?>>4-อยู่บริเวณนั้น</option>
-          </select>
-        </td> 
-
-        <td style="text-align: center;">  <!-- การเคลื่อนย้ายออกจากพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','manMoveArea','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','manMoveArea','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','manMoveArea','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-                    
-        <td style="text-align: center;">  <!-- ห้ามเข้าพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','manNoEntry','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','manNoEntry','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','manNoEntry','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-      </tr> <!-- end คน -->
-
-      <tr>
-        <td style="text-align: center;">4</td>
-        <td >เสาไฟฟ้า</td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
-        
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','pillCh1');?>> <!-- ใต้เรือนยอด -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','pillCh2');?>> <!-- 1 เท่าของความสูง -->
-          </div>
-        </td>
-        <td>
-          <div style="text-align: center;">
-            <input type="checkbox" <?php getData($tree,'checkbox','pillCh3');?>> <!-- 1.5เท่าของความสูง -->
-          </div>
-        </td>                          
-                    
- 
-        <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','pillDamageAppear','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','pillDamageAppear','1');?>>1-พบน้อยมาก</option>
-            <option value="2" <?php getData($tree,'select','pillDamageAppear','2');?>>2-พบบางครั้ง</option>
-            <option value="3" <?php getData($tree,'select','pillDamageAppear','3');?>>3-พบบ่อย</option>
-            <option value="4" <?php getData($tree,'select','pillDamageAppear','4');?>>4-อยู่บริเวณนั้น</option>
-          </select>
-        </td> 
-
-        <td style="text-align: center;">  <!-- การเคลื่อนย้ายออกจากพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','pillMoveArea','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','pillMoveArea','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','pillMoveArea','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-                    
-        <td style="text-align: center;">  <!-- ห้ามเข้าพื้นที่อันตราย -->
-          <select id="arrow">   
-            <option value="0" <?php getData($tree,'select','pillNoEntry','0');?>>โปรดเลือก</option>   
-            <option value="1" <?php getData($tree,'select','pillNoEntry','1');?>>มีโอกาสเกิด</option>
-            <option value="2" <?php getData($tree,'select','pillNoEntry','2');?>>ไม่มีโอกาสเกิด</option>
-          </select>
-        </td>  
-      </tr> <!-- end เสาไฟฟ้า -->
+      <?php 
+                    if($tree!=NULL && $tree['listDamage']!=NULL){
+                      $i=0;
+                      foreach ($tree['listDamage'] as $value) {
+                        ?>
+                        <tr>
+                            <td style="text-align: center;">
+                              <?php echo $i+1;?>
+                            </td>
+                            <td>
+                              <input name="listDamage[<?php echo $i; ?>]" type="text" value="<?php echo $tree['listDamage'][$i]; ?>">
+                            </td>
+                            <td>
+                              <div style="text-align: center;">
+                                <input type="hidden" name="ch1[<?php echo $i; ?>]" value="off">
+                                <input type="checkbox" name="ch1[<?php echo $i; ?>]" <?php if($tree['ch1'][$i]=="on"){ echo "checked=''";}?>>
+                              </div>
+                            </td>
+                            <td >
+                              <div style="text-align: center;">
+                                <input type="hidden" name="ch2[<?php echo $i; ?>]" value="off">
+                                <input type="checkbox" name="ch2[<?php echo $i; ?>]" <?php if($tree['ch2'][$i]=="on"){ echo "checked=''";}?>>
+                              </div>
+                            </td>
+                            <td >
+                              <div style="text-align: center;">
+                                <input type="hidden" name="ch3[<?php echo $i; ?>]" value="off">
+                                <input type="checkbox" name="ch3[<?php echo $i; ?>]" <?php if($tree['ch3'][$i]=="on"){ echo "checked=''";}?>>
+                              </div>
+                            </td>
+                            <td style="text-align: center;">
+                              <select id="arrow" name="damageArea[]">
+                                <option value="0" <?php if($tree['damageArea'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
+                                <option value="1" <?php if($tree['damageArea'][$i]=="1"){ echo "selected=''";}?>>1-พบน้อยมาก</option>
+                                <option value="2" <?php if($tree['damageArea'][$i]=="2"){ echo "selected=''";}?>>2-พบบางครั้ง</option>
+                                <option value="3" <?php if($tree['damageArea'][$i]=="3"){ echo "selected=''";}?>>3-พบบ่อย</option>
+                                <option value="4" <?php if($tree['damageArea'][$i]=="4"){ echo "selected=''";}?>>4-อยู่บริเวณนั้น</option>
+                              </select>
+                            </td>
+                            <td style="text-align: center;">
+                              <select id="arrow" name="moveArea[]">
+                                <option value="0" <?php if($tree['moveArea'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
+                                <option value="1" <?php if($tree['moveArea'][$i]=="1"){ echo "selected=''";}?>>มีโอกาสเกิด</option>
+                                <option value="2" <?php if($tree['moveArea'][$i]=="2"){ echo "selected=''";}?>>ไม่มีโอกาสเกิด</option>
+                              </select>
+                            </td>
+                            <td style="text-align: center;">
+                              <select id="arrow" name="noEntry[]">
+                                <option value="0" <?php if($tree['noEntry'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
+                                <option value="1" <?php if($tree['noEntry'][$i]=="1"){ echo "selected=''";}?>>มีโอกาสเกิด</option>
+                                <option value="2" <?php if($tree['noEntry'][$i]=="2"){ echo "selected=''";}?>>ไม่มีโอกาสเกิด</option>
+                              </select>
+                            </td>
+                          </tr>
+                        <?php
+                        $i++;
+                      }
+                    }
+                  ?>      
+      
 
 
     </tbody>
