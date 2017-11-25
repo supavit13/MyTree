@@ -90,6 +90,8 @@
                   </div>
                   <input type="checkbox" class="ui checkbox" id="policycheck" name="policycheck" onclick="showsave()"><span>&nbsp;ยอมรับ</span>
 
+                  <p style="color: red;">*หมายเหตุ &nbsp;ปุ่มบันทึกจะขึ้นหลังจากกดยอมรับ</p>
+
                   
 
                   <div align="center" id="savediv" style="display:none;">
