@@ -677,7 +677,7 @@ $(document).ready(function(){
 
               $('#edit_div').append(data_edit);    
 
-			
+			});
               
     </script>
 
