@@ -1158,7 +1158,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <th colspan="3" style="text-align: center;">โอกาสในการเกิด</th>
                     <th rowspan="2" style="width: 3em;">ระดับความรุนแรงของผล<br>กระทบ</th>
                     <th rowspan="2" style="width: 2em;">ระดับความเสี่ยงอันตราย(matrix2)</th>
-                    <th></th>
+                    <th rowspan="2"></th>
                   </tr>
                   <tr>
                     <th>ความล้มเหลวของต้นไม้</th>
