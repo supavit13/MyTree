@@ -88,11 +88,11 @@
                       หากคุณไม่ปฏิบัติตามข้อกำหนดนี้ และเราไม่ได้ดำเนินการใดโดยทันที จะไม่ถือว่าเราสละสิทธิ์ใด ๆ ที่มี
                     </textarea>
                   </div>
-                  <input type="checkbox" class="ui checkbox" id="policycheck" name="policycheck"><span>&nbsp;ยอมรับ</span>
+                  <input type="checkbox" class="ui checkbox" id="policycheck" name="policycheck" onclick="showsave()"><span>&nbsp;ยอมรับ</span>
 
                   
 
-                  <div align="center" style="display:none;">
+                  <div align="center" id="savediv" style="display:none;">
                     <center id="divSubmit">
                       <button class='ui blue button' id='submit' type='submit'>บันทึก</button>
                     </center>
@@ -102,8 +102,11 @@
                 </form>
 
                 <script type="text/javascript">
-                    if(document.getElementById("policycheck").value == "on"){
-                      document.getElementById("submit").style.display = 'block';
+                    function provinceFun() {
+                        var pFun = document.getElementById('savediv');
+                        if (pFun.style.display == 'none') {
+                            pFun.style.display = 'block';
+                        } 
                     }
                 </script>
 
