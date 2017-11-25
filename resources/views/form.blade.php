@@ -143,12 +143,12 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>พิกัดละติจูด</span>
-                    <input id="Tree_lat" type="number" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" require="">
+                    <input id="Tree_lat" type="number" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" required>
                   </div>
 
                   <div class="three wide column">
                     <span>พิกัดลองจิจูด</span>
-                    <input id="Tree_long" type="number" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" require="">
+                    <input id="Tree_long" type="number" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" required>
                   </div>
 
                   <div class="two wide column">
@@ -159,7 +159,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="five wide column">
                     <span>ชนิด</span>
-                    <input id="TreeName" type="text" value="<?php getData($tree,'text','Tree_name'); ?>" class="form-control" name="Tree_name" require="">
+                    <input id="TreeName" type="text" value="<?php getData($tree,'text','Tree_name'); ?>" class="form-control" name="Tree_name" required>
                   </div>
 
                   <div class="five wide column">
@@ -169,7 +169,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="five wide column">
                     <span>เส้นผ่านศูนย์กลางเพียงอก (ซม.)</span>
-                    <input id="Tree_diameter_Trunk" type="number" step="0.01" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>" class="form-control anti-Minus" name="Tree_diameter_Trunk" require="">
+                    <input id="Tree_diameter_Trunk" type="number" step="0.01" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>" class="form-control anti-Minus" name="Tree_diameter_Trunk" required>
                     <span id="miss_diameter_trunk" style="color: red;"></span>
                   </div>
 
@@ -186,7 +186,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="five wide column">
                     <span>ผู้ประเมิน</span>
-                    <input type="text" value="<?php echo $userlogin['username'] ?>" class="form-control" name="User_name" require="">
+                    <input type="text" value="<?php echo $userlogin['username'] ?>" class="form-control" name="User_name" required>
                     <input type="hidden" name="UserID" value="<?php echo $userlogin['_id'] ?>">
                   </div>
 
@@ -197,7 +197,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                  <div class="five wide column">
                     <span>โทรศัพท์</span>
-                    <input  type="number"  class="form-control input-md" value="<?php getData($tree,'text','Tree_phone'); ?>" name="Tree_phone" require="">
+                    <input  type="number"  class="form-control input-md" value="<?php getData($tree,'text','Tree_phone'); ?>" name="Tree_phone" required>
                   </div>
 
              
