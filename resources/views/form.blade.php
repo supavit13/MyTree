@@ -404,12 +404,12 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                   <div class="two wide column">
-                    <input type="radio" name="radio" >
+                    <input type="radio" name="radioslope" >
                     <span>ราบ</span>
                   </div>
 
                   <div class="four wide column">
-                    <input type="radio" name="radio" >
+                    <input type="radio" name="radioslope" >
                     <span>ลาดเอียง (%)</span>
                     <input type="text"  class="form-control" value="<?php getData($tree,'text','slope'); ?>" name="slope" >
                   </div>
@@ -969,7 +969,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                   <div class="three wide column">
-                    <input type="checkbox" name="trunkDecay" <?php getData($tree,'checkbox','trunkDecay');?> >
+                    <input type="checkbox" name="trunkDecayDamage" <?php getData($tree,'checkbox','trunkDecay');?> >
                     <span>เนื้อไม้ผุเสียหาย</span>
                   </div>
  
