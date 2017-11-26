@@ -1193,10 +1193,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                                 <center>
                                   <select class="ui dropdown" name="treePartDamage[<?php echo $n; ?>]">
                                     <option type="hidden">เลือก</option>
-                                    <option value="1" <?php if($tree['treePartDamage'][$i]=="1"){ echo "selected=''";}?>>น้อย</option>
-                                    <option value="2" <?php if($tree['treePartDamage'][$i]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
-                                    <option value="3" <?php if($tree['treePartDamage'][$i]=="3"){ echo "selected=''";}?>>มาก</option>
-                                    <option value="4" <?php if($tree['treePartDamage'][$i]=="4"){ echo "selected=''";}?>>มากที่สุด</option>
+                                    <option value="1" <?php if($tree['treePartDamage'][$n]=="1"){ echo "selected=''";}?>>น้อย</option>
+                                    <option value="2" <?php if($tree['treePartDamage'][$n]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
+                                    <option value="3" <?php if($tree['treePartDamage'][$n]=="3"){ echo "selected=''";}?>>มาก</option>
+                                    <option value="4" <?php if($tree['treePartDamage'][$n]=="4"){ echo "selected=''";}?>>มากที่สุด</option>
                                   </select>
                                 </center>
                               </td>
@@ -1204,10 +1204,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                                 <center>
                                   <select class="ui dropdown" name="treePartImpact[<?php echo $n; ?>]">
                                     <option type="hidden">เลือก</option>
-                                    <option value="1" <?php if($tree['treePartImpact'][$i]=="1"){ echo "selected=''";}?>>ต่ำมาก</option>
-                                    <option value="2" <?php if($tree['treePartImpact'][$i]=="2"){ echo "selected=''";}?>>ต่ำ</option>
-                                    <option value="3" <?php if($tree['treePartImpact'][$i]=="3"){ echo "selected=''";}?>>ปานกลาง</option>
-                                    <option value="4" <?php if($tree['treePartImpact'][$i]=="4"){ echo "selected=''";}?>>สูง</option>
+                                    <option value="1" <?php if($tree['treePartImpact'][$n]=="1"){ echo "selected=''";}?>>ต่ำมาก</option>
+                                    <option value="2" <?php if($tree['treePartImpact'][$n]=="2"){ echo "selected=''";}?>>ต่ำ</option>
+                                    <option value="3" <?php if($tree['treePartImpact'][$n]=="3"){ echo "selected=''";}?>>ปานกลาง</option>
+                                    <option value="4" <?php if($tree['treePartImpact'][$n]=="4"){ echo "selected=''";}?>>สูง</option>
                                   </select>
                                 </center>
                               </td>
@@ -1215,10 +1215,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                                 <center>
                                   <select class="ui dropdown" name="treePartPlus[<?php echo $n; ?>]">
                                     <option type="hidden">เลือก</option>
-                                    <option value="1" <?php if($tree['treePartPlus'][$i]=="1"){ echo "selected=''";}?>>น้อย</option>
-                                    <option value="2" <?php if($tree['treePartPlus'][$i]=="2"){ echo "selected=''";}?>>ค่อนข้างน้อย</option>
-                                    <option value="3" <?php if($tree['treePartPlus'][$i]=="3"){ echo "selected=''";}?>>มาก</option>
-                                    <option value="4" <?php if($tree['treePartPlus'][$i]=="4"){ echo "selected=''";}?>>มากที่สุด</option>
+                                    <option value="1" <?php if($tree['treePartPlus'][$n]=="1"){ echo "selected=''";}?>>น้อย</option>
+                                    <option value="2" <?php if($tree['treePartPlus'][$n]=="2"){ echo "selected=''";}?>>ค่อนข้างน้อย</option>
+                                    <option value="3" <?php if($tree['treePartPlus'][$n]=="3"){ echo "selected=''";}?>>มาก</option>
+                                    <option value="4" <?php if($tree['treePartPlus'][$n]=="4"){ echo "selected=''";}?>>มากที่สุด</option>
                                   </select>
                                 </center>
                               </td>
@@ -1226,10 +1226,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                                 <center>
                                   <select class="ui dropdown" name="treePartRank[<?php echo $n; ?>]">
                                     <option type="hidden">เลือก</option>
-                                    <option value="1" <?php if($tree['treePartRank'][$i]=="1"){ echo "selected=''";}?>>ต่ำ</option>
-                                    <option value="2" <?php if($tree['treePartRank'][$i]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
-                                    <option value="3" <?php if($tree['treePartRank'][$i]=="3"){ echo "selected=''";}?>>รุนแรง</option>
-                                    <option value="4" <?php if($tree['treePartRank'][$i]=="4"){ echo "selected=''";}?>>รุนแรงมาก</option>
+                                    <option value="1" <?php if($tree['treePartRank'][$n]=="1"){ echo "selected=''";}?>>ต่ำ</option>
+                                    <option value="2" <?php if($tree['treePartRank'][$n]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
+                                    <option value="3" <?php if($tree['treePartRank'][$n]=="3"){ echo "selected=''";}?>>รุนแรง</option>
+                                    <option value="4" <?php if($tree['treePartRank'][$n]=="4"){ echo "selected=''";}?>>รุนแรงมาก</option>
                                   </select>
                                 </center>
                               </td>
