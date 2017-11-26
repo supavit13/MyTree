@@ -5,6 +5,7 @@
 				width: 100%;
 				height: 100%;
 				line-height: 168%;
+				font-size: 18;
 			}
 			
 			.hideme{
@@ -31,7 +32,7 @@
 			    font-family: 'THSarabunNew', sans-serif;
 			    font-size: 14px;
 			    /*height: 5cm;*/
-			    width: 2cm;
+			    width: 5cm;
 			    text-align: center;
     			word-wrap: break-word;
 			}

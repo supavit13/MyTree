@@ -967,10 +967,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                     
                     <td style="text-align: center;">1</td>
 
-                    <td style="text-align: center;">กิ่ง</td>
+                    <td class="bigtable_wordwrap1" style="text-align: center;">กิ่ง</td>
                     
                     <td>    <!-- ปัจจัยเสี่ยงอันตราย -->
-                      <p class="bigtable_wordwrap1">555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 <?php getData($tree,'text','damangeRiskFactorRoot'); ?> </p> 
+                      <p class="bigtable_wordwrap1"> <?php getData($tree,'text','damangeRiskFactorRoot'); ?> </p> 
                     </td>
 
                     
@@ -1292,12 +1292,12 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span>ต้องการ</span>
   <span>เรื่อง</span>
     <span>
-      <input type="text" class="hideme" name="needMore" id="input" style="width: 10%;" value="<?php getData($tree,'text','needMore'); ?>">
+      <input type="text" class="hideme" name="needMore" id="input" style="width: 25%;" value="<?php getData($tree,'text','needMore'); ?>">
     </span>
 
   <span style="font-weight: bold;">ระยะเวลาที่ควรมีการตรวจสอบ(ทุกๆ)</span>
   <span>
-      <input type="text" class="hideme" id="input" style="width: 3cm;" value="<?php getData($tree,'text','validTime'); ?>">
+      <input type="text" class="hideme" id="input" style="width: 15%;" value="<?php getData($tree,'text','validTime'); ?>">
     </span>
   <!-- <span>ปี</span> -->
 
