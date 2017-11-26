@@ -329,7 +329,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </span>
     <span>อื่นๆ รายละเอียดเพิ่มเติม</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 9.5cm;" value="<?php getData($tree,'text','weather_other'); ?>">
+      <input type="text" class="hideme" id="input" style="width: 28%;" value="<?php getData($tree,'text','weather_other'); ?>">
     </span> 
 
 <!-- - - - - - - - - - - - - สุขภาพของต้นไม้ - - - - - -  - - - - - - - - - - -  -->
@@ -382,7 +382,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </span>
     <span>ร่วง</span>
     <span>
-      <input type="text"  class="hideme" id="input" style="width: 2cm;" value="<?php getData($tree,'text','leafCh4_text'); ?>">
+      <input type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh4_text'); ?>">
     </span>
     <span>%</span>
 
@@ -391,7 +391,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </span>
     <span>ซีดเหลือง</span>
     <span>
-      <input type="text"  class="hideme" id="input" style="width: 2cm;" value="<?php getData($tree,'text','leafCh5_text'); ?>">
+      <input type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh5_text'); ?>">
     </span>
     <span>%</span>
 
@@ -400,7 +400,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </span>
     <span>แห้ง</span>
     <span>
-      <input type="text"  class="hideme" id="input" style="width: 2cm;" value="<?php getData($tree,'text','leafCh6_text'); ?>">
+      <input type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh6_text'); ?>">
     </span>
     <span>%</span>
 
@@ -1192,7 +1192,7 @@ function getData($tree,$type='',$name='',$var=NULL){
   </div>  <!--  end grid -->
 
 
-  <br><br>
+  <br>
 
   <span style="font-weight: bold;">คำอธิบายเพิ่มเติม</span>
     <span>
