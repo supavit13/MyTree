@@ -68,3 +68,9 @@
 			table,td,th{
     			border: 1px solid black;
 			}
+			.imageSize{
+				width: auto;
+    			height: 450px;
+    			font-size: 1.14285714rem;
+    			display: inline-block;
+			}

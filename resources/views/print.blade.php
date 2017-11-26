@@ -1303,37 +1303,48 @@ function getData($tree,$type='',$name='',$var=NULL){
   </span>
     @if($tree['Tree_imgFull']!=NULL)
       @foreach($tree['Tree_imgFull'] as $imgFull)
-        <img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'>
+      <div class='imageSize' align="center">
+        <img class='imageSize' src='{{asset('images/uploads/'.$imgFull)}}'><br><span>เต็มต้น</span>
+      </div>
       @endforeach
     @endif
-    <span>เต็มต้น</span>
+    
     @if($tree['Tree_imgTruck']!=NULL)
       @foreach($tree['Tree_imgTruck'] as $imgTruck)
-        <img class='ui large image' src='{{asset('images/uploads/'.$imgTruck)}}'>
+      <div class='imageSize' align="center">
+        <img class='imageSize' src='{{asset('images/uploads/'.$imgTruck)}}'><br><span>ลำต้น</span>
+      </div>
       @endforeach
             @endif
-            <span>ลำต้น</span>
-            <div class='ui divider'></div>
+            
+            <!-- <div class='ui divider'></div> -->
             @if($tree['Tree_imgLeaf']!=NULL)
               @foreach($tree['Tree_imgLeaf'] as $imgLeaf)
-                <img class='ui large image' src='{{asset('images/uploads/'.$imgLeaf)}}'>
+              <div class='imageSize' align="center">
+                <img class='imageSize' src='{{asset('images/uploads/'.$imgLeaf)}}'><br><span>ใบ</span>
+              </div>
               @endforeach
             @endif
-            <span>ใบ</span>
-            <div class='ui divider'></div>
+            
+            <!-- <div class='ui divider'></div> -->
             @if($tree['Tree_imgTop']!=NULL)
               @foreach($tree['Tree_imgTop'] as $imgTop)
-                <img class='ui large image' src='{{asset('images/uploads/'.$imgTop)}}'>
+               <div class='imageSize' align="center">
+                <img class='imageSize' src='{{asset('images/uploads/'.$imgTop)}}'><br><span>เรือนยอด</span>
+                </div>
               @endforeach
             @endif
-            <span>เรือนยอด</span>
-            <div class='ui divider'></div>
+            
+            <!-- <div class='ui divider'></div> -->
             @if($tree['Tree_imgRoot']!=NULL)
               @foreach($tree['Tree_imgRoot'] as $imgRoot)
-                <img class='ui large image' src='{{asset('images/uploads/'.$imgRoot)}}'>
+              <div class='imageSize' align="center">
+                <img class='imageSize' src='{{asset('images/uploads/'.$imgRoot)}}'><br><span>ราก</span>
+              </div>
+                
               @endforeach
             @endif
-            <span>ราก</span>
+            
             <div class='ui divider'></div>
 </div></center> 
 
