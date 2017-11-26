@@ -101,7 +101,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </span>
   <span style="font-weight: bold;">เมตร</span>
 
-  <span style="font-weight: bold;">เส้นผ่านศูนย์กลางเรือนยอด</span>
+  <span id="tab" style="font-weight: bold;">เส้นผ่านศูนย์กลางเรือนยอด</span>
     <span>
       <input type="text" class="hideme"  id="input" style="width: 2.5cm;" value="<?php getData($tree,'text','Tree_diameter_Top'); ?>">
     </span>
@@ -109,7 +109,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด -->
 
-  <span id="tab" style="font-weight: bold;">ผู้ประเมิน</span>
+  <span style="font-weight: bold;">ผู้ประเมิน</span>
     <span>
       <input type="text" class="hideme"  id="input" style="width: 6.5cm;" value="<?php echo $userlogin['username'] ?>">
     </span>
@@ -318,6 +318,9 @@ function getData($tree,$type='',$name='',$var=NULL){
     <span>
       <input type="text" class="hideme" id="input" style="width: 9.5cm;" value="<?php getData($tree,'text','soilDetail'); ?>">
     </span> 
+
+<!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
+
   <span>สภาพอากาศ</span> 
     <span>
       <input type="checkbox" name="weather1" <?php getData($tree,'checkbox','weather1');?>>
@@ -629,7 +632,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
     <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด -->
 
-  <span id="tab">
+  <span>
     <input type="checkbox" name="limbLesion" <?php getData($tree,'checkbox','limbLesion');?>>
   </span>
   <span>รอยแผลกิ่ง</span>
