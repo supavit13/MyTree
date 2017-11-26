@@ -617,7 +617,7 @@ $(document).ready(function(){
 		}
 	</script>
 	<script type="text/javascript">
-            var i = '<?php echo sizeof($tree['listDamage'])-1 ?>' ;
+            var i = 0 ;
             $("#add_table").click(function(event){
               event.preventDefault();
 
