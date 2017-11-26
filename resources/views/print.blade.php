@@ -35,9 +35,6 @@ function getData($tree,$type='',$name='',$var=NULL){
       แบบประเมินความเสี่ยงอันตรายจากต้นไม้เบื้องต้น
     </span>
   </div></center> 
-
-  <br><br>
-
   <span style="font-weight: bold;">เจ้าของพื้นที่</span>
     <span>
       <input type="text" class="hideme" id="input" style="width: 5cm;" value="<?php getData($tree,'text','ownerarea'); ?>">
@@ -91,19 +88,19 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">เส้นผ่านศูนย์กลางเพียงอก</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 3cm;" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>">
+      <input type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>">
     </span>
   <span style="font-weight: bold;">เซนติเมตร</span>
 
   <span id="tab" style="font-weight: bold;">ความสูงทั้งหมด</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 3cm;" value="<?php getData($tree,'text','Tree_height'); ?>">
+      <input type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_height'); ?>">
     </span>
   <span style="font-weight: bold;">เมตร</span>
 
   <span id="tab" style="font-weight: bold;">เส้นผ่านศูนย์กลางเรือนยอด</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 2.5cm;" value="<?php getData($tree,'text','Tree_diameter_Top'); ?>">
+      <input type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_diameter_Top'); ?>">
     </span>
   <span style="font-weight: bold;">เมตร</span>
 
@@ -1292,7 +1289,7 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span>ต้องการ</span>
   <span>เรื่อง</span>
     <span>
-      <input type="text" class="hideme" name="needMore" id="input" style="width: 25%;" value="<?php getData($tree,'text','needMore'); ?>">
+      <input type="text" class="hideme" name="needMore" id="input" style="width: 20%;" value="<?php getData($tree,'text','needMore'); ?>">
     </span>
 
   <span style="font-weight: bold;">ระยะเวลาที่ควรมีการตรวจสอบ(ทุกๆ)</span>
