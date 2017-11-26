@@ -122,14 +122,13 @@ function getData($tree,$type='',$name='',$var=NULL){
     </span>
 
 <!-- - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-  <br><br><br>
+  <br><br>
 
   <center><div>
     <span style="font-weight: bold; background-color: yellow; font-size: 18px;">
       แบบประเมินความเสียหายที่จะเกิดขึ้น
     </span>
   </div></center> 
-  <br>
 
   <table>
     <thead>
@@ -231,8 +230,6 @@ function getData($tree,$type='',$name='',$var=NULL){
       ข้อมูลสภาพพื้นที่
     </span>
   </div></center> 
-
-<br>
 
   <span style="font-weight: bold;">ประวัติการล้มเหลวของต้นไม้ในอดีต</span>
     <span>
@@ -337,15 +334,13 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <!-- - - - - - - - - - - - - สุขภาพของต้นไม้ - - - - - -  - - - - - - - - - - -  -->
 
-<br><br><br>
+<br><br>
   
   <center><div>
     <span style="font-weight: bold; background-color: yellow; font-size: 18px;">
       สุขภาพของต้นไม้
     </span>
   </div></center> 
-
-<br>
 
 
   <span style="font-weight: bold;">ความแข็งแรงโดยรวม</span>
@@ -432,14 +427,14 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-<br><br><br>
+<br><br>
 
   <center><div>
     <span style="font-weight: bold; background-color: yellow; font-size: 18px;">
       การรับแรงกระทำจากลมของต้นไม้
     </span>
   </div></center>
-<br>
+
 <span style="font-weight: bold;">การรับลม</span>
 <span>
   <input type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','มีการป้องกัน'); ?> >
@@ -555,14 +550,13 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <!-- - - - - - - - -ปัจจัยเสี่ยงและโอกาสในการเกิดอันตรายของต้นไม้ - - - - - - - - - - - -  -->
 
-<br><br><br>
+<br><br>
   
   <center><div>
     <span style="font-weight: bold; background-color: yellow; font-size: 18px;">
       ปัจจัยเสี่ยงและโอกาสในการเกิดอันตรายของต้นไม้
     </span>
   </div></center>
-  <br>
   
 
 <span style="font-weight: bold; background-color: yellow;">เรือนยอดและกิ่ง</span> 
@@ -903,7 +897,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-  <br><br><br>
+  <br><br>
 
   <center><div>
     <span style="font-weight: bold; background-color: yellow; font-size: 18px;">
@@ -911,7 +905,6 @@ function getData($tree,$type='',$name='',$var=NULL){
     </span>
   </div></center> 
 
-  <br>  
 
   
           <table>
@@ -1080,7 +1073,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
 <!-- - - - - - - - - - - - - matrix1 - - - - - - - - - - - - - - -->
-  <br><br>
+  <br>
 
   <div class="ui grid">
       <div class="nine wide column"> <!-- - - -  matrix1 - - - - - -->
