@@ -293,8 +293,73 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </tr>
                   </thead>
                 <tbody>
+                  <?php  
+                    if($tree!=NULL && $tree['listDamage']!=NULL){
+                      $i=0;
+                        foreach ($tree['listDamage'] as $value) {
+                      ?>
 
-                  
+                  <tr>
+                    <td>
+                      <input class="hideme" id="tree_num" type="text" value="<?php echo $i+1; ?>">
+                    </td>
+                    <td><input class="form-control" type="text" name="listDamage[<?php echo $i; ?>]" value="<?php echo $tree['listDamage'][$i]; ?>">
+                    </td>
+                    <td>
+                      <center>
+                        <select class="ui dropdown" name="protectTarget[<?php echo $i; ?>]">
+                          <option type="hidden">เลือก</option>
+                          <option value="1" <?php if($tree['protectTarget'][$i]=="1"){ echo "selected=''";}?>>มี</option>
+                          <option value="2" <?php if($tree['protectTarget'][$i]=="2"){ echo "selected=''";}?>>ไม่มี</option>
+                        </select>
+                      </center>
+                    </td>
+                    <td>
+                      <input type="hidden" name="ch1[<?php echo $i; ?>]" value="off">
+                      <input class="form-control" type="checkbox" name="ch1[<?php echo $i; ?>]" <?php if($tree['ch1'][$i]=="on"){ echo "checked=''";}?>>
+                    </td>
+                    <td>
+                      <input type="hidden" name="ch2[<?php echo $i; ?>]" value="off">
+                      <input class="form-control" type="checkbox" name="ch2[<?php echo $i; ?>]" <?php if($tree['ch2'][$i]=="on"){ echo "checked=''";}?>>
+                    </td>
+                    <td>
+                      <input type="hidden" name="ch3[<?php echo $i; ?>]" value="off">
+                      <input class="form-control" type="checkbox" name="ch3[<?php echo $i; ?>]" <?php if($tree['ch3'][$i]=="on"){ echo "checked=''";}?>>
+                    </td>
+
+
+
+                    <td>
+                      <center><select class="ui dropdown" name="damageArea[<?php echo $i; ?>]">
+                        <option type="hidden">เลือก</option>
+                        <option value="1" <?php if($tree['damageArea'][$i]=="1"){ echo "selected=''";}?>>1-ไม่ค่อยปรากฎ</option>
+                        <option value="2" <?php if($tree['damageArea'][$i]=="2"){ echo "selected=''";}?>>2-อยู่เป็นบางครั้ง</option>
+                        <option value="3" <?php if($tree['damageArea'][$i]=="3"){ echo "selected=''";}?>>3-ค่อนข้างบ่อย</option>
+                        <option value="4" <?php if($tree['damageArea'][$i]=="4"){ echo "selected=''";}?>>4-อยู่ตลอด</option>
+                      </select></center>
+                    </td>
+                    <td>
+                      <center><select class="ui dropdown" name="moveArea[<?php echo $i; ?>]">
+                        <option type="hidden">เลือก</option>
+                        <option value="1" <?php if($tree['moveArea'][$i]=="1"){ echo "selected=''";}?>>ได้</option>
+                        <option value="2" <?php if($tree['moveArea'][$i]=="2"){ echo "selected=''";}?>>ไม่ได้</option>
+                      </select></center>
+                    </td>
+                    <td>
+                      <center><select class="ui dropdown" name="noEntry[<?php echo $i; ?>]">
+                        <option type="hidden">เลือก</option>
+                        <option value="1" <?php if($tree['noEntry'][$i]=="1"){ echo "selected=''";}?>>ได้</option>
+                        <option value="2" <?php if($tree['noEntry'][$i]=="2"){ echo "selected=''";}?>>ไม่ได้</option>
+                      </select></center>
+                    </td>
+                    <td><input type="button" class="ui red button delete_tr" id="delete_tr" data-id="<?php echo $i; ?>" value="ลบ"></td>
+                  </tr>
+
+                  <?php
+                        $i++;
+                      }
+                    }
+                  ?>
                   
                   
                 </tbody>
