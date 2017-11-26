@@ -1300,7 +1300,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 <center><div>
   <span style="font-weight: bold; background-color: yellow; font-size: 18px;">
     ภาพประกอบการดำเนินงานโดยสังเขป
-  </span>
+  </span><br>
     @if($tree['Tree_imgFull']!=NULL)
       @foreach($tree['Tree_imgFull'] as $imgFull)
       <div class='imageSize' align="center">
