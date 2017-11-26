@@ -321,11 +321,11 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
-  <span>สภาพอากาศ</span> 
+  <span style="font-weight: bold;" >สภาพอากาศ</span> 
     <span>
       <input type="checkbox" name="weather1" <?php getData($tree,'checkbox','weather1');?>>
     </span>
-    <span>ลมแรง</span>
+    <span  >ลมแรง</span>
     <span>
       <input type="checkbox" name="weather2" <?php getData($tree,'checkbox','weather2');?>>
     </span>
