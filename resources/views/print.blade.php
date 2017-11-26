@@ -166,6 +166,13 @@ function getData($tree,$type='',$name='',$var=NULL){
             <td style="text-align: center;"><?php echo $i+5; ?></td>
             <td ><input class="hideme" name="listDamage[<?php echo $i; ?>]" type="text" value="<?php echo $tree['listDamage'][$i]; ?>"></td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
             
+            <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
+              <select id="arrow">   
+                <option value="0" <?php if($tree['protection'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
+                <option value="1" <?php if($tree['protection'][$i]=="1"){ echo "selected=''";}?>>มี</option>
+                <option value="2" <?php if($tree['protection'][$i]=="2"){ echo "selected=''";}?>>ไม่มี</option>
+              </select>
+            </td> 
             <td>
               <div style="text-align: center;">
                 <input type="checkbox" name="ch1[<?php echo $i; ?>]" <?php if($tree['ch1'][$i]=="on"){ echo "checked=''";}?>>
@@ -182,7 +189,7 @@ function getData($tree,$type='',$name='',$var=NULL){
               </div>
             </td>                          
                         
-     
+
             <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
               <select id="arrow">   
                 <option value="0" <?php if($tree['damageArea'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
@@ -920,7 +927,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                     <th colspan="12" style="text-align: center;">โอกาสในการเกิด</th>
                     <th colspan="4" style="text-align: center;">ระดับความรุนแรงของความผลกระทบ</th>
-                    <th rowspan="3" class="rotate1"><div style="width: 50px;"><span>ระดับความเสี่ยงอันตรายอันตราย(matrix2)</span></div></th>
+                    <th rowspan="3" class="rotate1"><div style="width: 50px;"><span>ระดับความเสี่ยงอันตราย<br>(matrix2)</span></div></th>
                   </tr>
 
                   <tr>
@@ -963,21 +970,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                       <p class="bigtable_wordwrap1"> <?php getData($tree,'text','damangeRiskFactorRoot'); ?> </p> 
                     </td>
 
-                    <td>    <!-- ขนาด(ซม.) -->
-                      <p class="bigtable_wordwrap1"> <?php getData($tree,'text','riskRootSize'); ?> </p> 
-                    </td>
-
-                    <td>   <!--  ระยะอันตราย(ซม.) -->
-                      <p class="bigtable_wordwrap1"> <?php getData($tree,'text','riskRootTime'); ?> </p> 
-                    </td>
-
-                    <td>    <!-- จำนวนความเสียหายที่อาจเกิดขึ้น -->
-                      <p class="bigtable_wordwrap1"> <?php getData($tree,'text','riskRootAmount'); ?> </p>
-                    </td>
-
-                    <td>    <!-- มาตราการณ์ป้องกัน -->
-                      <p class="bigtable_wordwrap1"> <?php getData($tree,'text','riskRootProtect'); ?> </p>
-                    </td>
+                    
                     
                    <!--  ความเสียหาย -->
                     <td style="text-align: center;">
@@ -1296,7 +1289,7 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span>ต้องการ</span>
   <span>เรื่อง</span>
     <span>
-      <input type="text" class="hideme" name="needMore" id="input" style="width: 20.25cm;" value="<?php getData($tree,'text','needMore'); ?>">
+      <input type="text" class="hideme" name="needMore" id="input" style="width: 10%;" value="<?php getData($tree,'text','needMore'); ?>">
     </span>
 
   <span style="font-weight: bold;">ระยะเวลาที่ควรมีการตรวจสอบ(ทุกๆ)</span>
