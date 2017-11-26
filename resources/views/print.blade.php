@@ -970,7 +970,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <td style="text-align: center;">กิ่ง</td>
                     
                     <td>    <!-- ปัจจัยเสี่ยงอันตราย -->
-                      <p class="bigtable_wordwrap1"> <?php getData($tree,'text','damangeRiskFactorRoot'); ?> </p> 
+                      <p class="bigtable_wordwrap1">555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 <?php getData($tree,'text','damangeRiskFactorRoot'); ?> </p> 
                     </td>
 
                     
