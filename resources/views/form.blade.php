@@ -1176,6 +1176,77 @@ function getData($tree,$type='',$name='',$var=NULL){
                   
                 </thead>
                 <tbody>
+
+
+                  <?php  
+                    if($tree!=NULL && $tree['treePartName']!=NULL){
+                    $n=0;
+                      foreach ($tree['treePartName'] as $value) {
+                  ?>
+
+                  <tr id="table1st" class="trRow" data-id="<?php echo $n+1; ?>">
+                            <td>
+                                  <input class="form-control" type="text" name="treePartSeq[<?php echo $n; ?>]" value="<?php echo $tree['treePartSeq'][$n]; ?>" ></td>
+                              <td><input class="form-control" type="text" name="treePartName[<?php echo $n; ?>]" value="<?php echo $tree['treePartName'][$n]; ?>"></td>
+                              <td><input  type="text" class="form-control" name="treePartFactor[<?php echo $n; ?>]" value="<?php echo $tree['treePartFactor'][$n]; ?>"></td>
+                              <td>
+                                <center>
+                                  <select class="ui dropdown" name="treePartDamage[<?php echo $n; ?>]">
+                                    <option type="hidden">เลือก</option>
+                                    <option value="1" <?php if($tree['treePartDamage'][$i]=="1"){ echo "selected=''";}?>>น้อย</option>
+                                    <option value="2" <?php if($tree['treePartDamage'][$i]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
+                                    <option value="3" <?php if($tree['treePartDamage'][$i]=="3"){ echo "selected=''";}?>>มาก</option>
+                                    <option value="4" <?php if($tree['treePartDamage'][$i]=="4"){ echo "selected=''";}?>>มากที่สุด</option>
+                                  </select>
+                                </center>
+                              </td>
+                              <td>
+                                <center>
+                                  <select class="ui dropdown" name="treePartImpact[<?php echo $n; ?>]">
+                                    <option type="hidden">เลือก</option>
+                                    <option value="1" <?php if($tree['treePartImpact'][$i]=="1"){ echo "selected=''";}?>>ต่ำมาก</option>
+                                    <option value="2" <?php if($tree['treePartImpact'][$i]=="2"){ echo "selected=''";}?>>ต่ำ</option>
+                                    <option value="3" <?php if($tree['treePartImpact'][$i]=="3"){ echo "selected=''";}?>>ปานกลาง</option>
+                                    <option value="4" <?php if($tree['treePartImpact'][$i]=="4"){ echo "selected=''";}?>>สูง</option>
+                                  </select>
+                                </center>
+                              </td>
+                              <td>
+                                <center>
+                                  <select class="ui dropdown" name="treePartPlus[<?php echo $n; ?>]">
+                                    <option type="hidden">เลือก</option>
+                                    <option value="1" <?php if($tree['treePartPlus'][$i]=="1"){ echo "selected=''";}?>>น้อย</option>
+                                    <option value="2" <?php if($tree['treePartPlus'][$i]=="2"){ echo "selected=''";}?>>ค่อนข้างน้อย</option>
+                                    <option value="3" <?php if($tree['treePartPlus'][$i]=="3"){ echo "selected=''";}?>>มาก</option>
+                                    <option value="4" <?php if($tree['treePartPlus'][$i]=="4"){ echo "selected=''";}?>>มากที่สุด</option>
+                                  </select>
+                                </center>
+                              </td>
+                              <td>
+                                <center>
+                                  <select class="ui dropdown" name="treePartRank[<?php echo $n; ?>]">
+                                    <option type="hidden">เลือก</option>
+                                    <option value="1" <?php if($tree['treePartRank'][$i]=="1"){ echo "selected=''";}?>>ต่ำ</option>
+                                    <option value="2" <?php if($tree['treePartRank'][$i]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
+                                    <option value="3" <?php if($tree['treePartRank'][$i]=="3"){ echo "selected=''";}?>>รุนแรง</option>
+                                    <option value="4" <?php if($tree['treePartRank'][$i]=="4"){ echo "selected=''";}?>>รุนแรงมาก</option>
+                                  </select>
+                                </center>
+                              </td>
+                              <td>
+                                <input class="form-control" type="text" name="treeDamage[<?php echo $n; ?>]" value="<?php echo $tree['treeDamage'][$n]; ?>" >
+                              </td>
+                              <td>
+                                <input type="button" class="ui red button delete_tr1" id="delete_tr1" data-id="<?php echo $n; ?>" value="ลบ">
+                              </td>
+                            </tr>
+                        <?php
+                        $n++;
+                      }
+                    }
+                  ?>
+
+
                    
                 </tbody>
               </table>
@@ -1452,8 +1523,33 @@ function getData($tree,$type='',$name='',$var=NULL){
 
             });
           </script>
+<?php $sizeofList1 =  sizeof($tree['treePartName']) ;?>
+<script type="text/javascript">
+    var n="<?php echo $sizeofList1; ?>" ;
+    var nn=parseInt(n)+1;
+    var arr=[];
+            $("#add_table_risk").click(function(event){
+              event.preventDefault();
+
+              var data_risk1 = '<tr id="table1st" class="trRow" data-id="'+n+'">'+
+                            '<td><input class="form-control" type="text" name="treePartSeq['+n+']" value="'+nn+'"></td>'+'<td><input class="form-control" type="text" name="treePartName['+n+']"></td>'+'<td><input  type="text" class="form-control" name="treePartFactor['+n+']"></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">น้อย</option><option value="2">ปานกลาง</option><option value="3">มาก</option><option value="4">มากที่สุด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartImpact['+n+']"><option type="hidden">เลือก</option><option value="1">ต่ำมาก</option><option value="2">ต่ำ</option><option value="3">ปานกลาง</option><option value="4">สูง</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartPlus['+n+']"><option type="hidden">เลือก</option><option value="1">น้อย</option><option value="2">ค่อนข้างน้อย</option><option value="3">มาก</option><option value="4">มากที่สุด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartRank['+n+']"><option type="hidden">เลือก</option><option value="1">ต่ำ</option><option value="2">ปานกลาง</option><option value="3">รุนแรง</option><option value="4">รุนแรงมาก</option></select></center></td>'+'<td><input class="form-control" type="text" name="treeDamage['+n+']"></td>'+'<td><input type="button" class="ui red button delete_tr1" id="delete_tr1" data-id="'+n+'" value="ลบ"></td>'+'</tr>';
+              $('#table1_risk').append(data_risk1);
+              n++;
+              arr.push(n);
+
+            });
+
+              $(document).on('click', '#delete_tr1', function() {
+                  var trId = $(this).data('id');
+
+                  $('.trRow[data-id="'+trId+'"]').remove();
+                
+
+              });
 
 
+
+    </script>
 
 
 

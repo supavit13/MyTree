@@ -323,15 +323,15 @@ class HomeController extends Controller
             $treePartSeq=[];
             $treePartName=[];
             $treePartFactor=[];
-            $treePartSize=[];
-            $treePartTime=[];
-            $treePartAmount=[];
-            $treePartProtect=[];
+            // $treePartSize=[];
+            // $treePartTime=[];
+            // $treePartAmount=[];
+            // $treePartProtect=[];
             $treePartDamage=[];
-            $treePartEffect=[];
-            $treePartEffectDamage=[];
-            $treePartLDamage=[];
-            $treePartLDanger=[];
+            $treePartImpact=[];
+            $treePartPlus=[];
+            $treePartRank=[];
+            $treeDamage=[];
             $i=0;
             foreach ($request->treePartSeq as $value) {
                 $treePartSeq[$i]=$value;
@@ -348,63 +348,39 @@ class HomeController extends Controller
                 $i++;
             }
             $i=0;
-            foreach ($request->treePartSize as $value) {
-                $treePartSize[$i]=$value;
-                $i++;
-            }
-            $i=0;
-            foreach ($request->treePartTime as $value) {
-                $treePartTime[$i]=$value;
-                $i++;
-            }
-            $i=0;
-            foreach ($request->treePartAmount as $value) {
-                $treePartAmount[$i]=$value;
-                $i++;
-            }
-            $i=0;
-            foreach ($request->treePartProtect as $value) {
-                $treePartProtect[$i]=$value;
-                $i++;
-            }
-            $i=0;
             foreach ($request->treePartDamage as $value) {
                 $treePartDamage[$i]=$value;
                 $i++;
             }
             $i=0;
-            foreach ($request->treePartEffect as $value) {
-                $treePartEffect[$i]=$value;
+            foreach ($request->treePartImpact as $value) {
+                $treePartImpact[$i]=$value;
                 $i++;
             }
             $i=0;
-            foreach ($request->treePartEffectDamage as $value) {
-                $treePartEffectDamage[$i]=$value;
+            foreach ($request->treePartPlus as $value) {
+                $treePartPlus[$i]=$value;
                 $i++;
             }
             $i=0;
-            foreach ($request->treePartLDamage as $value) {
-                $treePartLDamage[$i]=$value;
+            foreach ($request->treePartRank as $value) {
+                $treePartRank[$i]=$value;
                 $i++;
             }
             $i=0;
-            foreach ($request->treePartLDanger as $value) {
-                $treePartLDanger[$i]=$value;
+            foreach ($request->treeDamage as $value) {
+                $treeDamage[$i]=$value;
                 $i++;
             }
        
             $trees->treePartSeq=$treePartSeq;
             $trees->treePartName=$treePartName;
-            $trees->treePartFactor=$treePartFactor; 
-            $trees->treePartSize=$treePartSize;
-            $trees->treePartTime=$treePartTime;
-            $trees->treePartAmount=$treePartAmount; 
-            $trees->treePartProtect=$treePartProtect; 
+            $trees->treePartFactor=$treePartFactor;  
             $trees->treePartDamage=$treePartDamage;
-            $trees->treePartEffect=$treePartEffect;
-            $trees->treePartEffectDamage=$treePartEffectDamage;
-            $trees->treePartLDamage=$treePartLDamage;
-            $trees->treePartLDanger=$treePartLDanger;
+            $trees->treePartImpact=$treePartImpact;
+            $trees->treePartPlus=$treePartPlus;
+            $trees->treePartRank=$treePartRank;
+            $trees->treeDamage=$treeDamage;
         }
         
         $trees->moreDetail=$request->input('moreDetail');
