@@ -125,6 +125,7 @@
 
     L.esri.basemapLayer("Topographic",{
       maxZoom: 18,
+      minZoom: 20,
       attribution: 'Develop by MyTreeTeam.'
     }).addTo(mymap);
     
