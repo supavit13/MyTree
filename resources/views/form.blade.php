@@ -1276,9 +1276,9 @@ function getData($tree,$type='',$name='',$var=NULL){
                   </div>
 
                   <div class="ten wide column">
-                    <span">วิธีแก้ไข</span>
+                    <span>วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution2" value="<?php getData($tree,'text','Solution2'); ?>" >
-                    <span">ปัญหาที่อาจหลงเหลือ</span>
+                    <span>ปัญหาที่อาจหลงเหลือ</span>
                     <input type="text" class="form-control" name="problem2" value="<?php getData($tree,'text','problem2'); ?>" >
                   </div>
                 </div>
