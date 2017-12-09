@@ -108,7 +108,7 @@
 
     var mymap = L.map('mapid').setView([13.1192, 100.92066], 16);
 
-    mymap = bounds[],
+    // mymap = bounds[],s
       mymap.setMaxBounds([
           [21.22794, 90.79102],
           [21.30985, 115.00488],
