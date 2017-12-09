@@ -389,11 +389,22 @@ function getData($tree,$type='',$name='',$var=NULL){
             <div class="panel-body">
 
               <div class="ui grid">
+                  <!-- <div class="sixteen wide column">
+                    <span>ร่องรอยความเสียหายของต้นไม้ที่พบในพื้นที่</span>
+                    <input  type="text"  class="form-control" value="<?php getData($tree,'text','damageInArea'); ?>" name="damageInArea" >
+                  </div> -->
 
                   <div class="sixteen wide column">
                     <span>ประวัติการล้มเหลวของต้นไม้ในอดีต</span>
                     <input  type="text"  class="form-control" value="<?php getData($tree,'text','damageInArea'); ?>" name="damageInArea" >
                   </div>
+
+                  <!-- <div class="five wide column">
+                    <span>สภาพภูมิประเทศ</span>
+                    <input type="text"  class="form-control" value="<?php getData($tree,'text','topographyStats'); ?>" name="topographyStats" >
+                  </div> -->
+                
+                <!-- - - - - - - - - - - - - - - - - - - -->
                   <div class="three wide column">
                     <span style="font-weight: bold;">สภาพภูมิประเทศ</span>
                   </div>
@@ -1260,14 +1271,14 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <div class="ten wide column">
                     <span>วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution1" value="<?php getData($tree,'text','Solution1'); ?>" >
-                    <span>ปัญหาที่อาจหลงเหลือ</span>
+                    <span">ปัญหาที่อาจหลงเหลือ</span>
                     <input type="text" class="form-control" name="problem1" value="<?php getData($tree,'text','problem1'); ?>" >
                   </div>
 
                   <div class="ten wide column">
-                    <span>วิธีแก้ไข</span>
+                    <span">วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution2" value="<?php getData($tree,'text','Solution2'); ?>" >
-                    <span>ปัญหาที่อาจหลงเหลือ</span>
+                    <span">ปัญหาที่อาจหลงเหลือ</span>
                     <input type="text" class="form-control" name="problem2" value="<?php getData($tree,'text','problem2'); ?>" >
                   </div>
                 </div>

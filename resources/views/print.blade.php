@@ -952,83 +952,119 @@ function getData($tree,$type='',$name='',$var=NULL){
    
                 <tbody>
                   
-                @if($tree!=NULL and $tree['treePartName']!=NULL)
-                  <?php $n=0; ?>
-                  @foreach($tree['treePartName'] as $value)
+
                   <tr>  <!-- ราก -->
                     
-                    <td style="text-align: center;"><?php echo $n+1; ?></td>
+                    <td style="text-align: center;">1</td>
 
-                    <td class="bigtable_wordwrap1" style="text-align: center;"><?php echo $tree['treePartName'][$n]; ?></td>
+                    <td class="bigtable_wordwrap1" style="text-align: center;">กิ่ง</td>
                     
                     <td>    <!-- ปัจจัยเสี่ยงอันตราย -->
-                      <p class="bigtable_wordwrap1"><?php echo $tree['treePartFactor'][$n]; ?></p> 
+                      <p class="bigtable_wordwrap1"> <?php getData($tree,'text','damangeRiskFactorRoot'); ?> </p> 
                     </td>
 
                     
                     
                    <!--  ความเสียหาย -->
-                   <td>
-                      <center>
-                        <select id="arrow" name="treePartDamage[<?php echo $n; ?>]">
-                          <option type="hidden">เลือก</option>
-                          <option value="1" <?php if($tree['treePartDamage'][$n]=="1"){ echo "selected=''";}?>>น้อย</option>
-                          <option value="2" <?php if($tree['treePartDamage'][$n]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
-                          <option value="3" <?php if($tree['treePartDamage'][$n]=="3"){ echo "selected=''";}?>>มาก</option>
-                          <option value="4" <?php if($tree['treePartDamage'][$n]=="4"){ echo "selected=''";}?>>มากที่สุด</option>
-                        </select>
-                      </center>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio1" <?php getData($tree,'select','rootDamageRate','1');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio1" <?php getData($tree,'select','rootDamageRate','2');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio1" <?php getData($tree,'select','rootDamageRate','3');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio1" <?php getData($tree,'select','rootDamageRate','4');?>>
+                      </div>
                     </td>
 
                     <!-- ผลกระทบ -->
-                    <td>
-                        <center>
-                          <select id="arrow" name="treePartImpact[<?php echo $n; ?>]">
-                            <option type="hidden">เลือก</option>
-                            <option value="1" <?php if($tree['treePartImpact'][$n]=="1"){ echo "selected=''";}?>>ต่ำมาก</option>
-                            <option value="2" <?php if($tree['treePartImpact'][$n]=="2"){ echo "selected=''";}?>>ต่ำ</option>
-                            <option value="3" <?php if($tree['treePartImpact'][$n]=="3"){ echo "selected=''";}?>>ปานกลาง</option>
-                            <option value="4" <?php if($tree['treePartImpact'][$n]=="4"){ echo "selected=''";}?>>สูง</option>
-                          </select>
-                        </center>
-                      </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio2" <?php getData($tree,'select','rootDamageEffect','1');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio2" <?php getData($tree,'select','rootDamageEffect','2');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio2" <?php getData($tree,'select','rootDamageEffect','3');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio2" <?php getData($tree,'select','rootDamageEffect','4');?>>
+                      </div>
+                    </td>
 
                     <!-- ความเสียหาย+ผลกระทบ(matrix1) -->
-                    <td>
-                      <center>
-                        <select id="arrow" name="treePartPlus[<?php echo $n; ?>]">
-                          <option type="hidden">เลือก</option>
-                          <option value="1" <?php if($tree['treePartPlus'][$n]=="1"){ echo "selected=''";}?>>น้อย</option>
-                          <option value="2" <?php if($tree['treePartPlus'][$n]=="2"){ echo "selected=''";}?>>ค่อนข้างน้อย</option>
-                          <option value="3" <?php if($tree['treePartPlus'][$n]=="3"){ echo "selected=''";}?>>มาก</option>
-                          <option value="4" <?php if($tree['treePartPlus'][$n]=="4"){ echo "selected=''";}?>>มากที่สุด</option>
-                        </select>
-                      </center>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio2" <?php getData($tree,'select','rootDamageEffectRate','1');?>>
+                      </div>
                     </td>
-                    
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio2" <?php getData($tree,'select','rootDamageEffectRate','2');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio2" <?php getData($tree,'select','rootDamageEffectRate','3');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio2" <?php getData($tree,'select','rootDamageEffectRate','4');?>>
+                      </div>
+                    </td>
 
                     <!-- ระดับความรุนแรงของความเสียหาย -->
-                    <td>
-                      <center>
-                        <select id="arrow" name="treePartRank[<?php echo $n; ?>]">
-                          <option type="hidden">เลือก</option>
-                          <option value="1" <?php if($tree['treePartRank'][$n]=="1"){ echo "selected=''";}?>>ต่ำ</option>
-                          <option value="2" <?php if($tree['treePartRank'][$n]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
-                          <option value="3" <?php if($tree['treePartRank'][$n]=="3"){ echo "selected=''";}?>>รุนแรง</option>
-                          <option value="4" <?php if($tree['treePartRank'][$n]=="4"){ echo "selected=''";}?>>รุนแรงมาก</option>
-                        </select>
-                      </center>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio7" <?php getData($tree,'select','rootLevelDamage','1');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio7" <?php getData($tree,'select','rootLevelDamage','2');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio7" <?php getData($tree,'select','rootLevelDamage','3');?>>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <div>
+                        <input type="radio" name="radio7" <?php getData($tree,'select','rootLevelDamage','4');?>>
+                      </div>
                     </td>
 
                     <!-- ระดับความอันตราย(matrix2) -->
                       <!-- <p class="bigtable_wordwrap1">ปานกลาง</p> -->
                     <td style="text-align: center;">
-                    <input class="hideme" id="input" type="text" name="treeDamage[<?php echo $n; ?>]" value="<?php echo $tree['treeDamage'][$n]; ?>" >
+                      <select id="arrow">   
+                        <option value="1" <?php getData($tree,'select','rootLevelDanger','1');?>>ต่ำ</option>   
+                        <option value="2" <?php getData($tree,'select','rootLevelDanger','2');?>>ปานกลาง</option>
+                        <option value="3" <?php getData($tree,'select','rootLevelDanger','3');?>>สูง</option>
+                        <option value="4" <?php getData($tree,'select','rootLevelDanger','4');?>>สูงที่สุด</option>
+                      </select>
                     </td>
                   </tr> <!-- end ราก -->
-                  <?php $i++; ?>
-                  @endforeach
-                @endif
+
 
                   
                 </tbody>
