@@ -389,22 +389,11 @@ function getData($tree,$type='',$name='',$var=NULL){
             <div class="panel-body">
 
               <div class="ui grid">
-                  <!-- <div class="sixteen wide column">
-                    <span>ร่องรอยความเสียหายของต้นไม้ที่พบในพื้นที่</span>
-                    <input  type="text"  class="form-control" value="<?php getData($tree,'text','damageInArea'); ?>" name="damageInArea" >
-                  </div> -->
 
                   <div class="sixteen wide column">
                     <span>ประวัติการล้มเหลวของต้นไม้ในอดีต</span>
                     <input  type="text"  class="form-control" value="<?php getData($tree,'text','damageInArea'); ?>" name="damageInArea" >
                   </div>
-
-                  <!-- <div class="five wide column">
-                    <span>สภาพภูมิประเทศ</span>
-                    <input type="text"  class="form-control" value="<?php getData($tree,'text','topographyStats'); ?>" name="topographyStats" >
-                  </div> -->
-                
-                <!-- - - - - - - - - - - - - - - - - - - -->
                   <div class="three wide column">
                     <span style="font-weight: bold;">สภาพภูมิประเทศ</span>
                   </div>
