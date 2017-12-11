@@ -163,7 +163,7 @@
                 $("#sideid").append(detail);
 
                 arrayGraph = [['Task', 'the risk per a tree']];
-                if ({{ $tree['damageArea'] }} != null) {
+                if ( {{ $tree['listDamage'] }} != null) {
                   var value = ["none" , 0]; 
                   <?php for($i=0;$i<sizeof($tree['damageArea']);$i++): ?>
                     value[0] = {{ $tree['listDamage'][$i] }};
