@@ -316,7 +316,7 @@ function getData($tree,$type='',$name='',$var=NULL){
             <td ><input readonly class="hideme" name="listDamage[<?php echo $i; ?>]" type="text" value="<?php echo $tree['listDamage'][$i]; ?>"></td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
             
             <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
-              <select id="arrow">   
+              <select disabled id="arrow">   
                 <option value="0" <?php if($tree['protection'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
                 <option value="1" <?php if($tree['protection'][$i]=="1"){ echo "selected=''";}?>>มี</option>
                 <option value="2" <?php if($tree['protection'][$i]=="2"){ echo "selected=''";}?>>ไม่มี</option>
@@ -340,7 +340,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                         
 
             <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
-              <select id="arrow">   
+              <select disabled id="arrow">   
                 <option value="0" <?php if($tree['damageArea'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
                 <option value="1" <?php if($tree['damageArea'][$i]=="1"){ echo "selected=''";}?>>1-พบน้อยมาก</option>
                 <option value="2" <?php if($tree['damageArea'][$i]=="2"){ echo "selected=''";}?>>2-พบบางครั้ง</option>
@@ -350,7 +350,7 @@ function getData($tree,$type='',$name='',$var=NULL){
             </td> 
 
             <td style="text-align: center;">  <!-- การเคลื่อนย้ายออกจากพื้นที่อันตราย -->
-              <select id="arrow">   
+              <select disabled id="arrow">   
                 <option value="0" <?php if($tree['moveArea'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
                 <option value="1" <?php if($tree['moveArea'][$i]=="1"){ echo "selected=''";}?>>มีโอกาสเกิด</option>
                 <option value="2" <?php if($tree['moveArea'][$i]=="2"){ echo "selected=''";}?>>ไม่มีโอกาสเกิด</option>
@@ -358,7 +358,7 @@ function getData($tree,$type='',$name='',$var=NULL){
             </td>  
                         
             <td style="text-align: center;">  <!-- ห้ามเข้าพื้นที่อันตราย -->
-              <select id="arrow">   
+              <select disabled id="arrow">   
                 <option value="0" <?php if($tree['noEntry'][$i]=="0"){ echo "selected=''";}?>>โปรดเลือก</option>
                 <option value="1" <?php if($tree['noEntry'][$i]=="1"){ echo "selected=''";}?>>มีโอกาสเกิด</option>
                 <option value="2" <?php if($tree['noEntry'][$i]=="2"){ echo "selected=''";}?>>
@@ -1123,7 +1123,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                    <!--  ความเสียหาย -->
                    <td>
                       <center>
-                        <select id="arrow" name="treePartDamage[<?php echo $n; ?>]">
+                        <select disabled id="arrow" name="treePartDamage[<?php echo $n; ?>]">
                           <option type="hidden">เลือก</option>
                           <option value="1" <?php if($tree['treePartDamage'][$n]=="1"){ echo "selected=''";}?>>น้อย</option>
                           <option value="2" <?php if($tree['treePartDamage'][$n]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
@@ -1136,7 +1136,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <!-- ผลกระทบ -->
                     <td>
                         <center>
-                          <select id="arrow" name="treePartImpact[<?php echo $n; ?>]">
+                          <select disabled id="arrow" name="treePartImpact[<?php echo $n; ?>]">
                             <option type="hidden">เลือก</option>
                             <option value="1" <?php if($tree['treePartImpact'][$n]=="1"){ echo "selected=''";}?>>ต่ำมาก</option>
                             <option value="2" <?php if($tree['treePartImpact'][$n]=="2"){ echo "selected=''";}?>>ต่ำ</option>
@@ -1149,7 +1149,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <!-- ความเสียหาย+ผลกระทบ(matrix1) -->
                     <td>
                       <center>
-                        <select id="arrow" name="treePartPlus[<?php echo $n; ?>]">
+                        <select disabled id="arrow" name="treePartPlus[<?php echo $n; ?>]">
                           <option type="hidden">เลือก</option>
                           <option value="1" <?php if($tree['treePartPlus'][$n]=="1"){ echo "selected=''";}?>>น้อย</option>
                           <option value="2" <?php if($tree['treePartPlus'][$n]=="2"){ echo "selected=''";}?>>ค่อนข้างน้อย</option>
@@ -1163,7 +1163,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <!-- ระดับความรุนแรงของความเสียหาย -->
                     <td>
                       <center>
-                        <select id="arrow" name="treePartRank[<?php echo $n; ?>]">
+                        <select disabled id="arrow" name="treePartRank[<?php echo $n; ?>]">
                           <option type="hidden">เลือก</option>
                           <option value="1" <?php if($tree['treePartRank'][$n]=="1"){ echo "selected=''";}?>>ต่ำ</option>
                           <option value="2" <?php if($tree['treePartRank'][$n]=="2"){ echo "selected=''";}?>>ปานกลาง</option>
