@@ -163,7 +163,7 @@
                 $("#sideid").append(detail);
 
                 arrayGraph = [['Task', 'the risk per a tree']];
-                if ( {{ $tree['listDamage'] }} != null) {
+                <?php if ($tree['listDamage']!=NULL): ?>
                   var value = ["none" , 0]; 
                   <?php for($i=0;$i<sizeof($tree['damageArea']);$i++): ?>
                     value[0] = {{ $tree['listDamage'][$i] }};
@@ -172,7 +172,8 @@
                   <?php endfor ?>
                   console.log(arrayGraph);
                   drawChart();
-                }
+                <?php endif ?>
+
 
                 @if($tree['Tree_imgFull']!=NULL)
                   @foreach($tree['Tree_imgFull'] as $imgFull)
