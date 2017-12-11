@@ -10,8 +10,7 @@
 <?php 
 if(!empty($trees)){
   $tree=$trees;
-  $update=1;
-
+  $update=1
 }else{
   $tree=NULL;
   $update=0;
@@ -1512,6 +1511,11 @@ function getData($tree,$type='',$name='',$var=NULL){
   <h4></h4>
 </div>
 <script type="text/javascript">
+
+    var checkedit = parseInt({{$update}});
+    if(checkedit == 1){
+      $("#buttonDel").show();
+    }
             var i=1;
             $("#add_table").click(function(event){
               event.preventDefault();
@@ -1540,6 +1544,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 </script>
 
 <script type="text/javascript">
+
     var n=1;
             $("#add_table_risk").click(function(event){
               event.preventDefault();
