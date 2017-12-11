@@ -199,6 +199,26 @@ class HomeController extends Controller
             $trees->Tree_imgFull= $full;  
         }
 
+         if($request->trucktree!=NULL){
+            $tree_id = Tree::find($request->input('id'));
+
+            $full = $tree_id->Tree_imgTruck;
+    
+            foreach ($request->trucktree as $value) {
+                foreach ($tree_id->Tree_imgTruck as $key) {
+                    if($value == $key){
+                        $test = $this->indexof($full,$value);
+                        // dd($test);
+                        unlink('images/uploads/'.$value);
+                        $full[$test] = "";
+                        
+                    }
+
+                }
+                
+            }
+            $trees->Tree_imgTruck= $full;  
+        }
 
 
 
