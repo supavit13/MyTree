@@ -1534,7 +1534,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   
 
             });
-                }
+                
 </script>
 
 <script type="text/javascript">
