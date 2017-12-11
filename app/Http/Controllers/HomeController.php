@@ -117,6 +117,21 @@ class HomeController extends Controller
             $request->session()->put('userlogin',$current_userlogin);
         }
     }
+
+
+    function indexof($arr,$value){
+  
+      $list_count=count($arr);
+      for($i=0;$i<$list_count;$i++)
+      {
+              if($arr[$i]==$value){
+                        $position=$i;
+              }
+      
+      }
+      return $position;
+    }
+
     public function store(Request $request){
 
         if($request->session()->has('login_name')){
@@ -170,10 +185,8 @@ class HomeController extends Controller
             foreach ($request->fulltree as $value) {
                 foreach ($tree_id->Tree_imgFull as $key) {
                     if($value == $key){
-                        dd(indexOfArray($full,$value));
+                        dd(indexof($full,$value));
                         unlink('images/uploads/'.$value);
-
-                        $full[indexOfArray($full,$value)] = "";
                         
                     }
 
@@ -181,6 +194,9 @@ class HomeController extends Controller
                 
             }
         }
+
+
+
 
 
         // part 2
