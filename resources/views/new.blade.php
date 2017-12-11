@@ -100,8 +100,8 @@
           [3.73271, 90.79102],
           [4.82826, 115.00488]
         ]);
-    var sum = 0;
     var countTree=0;
+    var arrayGraph = [];
 
     // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
       // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -113,30 +113,21 @@
       minZoom: 6,
       attribution: 'Develop by MyTreeTeam.'
     }).addTo(mymap);
+
     
-    @foreach ($trees as $tree) 
-      sum=0;
-      var size=0;
-      var sumSize=0;
-          <?php if ($tree['damageArea']!=NULL): ?>
-          size={{ sizeof($tree['damageArea']) }};
-          sumSize=size*4;
-            <?php foreach ($tree['damageArea'] as $value): ?>
-              sum += parseInt({{ $value }});
-            <?php endforeach ?>
-            sum=sum/sumSize*4;
-          <?php endif ?>
+
+    @foreach ($trees as $tree)
+      var totalRisk = 0;
+      <?php if ($tree['damageArea']!=NULL): ?>
+        <?php foreach ($tree['damageArea'] as $value): ?>
+          totalRisk += parseInt({{ $value }});
+        <?php endforeach ?>
+      <?php else: ?>
+        strOfListDamage = "NONE,";
+        numberOfDamageArea = "0,";
+      <?php endif ?>
       var colorRisk="green";
       var sizePoint=2; // 2 4 6
-      var veh=0;
-      var buil=0;
-      var man=0;
-      var pill=0;
-      veh=parseInt({{ $tree{'vehDamageAppear'} }});
-      buil=parseInt({{ $tree{'builDamageAppear'} }});
-      man=parseInt({{ $tree{'manDamangeArea'} }});
-      pill=parseInt({{ $tree{'vehDamageAppear'} }});
-      var totalRisk=veh+buil+man+pill+sum;
       if(totalRisk>7){
         colorRisk="red";
       }
@@ -165,26 +156,24 @@
                 }
                 
                 marker=L.marker([{{ $tree{'Tree_lat'} }}, {{ $tree{'Tree_long'} }}]).addTo(mymap);
-                sum=0;
-                var size=0;
-                var sumSize=0;
-                    <?php if ($tree['damageArea']!=NULL): ?>
-                    size={{ sizeof($tree['damageArea']) }};
-                    sumSize=size*4;
-                      <?php foreach ($tree['damageArea'] as $value): ?>
-                        sum += parseInt({{ $value }});
-                      <?php endforeach ?>
-                      sum=sum/sumSize*4;
-                    <?php endif ?>
+                
                 $(".detail").remove();
                 $("#mapid").css({"width": "65%"});
                 $("#sideid").css({"display": "inline-block"});
-                drawChart(parseInt({{ $tree{'vehDamageAppear'} }})
-                         ,parseInt({{ $tree{'builDamageAppear'} }})
-                         ,parseInt({{ $tree{'manDamangeArea'} }})
-                         ,parseInt({{ $tree{'pillDamageAppear'} }})
-                         ,sum );
                 $("#sideid").append(detail);
+
+                arrayGraph = [['Task', 'the risk per a tree']];
+                <?php if ($tree['damageArea']!=NULL): ?>
+                  var value = ["none" , 0]; 
+                  <?php for($i=0;$i<sizeof($tree['damageArea']);$i++): ?>
+                    value[0] = {{ $tree['listDamage'][$i] }};
+                    value[1] = parseInt({{ $tree['damageArea'][$i] }});
+                    arrayGraph.push(value);
+                  <?php endfor ?>
+                  drawChart();
+                <?php endif ?>
+
+
                 @if($tree['Tree_imgFull']!=NULL)
                   @foreach($tree['Tree_imgFull'] as $imgFull)
                   $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>เต็มต้น</span><div class='ui divider'></div>");
@@ -333,15 +322,8 @@
     google.charts.setOnLoadCallback(drawChart);
 
     // Draw the chart and set the chart values
-    function drawChart(c,h,b,s,o) {
-      var data = google.visualization.arrayToDataTable([
-      ['Task', 'the risk per a tree'],
-      ['รถ', c ],
-      ['อาคาร', h ],
-      ['คน', b ],
-      ['เสาไฟ', s ],
-      ['อื่นๆ', o ]
-    ]);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable(arrayGraph);
 
       // Optional; add a title and set the width and height of the chart
       var options = {
