@@ -59,36 +59,9 @@
   <table>
     <tr>
       <td>
-        <label>ชื่อวิทยาศาสตร์ : </label><span>{{$img['Tree_sci_name']}}</span>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>ชนิดต้นไม้ : </label><span>{{$img['Tree_type']}}</span>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>เส้นผ่านศูนย์กลาง : </label><span>{{$img['Tree_diameter_Trunk']}} ซม.</span>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>ที่อยู่ : </label><span>{{$img['Tree_address']}}</span>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>พิกัด(LatLng) : </label><span>{{$img['Tree_lat']}}, {{$img['Tree_long']}}</span>
-      </td>
-    </tr>
-    <tr>
-      <td>
         <label>สำรวจโดย : </label><span><a href='/profiles/{{$users['_id']}}'>{{$users['username']}}</a></span>
       </td>
     </tr>
-    
-
   </table>
     
     
@@ -184,9 +157,7 @@ function getData($tree,$type='',$name='',$var=NULL){
   <br>
 
   <center><div>
-    <span style="font-weight: bold; font-size: 18px;">
-      แบบประเมินความเสี่ยงอันตรายจากต้นไม้เบื้องต้น
-    </span>
+
   </div></center> 
   <span style="font-weight: bold;">เจ้าของพื้นที่</span>
     <span>
