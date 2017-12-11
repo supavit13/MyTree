@@ -37,12 +37,12 @@ return [
     'facebook' => [
         'client_id' => '1251841691592100',
         'client_secret' => '22da2ef82447a5060188c5960fb8c005',
-        'redirect' => 'http://localhost:8888/validation',
+        'redirect' => 'http://mytree-th.herokuapp.com/validation',
     ],
     'google' => [
         'client_id' => '92557457763-qhd2mubimahpcm247g7v2spf8j9ldnco.apps.googleusercontent.com',
         'client_secret' => 'DsZYRPxqN3qUkxr-KnH2fb6Z',
-        'redirect' => 'http://localhost:8888/validation',
+        'redirect' => 'http://mytree-th.herokuapp.com/validation',
     ],
 
 
