@@ -124,7 +124,7 @@ class HomeController extends Controller
 
       for($i=0;$i<sizeof($full);$i++)
       {
-        dd($value);
+        dd($full[i]);
               if($full[$i]==$value){
                        
                         return $i;
