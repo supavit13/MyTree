@@ -1267,45 +1267,54 @@ function getData($tree,$type='',$name='',$var=NULL){
   </span><br>
     @if($tree['Tree_imgFull']!=NULL)
       @foreach($tree['Tree_imgFull'] as $imgFull)
+      @if($imgFull !="")
       <div class='imageSize' align="center">
         <img class='imageSize' src='{{asset('images/uploads/'.$imgFull)}}'><br><span>เต็มต้น</span>
       </div>
+      @endif
       @endforeach
     @endif
     
     @if($tree['Tree_imgTruck']!=NULL)
       @foreach($tree['Tree_imgTruck'] as $imgTruck)
+      @if($imgTruck !="")
       <div class='imageSize' align="center">
         <img class='imageSize' src='{{asset('images/uploads/'.$imgTruck)}}'><br><span>ลำต้น</span>
       </div>
+      @endif
       @endforeach
             @endif
             
             <!-- <div class='ui divider'></div> -->
             @if($tree['Tree_imgLeaf']!=NULL)
               @foreach($tree['Tree_imgLeaf'] as $imgLeaf)
+              @if($imgLeaf !="")
               <div class='imageSize' align="center">
                 <img class='imageSize' src='{{asset('images/uploads/'.$imgLeaf)}}'><br><span>ใบ</span>
               </div>
+              @endif
               @endforeach
             @endif
             
             <!-- <div class='ui divider'></div> -->
             @if($tree['Tree_imgTop']!=NULL)
               @foreach($tree['Tree_imgTop'] as $imgTop)
+              @if($imgTop !="")
                <div class='imageSize' align="center">
                 <img class='imageSize' src='{{asset('images/uploads/'.$imgTop)}}'><br><span>เรือนยอด</span>
                 </div>
+              @endif
               @endforeach
             @endif
             
             <!-- <div class='ui divider'></div> -->
             @if($tree['Tree_imgRoot']!=NULL)
               @foreach($tree['Tree_imgRoot'] as $imgRoot)
+              @if($imgRoot !="")
               <div class='imageSize' align="center">
                 <img class='imageSize' src='{{asset('images/uploads/'.$imgRoot)}}'><br><span>ราก</span>
               </div>
-                
+              @endif 
               @endforeach
             @endif
             
