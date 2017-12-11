@@ -163,13 +163,15 @@
                 $("#sideid").append(detail);
 
                 arrayGraph = [['Task', 'the risk per a tree']];
+                var counter=1;
                 <?php if ($tree['listDamage']!=NULL): ?>
                   var value = ["none" , 0]; 
                   <?php for($i=0; $i<sizeof($tree['damageArea']); $i++): ?>
                     value[0] = String({{ $tree['listDamage'][$i] }});
                     value[1] = parseInt({{ $tree['damageArea'][$i] }});
                     console.log(value);
-                    arrayGraph.push(value);
+                    arrayGraph.insert(1,value);
+                    counter++;
                   <?php endfor ?>
                   console.log(arrayGraph);
                   drawChart();
