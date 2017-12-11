@@ -168,7 +168,7 @@
                   <?php for($i=0; $i<sizeof($tree['damageArea']); $i++): ?>
                     value[0] = String({{ $tree['listDamage'][$i] }});
                     value[1] = parseInt({{ $tree['damageArea'][$i] }});
-                    console.log(arrayGraph);
+                    console.log(value);
                     arrayGraph.push(value);
                   <?php endfor ?>
                   console.log(arrayGraph);
