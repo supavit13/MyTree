@@ -164,16 +164,12 @@
 
                 arrayGraph = [['Task', 'the risk per a tree']];
                 <?php if ($tree['listDamage']!=NULL): ?>
-                  var value = ["none" , 0]; 
                   <?php for($i=0; $i<sizeof($tree['damageArea']); $i++): ?>
-                    value[0] = String({{ $tree['listDamage'][$i] }});
-                    value[1] = parseInt({{ $tree['damageArea'][$i] }});
-                    console.log(value);
                     arrayGraph.push([String({{ $tree['listDamage'][$i] }}),parseInt({{ $tree['damageArea'][$i] }})]);
-                    console.log(arrayGraph);
                   <?php endfor ?>
-                  console.log(arrayGraph);
                   drawChart();
+                <?php else: ?>
+                    $("svg").remove();
                 <?php endif ?>
 
 
