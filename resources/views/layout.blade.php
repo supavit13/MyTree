@@ -617,24 +617,7 @@ $(document).ready(function(){
 		}
 	</script>
 	
-	
-          <script>
 
-        
-    $(".removetr").click(function(event){
-        $("#id").click(function(event){
-        alert('tttt');
-        $("#id").remove();
-        });
-    });
-    $(document).on('click', '#delete_tr', function() {
-      
-     $(this).closest('tr').remove();
-      
-
-    });
-
-    </script>
 
 	
 
