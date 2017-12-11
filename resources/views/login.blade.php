@@ -25,7 +25,7 @@
 <script>
       $("#signin_forever").click(function(event){
           event.preventDefault();
-          $("#333").css("display", "block");
+          // $("#333").css("display", "block");
       });
 
 </script> 
