@@ -60,7 +60,7 @@
   <div id="sideid" class="ui raised segment" style="overflow:scroll;">
     <a href="#close" style="color: #000;"><i class="remove icon" id="close"></i></a>
     <hr>
-    <h2>อัตราความเสี่ยงอันตราย</h2>
+    <h2 id="headpiechart">อัตราความเสี่ยงอันตราย</h2>
     <div align="center" id='piechart'></div>
     <hr>
       <h2>ข้อมูลต้นไม้</h2>
@@ -159,6 +159,7 @@
                 
                 $(".detail").remove();
                 $("#piechart").show();
+                $("#headpiechart").show();
                 $("#mapid").css({"width": "65%"});
                 $("#sideid").css({"display": "inline-block"});
                 $("#sideid").append(detail);
@@ -173,6 +174,8 @@
                   drawChart();
                 <?php else: ?>
                     $("#piechart").hide();
+                    $("#headpiechart").hide();
+                    
                 <?php endif ?>
 
 
