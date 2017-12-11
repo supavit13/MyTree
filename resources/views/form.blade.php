@@ -1511,7 +1511,8 @@ function getData($tree,$type='',$name='',$var=NULL){
 </div>
 <?php $sizeofList =  sizeof($tree['listDamage']) ;?>
 <script type="text/javascript">
-            var i = "<?php echo $sizeofList; ?>" ;
+            var i=0;
+            // var i = parseInt("<?php echo $sizeofList; ?>") ;
             var ii=parseInt(i)+1;
             $("#add_table").click(function(event){
               event.preventDefault();
@@ -1520,14 +1521,15 @@ function getData($tree,$type='',$name='',$var=NULL){
                             '<td><input class="hideme" id="tree_num" type="text" value="'+ii+'"></td>'+'<td><input class="form-control" type="text" name="listDamage['+i+']"></td>'+'<td><center><select class="ui dropdown" name="protectTarget['+i+']"><option type="hidden">เลือก</option><option value="1">มี</option><option value="2">ไม่มี</option></select></center></td>'+'<td><input type="hidden" name="ch1['+i+']" value="off"><input class="form-control" name="ch1['+i+']" type="checkbox"></td>'+'<td><input type="hidden" name="ch2['+i+']" value="off"><input class="form-control" name="ch2['+i+']" type="checkbox"></td>'+'<td><input type="hidden" name="ch3['+i+']" value="off"><input class="form-control" name="ch3['+i+']" type="checkbox"></td>'+'<td><center><select class="ui dropdown" name="damageArea['+i+']"><option type="hidden">เลือก</option><option value="1">1-ไม่ค่อยปรากฎ</option><option value="2">2-อยู่เป็นบางครั้ง</option><option value="3">3-ค่อนข้างบ่อย</option><option value="4">4-อยู่ตลอด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="moveArea['+i+']"><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><center><select class="ui dropdown" name="noEntry['+i+']"><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><input type="button" class="ui red button delete_tr" id="delete_tr" data-id="'+i+'" value="ลบ"></td>'+'</tr>';
               $('#table_damage').append(data_dam);
               i++;
+              ii++;
 
             });
           </script>
 <?php $sizeofList1 =  sizeof($tree['treePartName']) ;?>
 <script type="text/javascript">
-    var n="<?php echo $sizeofList1; ?>" ;
+    var n=0;
+    // var n="<?php echo $sizeofList1; ?>" ;
     var nn=parseInt(n)+1;
-    var arr=[];
             $("#add_table_risk").click(function(event){
               event.preventDefault();
 
@@ -1535,7 +1537,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                             '<td><input class="form-control" type="text" name="treePartSeq['+n+']" value="'+nn+'"></td>'+'<td><input class="form-control" type="text" name="treePartName['+n+']"></td>'+'<td><input  type="text" class="form-control" name="treePartFactor['+n+']"></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">น้อย</option><option value="2">ปานกลาง</option><option value="3">มาก</option><option value="4">มากที่สุด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartImpact['+n+']"><option type="hidden">เลือก</option><option value="1">ต่ำมาก</option><option value="2">ต่ำ</option><option value="3">ปานกลาง</option><option value="4">สูง</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartPlus['+n+']"><option type="hidden">เลือก</option><option value="1">น้อย</option><option value="2">ค่อนข้างน้อย</option><option value="3">มาก</option><option value="4">มากที่สุด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartRank['+n+']"><option type="hidden">เลือก</option><option value="1">ต่ำ</option><option value="2">ปานกลาง</option><option value="3">รุนแรง</option><option value="4">รุนแรงมาก</option></select></center></td>'+'<td><input class="form-control" type="text" name="treeDamage['+n+']"></td>'+'<td><input type="button" class="ui red button delete_tr1" id="delete_tr1" data-id="'+n+'" value="ลบ"></td>'+'</tr>';
               $('#table1_risk').append(data_risk1);
               n++;
-              arr.push(n);
+              nn++;
 
             });
 
