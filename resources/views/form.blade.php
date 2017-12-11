@@ -1388,7 +1388,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                             @if($img['Tree_imgFull']!=NULL)
                               @foreach($img['Tree_imgFull'] as $imgFull)
                                 <img class='ui large image' id="imagefull" data-id="{{ $imgFull }}" src='{{asset('images/uploads/'.$imgFull)}}'>
-                                <input type="button" class="ui red button delete_imgfull" id="delete_imgfull" value="ลบ">
+                                <input type="button" data-id="{{ $imgFull }}" class="ui red button delete_imgfull" id="delete_imgfull" value="ลบ">
                               @endforeach
                             @endif 
                           <?php endif ?>
