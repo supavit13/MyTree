@@ -74,31 +74,17 @@
 
 <div id="444" style="background-color:#e6ffee; width: 100%;">
 
+<div  class="ui centered grid">       
+          <div class="one wide column"> 
+              <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
+          </div>
 
-    <div id="services" class="text-center">
-      
-        <h1>ติดต่อ</h1>
-
-        <div class="row slideanim">
-          <div class="col-sm-4">
-            <i class="glyphicon glyphicon-home logo-small"></i>
-            <h4>ที่อยู่</h4>
-            <p>มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา</p>
-            <p>199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230</p>
-          </div>
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-earphone logo-small"></span>
-            <h4>โทรศัพท์</h4>
-            <p>0882370814 </p>
-          </div>
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-envelope logo-small"></span>
-            <h4>อีเมล</h4>
-            <p>webmasters@mytree.com </p>
-          </div>
+          <div class="ten wide column"> 
+            <h4>จัดทำโดย คณะวิศวกรรมศาสตร์ศรีราชา สาขาวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์</h4>  
+            199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230   
+            โทร 038 354 580 ต่อ 2631 โทรสาร 038 351 169 ©2017
+          </div>     
         </div>
-     
-    </div>
 </div>
 <!-- .....................................  444    .............................. -->
 
