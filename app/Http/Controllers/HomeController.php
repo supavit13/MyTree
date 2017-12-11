@@ -483,11 +483,14 @@ class HomeController extends Controller
     {
         $this->lastCheck($request);
         $img = Tree::find($id);
+        $trees = Tree::find($id);
         $users = Userlogin::where('_id',$img['UserID'])->first();
         $login_name=$request->session()->get('login_name');
         $userlogin=Userlogin::Where('username','=', $login_name)->first();
-        return view('detail', compact('img','users','userlogin','login_name'));
+        return view('detail', compact('trees','img','users','userlogin','login_name'));
     }
+
+
     public function editdetail(Request $request,$id){
         $this->lastCheck($request);
         $trees = Tree::find($id);
