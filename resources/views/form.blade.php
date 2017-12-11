@@ -1387,8 +1387,8 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                             @if($img['Tree_imgFull']!=NULL)
                               @foreach($img['Tree_imgFull'] as $imgFull)
-                                <img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'>
-                                <input type="button" class="ui red button delete_imgfull" id="delete_imgfull" data-id="{{ $imgFull }}" value="ลบ">
+                                <img class='ui large image' id="imagefull" data-id="{{ $imgFull }}" src='{{asset('images/uploads/'.$imgFull)}}'>
+                                <input type="button" class="ui red button delete_imgfull" id="delete_imgfull" value="ลบ">
                               @endforeach
                             @endif 
                           <?php endif ?>
@@ -1397,7 +1397,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                               $(document).on('click', '#delete_imgfull', function() {
                                   var imgfullId = $(this).data('id');
                                   alert(imgfullId);
-                                  $('#delete_imgfull[data-id="'+imgfullId+'"]').remove();
+                                  $('#imagefull[data-id="'+imgfullId+'"]').remove();
                                 
 
                               });
