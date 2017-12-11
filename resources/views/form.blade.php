@@ -1381,7 +1381,16 @@ function getData($tree,$type='',$name='',$var=NULL){
                         <label class="control-label" >แนบรูป</label>
                         <br>
                         <label>เต็มต้น : </label><br>                       
-                        <div id="full_tree"></div>                       
+                        <div id="full_tree">
+                          <?php if($update==1)?>
+                          @if($img['Tree_imgFull']!=NULL)
+                            @foreach($img['Tree_imgFull'] as $imgFull)
+                              <img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'>
+                            @endforeach
+                          @endif
+                        <?php endif ?>
+
+                        </div>                       
                         <br>
                         <button class="ui teal button" id="addfull_img">เพิ่ม</button>
                         <!-- <div>
