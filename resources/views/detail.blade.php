@@ -324,17 +324,17 @@ function getData($tree,$type='',$name='',$var=NULL){
             </td> 
             <td>
               <div style="text-align: center;">
-                <input readonly type="checkbox" name="ch1[<?php echo $i; ?>]" <?php if($tree['ch1'][$i]=="on"){ echo "checked=''";}?>>
+                <input disabled type="checkbox" name="ch1[<?php echo $i; ?>]" <?php if($tree['ch1'][$i]=="on"){ echo "checked=''";}?>>
               </div>
             </td>
             <td>
               <div style="text-align: center;">
-                <input readonly type="checkbox" name="ch2[<?php echo $i; ?>]" <?php if($tree['ch2'][$i]=="on"){ echo "checked=''";}?>>
+                <input disabled type="checkbox" name="ch2[<?php echo $i; ?>]" <?php if($tree['ch2'][$i]=="on"){ echo "checked=''";}?>>
               </div>
             </td>
             <td>
               <div style="text-align: center;">
-                <input readonly type="checkbox" name="ch3[<?php echo $i; ?>]" <?php if($tree['ch3'][$i]=="on"){ echo "checked=''";}?>>
+                <input disabled type="checkbox" name="ch3[<?php echo $i; ?>]" <?php if($tree['ch3'][$i]=="on"){ echo "checked=''";}?>>
               </div>
             </td>                          
                         
@@ -434,32 +434,32 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">สภาพดิน</span>
   
   <span>
-    <input readonly type="checkbox" name="soilCh2" <?php getData($tree,'checkbox','soilCh2');?>>
+    <input disabled type="checkbox" name="soilCh2" <?php getData($tree,'checkbox','soilCh2');?>>
   </span>
   <span>เนื้อดินจำกัด</span>
 
   <span>
-    <input readonly type="checkbox" name="soilCh3" <?php getData($tree,'checkbox','soilCh3');?>>
+    <input disabled type="checkbox" name="soilCh3" <?php getData($tree,'checkbox','soilCh3');?>>
   </span>
   <span>น้ำแช่ขัง</span>
 
   <span>
-    <input readonly type="checkbox" name="soilCh5" <?php getData($tree,'checkbox','soilCh5');?>>
+    <input disabled type="checkbox" name="soilCh5" <?php getData($tree,'checkbox','soilCh5');?>>
   </span>
   <span>ดินตื้น</span>
 
   <span>
-    <input readonly type="checkbox" name="soilCh4" <?php getData($tree,'checkbox','soilCh4');?>>
+    <input disabled type="checkbox" name="soilCh4" <?php getData($tree,'checkbox','soilCh4');?>>
   </span>
   <span>ดินแน่นแข็ง</span>
 
   <span>
-    <input readonly type="checkbox" name="soilCh6" <?php getData($tree,'checkbox','soilCh6');?>>
+    <input disabled type="checkbox" name="soilCh6" <?php getData($tree,'checkbox','soilCh6');?>>
   </span>
   <span>มีวัสดุปิดทับ</span> 
 
   <span>
-    <input readonly type="checkbox" name="soilCh7" <?php getData($tree,'checkbox','soilCh7');?>>
+    <input disabled type="checkbox" name="soilCh7" <?php getData($tree,'checkbox','soilCh7');?>>
   </span>
   <span>อื่นๆ รายละเอียดเพิ่มเติม</span> 
     <span>
@@ -470,15 +470,15 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;" >สภาพอากาศ</span> 
     <span>
-      <input readonly type="checkbox" name="weather1" <?php getData($tree,'checkbox','weather1');?>>
+      <input disabled type="checkbox" name="weather1" <?php getData($tree,'checkbox','weather1');?>>
     </span>
     <span  >ลมแรง</span>
     <span>
-      <input readonly type="checkbox" name="weather2" <?php getData($tree,'checkbox','weather2');?>>
+      <input disabled type="checkbox" name="weather2" <?php getData($tree,'checkbox','weather2');?>>
     </span>
     <span>ฝนตกหนัก</span>
     <span>
-      <input readonly type="checkbox" name="weather3" <?php getData($tree,'checkbox','weather3');?>>
+      <input disabled type="checkbox" name="weather3" <?php getData($tree,'checkbox','weather3');?>>
     </span>
     <span>อื่นๆ รายละเอียดเพิ่มเติม</span>
     <span>
@@ -516,22 +516,22 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span id="tab" style="font-weight: bold;">สภาพใบ</span>
     <span>
-      <input readonly type="checkbox" name="leafCh1" <?php getData($tree,'checkbox','leafCh1');?>>
+      <input disabled type="checkbox" name="leafCh1" <?php getData($tree,'checkbox','leafCh1');?>>
     </span>
     <span>ปกติ</span>
   
     <span>
-      <input readonly type="checkbox" name="leafCh2" <?php getData($tree,'checkbox','leafCh2');?>>
+      <input disabled type="checkbox" name="leafCh2" <?php getData($tree,'checkbox','leafCh2');?>>
     </span>
     <span>ผลัดใบ</span>
   
     <span>
-      <input readonly type="checkbox" name="leafCh3" <?php getData($tree,'checkbox','leafCh3');?>>
+      <input disabled type="checkbox" name="leafCh3" <?php getData($tree,'checkbox','leafCh3');?>>
     </span>
     <span>ผิดปกติ</span>
   
     <span>
-      <input readonly type="checkbox" name="leafCh4" <?php getData($tree,'checkbox','leafCh4');?>>
+      <input disabled type="checkbox" name="leafCh4" <?php getData($tree,'checkbox','leafCh4');?>>
     </span>
     <span>ร่วง</span>
     <span>
@@ -540,7 +540,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     <span>%</span>
 
     <span>
-      <input readonly type="checkbox" name="leafCh5" <?php getData($tree,'checkbox','leafCh5');?>>
+      <input disabled type="checkbox" name="leafCh5" <?php getData($tree,'checkbox','leafCh5');?>>
     </span>
     <span>ซีดเหลือง</span>
     <span>
@@ -549,7 +549,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     <span>%</span>
 
     <span>
-      <input readonly type="checkbox" name="leafCh5_5" <?php getData($tree,'checkbox','leafCh5_5');?>>
+      <input disabled type="checkbox" name="leafCh5_5" <?php getData($tree,'checkbox','leafCh5_5');?>>
     </span>
     <span>แห้ง</span>
     <span>
@@ -734,7 +734,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </span>
   <span style="font-weight: bold;">%</span>
   <span>
-    <input readonly type="checkbox">
+    <input disabled type="checkbox">
   </span>
   <span>มีร่องรอยความเสียหายของกิ่ง</span>
 
@@ -742,7 +742,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span>
-    <input readonly type="checkbox" name="dryBranches" <?php getData($tree,'checkbox','dryBranches');?>>
+    <input disabled type="checkbox" name="dryBranches" <?php getData($tree,'checkbox','dryBranches');?>>
   </span>
   <span>กิ่งแห้ง</span>
    <span>
@@ -758,7 +758,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
   <span id="tab">
-    <input readonly type="checkbox" name="brokenBranches" <?php getData($tree,'checkbox','brokenBranches');?>>
+    <input disabled type="checkbox" name="brokenBranches" <?php getData($tree,'checkbox','brokenBranches');?>>
   </span>
   <span>กิ่งหักแขวน</span>
 
@@ -777,27 +777,27 @@ function getData($tree,$type='',$name='',$var=NULL){
     <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด -->
 
   <span>
-    <input readonly type="checkbox" name="limbLesion" <?php getData($tree,'checkbox','limbLesion');?>>
+    <input disabled type="checkbox" name="limbLesion" <?php getData($tree,'checkbox','limbLesion');?>>
   </span>
   <span>รอยแผลกิ่ง</span>
 
   <span>
-    <input readonly type="checkbox" name="limbHole" <?php getData($tree,'checkbox','limbHole');?>>
+    <input disabled type="checkbox" name="limbHole" <?php getData($tree,'checkbox','limbHole');?>>
   </span>
   <span>รอยผุโพรงหรือรู</span>
 
   <span>
-    <input readonly type="checkbox" name="limbNode" <?php getData($tree,'checkbox','limbNode');?>>
+    <input disabled type="checkbox" name="limbNode" <?php getData($tree,'checkbox','limbNode');?>>
   </span>
   <span>ปุ่มปม</span>
 
   <span>
-    <input readonly type="checkbox" name="limbRotten" <?php getData($tree,'checkbox','limbRotten');?>>
+    <input disabled type="checkbox" name="limbRotten" <?php getData($tree,'checkbox','limbRotten');?>>
   </span>
   <span>เน่า</span>
 
   <span>
-    <input readonly type="checkbox" name="limbFungus" <?php getData($tree,'checkbox','limbFungus');?>>
+    <input disabled type="checkbox" name="limbFungus" <?php getData($tree,'checkbox','limbFungus');?>>
   </span>
   <span>เชื้อราเห็ด</span>
 
@@ -861,68 +861,68 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkTwin');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkTwin');?>>
   </span>
   <span>&nbspแตก2นาง</span>
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkTogather');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkTogather');?>>
   </span>
   <span>&nbspมีเปลือกร่วม</span>
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkDie');?>> 
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkDie');?>> 
   </span>
   <span>&nbspเปลือกแห้ง/หลุดร่อน</span>
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkAbnormal');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkAbnormal');?>>
   </span>
   <span>&nbspเปลือกผิดปกติ</span>
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkBroke');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkBroke');?>>
   </span>
   <span>&nbspมีรอยแตก</span>
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkHole');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkHole');?>>
   </span>
   <span>&nbspโพรง</span>
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkDecay');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkDecay');?>>
   </span>
   <span>&nbspผุ</span>
 
   <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkLiquid');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkLiquid');?>>
   </span>
   <span>&nbspมีน้ำยางหรือของเหลวไหลออกจากเปลือก</span>
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkNode');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkNode');?>>
   </span>
   <span>มีปุ่มปมหรือตา</span>
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkDecayDamage');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkDecayDamage');?>>
   </span>
   <span>&nbspเนื้อไม้ผุเสียหาย</span>
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkFungus');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkFungus');?>>
   </span>
   <span>&nbspมีเชื้อราเห็ด</span>
 
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkThin');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkThin');?>>
   </span>
   <span>&nbspความเรียวผิดปกติ</span>
 
   <span>
-    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkSlope_checkbox');?>>
+    <input disabled type="checkbox" <?php getData($tree,'checkbox','trunkSlope_checkbox');?>>
   </span>
   <span>&nbspเอียง</span>
     <span>
@@ -966,54 +966,54 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
   <span>
-    <input readonly type="checkbox" name="rootDown" <?php getData($tree,'checkbox','rootDown');?> >
+    <input disabled type="checkbox" name="rootDown" <?php getData($tree,'checkbox','rootDown');?> >
     <span>โคนต้นฝังดิน</span>
   </span> 
   
   <span>
-    <input readonly type="checkbox" name="rootWrap" <?php getData($tree,'checkbox','rootWrap');?> >
+    <input disabled type="checkbox" name="rootWrap" <?php getData($tree,'checkbox','rootWrap');?> >
     <span>รากพันโคนต้น</span>
   </span>
 
   <span>
-    <input readonly type="checkbox" name="rootUp" <?php getData($tree,'checkbox','rootUp');?>></span>
+    <input disabled type="checkbox" name="rootUp" <?php getData($tree,'checkbox','rootUp');?>></span>
     <span>โผล่พ้นดิน</span>
   </span>
   
   <span>
-    <input readonly type="checkbox" name="rootBroke" <?php getData($tree,'checkbox','rootBroke');?>>
+    <input disabled type="checkbox" name="rootBroke" <?php getData($tree,'checkbox','rootBroke');?>>
   </span>
   <span>แตกหักหรือถูกตัด</span>
 
   <span>
-    <input readonly type="checkbox" name="rootLesion" <?php getData($tree,'checkbox','rootLesion');?>>
+    <input disabled type="checkbox" name="rootLesion" <?php getData($tree,'checkbox','rootLesion');?>>
   </span>
   <span>เสียดสี</span>
 
   <span>
-    <input readonly type="checkbox" name="rootLiquid" <?php getData($tree,'checkbox','rootLiquid');?>>
+    <input disabled type="checkbox" name="rootLiquid" <?php getData($tree,'checkbox','rootLiquid');?>>
   </span>
   <span>มีของเหลวไหลจากเปลือก</span>
 
   <span>
-    <input readonly type="checkbox" name="rootNode" <?php getData($tree,'checkbox','rootNode');?>>
+    <input disabled type="checkbox" name="rootNode" <?php getData($tree,'checkbox','rootNode');?>>
   </span>
   <span>มีปุ่มปมหรือตา</span>
 
   <span>
-    <input readonly type="checkbox" name="rootDecay" <?php getData($tree,'checkbox','rootDecay');?>>
+    <input disabled type="checkbox" name="rootDecay" <?php getData($tree,'checkbox','rootDecay');?>>
   </span>
   <span>ผุ</span>
  
  <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 <span>
-  <input readonly type="checkbox" name="rootCavity" <?php getData($tree,'checkbox','rootCavity');?>>
+  <input disabled type="checkbox" name="rootCavity" <?php getData($tree,'checkbox','rootCavity');?>>
   <span>โพรง</span>
 <span>
-  <input readonly type="checkbox" name="rootFungus" <?php getData($tree,'checkbox','rootFungus');?> >
+  <input disabled type="checkbox" name="rootFungus" <?php getData($tree,'checkbox','rootFungus');?> >
   <span>เชื้อรา เห็ด</span>
 <span>
-  <input readonly type="checkbox" name="rootWater" <?php getData($tree,'checkbox','rootWater');?> >
+  <input disabled type="checkbox" name="rootWater" <?php getData($tree,'checkbox','rootWater');?> >
   <span>น้ำแช่ขัง</span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
