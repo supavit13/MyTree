@@ -144,12 +144,12 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>พิกัดละติจูด</span>
-                    <input id="Tree_lat" type="number" min="0" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" required>
+                    <input id="Tree_lat" type="number" min="0" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" required oninvalid="this.setCustomValidity('ใส่ทศนิยม 6 ตำแหน่งเท่านั้น')">
                   </div>
 
                   <div class="three wide column">
                     <span>พิกัดลองจิจูด</span>
-                    <input id="Tree_long" type="number" min="0" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" required>
+                    <input id="Tree_long" type="number" min="0" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" required oninvalid="this.setCustomValidity('ใส่ทศนิยม 6 ตำแหน่งเท่านั้น')">
                   </div>
 
                   <div class="two wide column">
