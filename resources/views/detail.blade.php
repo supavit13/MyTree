@@ -56,7 +56,7 @@
 <h1 style='margin-top: 5%; margin-bottom: 3%; font-size: 370%; color: black; text-shadow: 2px 2px back; text-align: center;'>{{$img['Tree_name']}}</h1>
 
 <div class='container' style='width: 60%' align='center'>
-    <label>สำรวจโดย : </label><span><a href='/profiles/{{$users['_id']}}'>{{$users['username']}}</a></span>
+    <label style="font-size: 19px;">สำรวจโดย : </label><span><a href='/profiles/{{$users['_id']}}'>{{$users['username']}}</a></span>
 </div>
 <hr>
 <div class='container' style='width: 70%'>
