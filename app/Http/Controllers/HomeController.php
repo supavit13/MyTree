@@ -495,6 +495,7 @@ class HomeController extends Controller
         $this->lastCheck($request);
         $trees = Tree::find($id);
         $treeall = Tree::find($id);
+        $img = Tree::find($id);
         if($request->session()->has('login_name')){
             $login_name=$request->session()->get('login_name');
             $userlogin=Userlogin::Where('username','=', $login_name)->first();
@@ -505,7 +506,7 @@ class HomeController extends Controller
 
             return redirect('/')->with('message', 'คุณไม่ได้รับอนุญาต');
         }
-        return view('form', compact('treeall','trees','userlogin','login_name'));
+        return view('form', compact('treeall','trees','userlogin','login_name','img'));
     }
     public function treedel(Request $request){
         $this->lastCheck($request);
