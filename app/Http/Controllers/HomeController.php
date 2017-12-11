@@ -167,6 +167,7 @@ class HomeController extends Controller
             foreach ($request->fulltree as $value) {
                 foreach ($tree_id->Tree_imgFull as $key) {
                     if($value == $key){
+                        dd("in");
                         Storage::delete('images/uploads/'.$value);
                     }
        
