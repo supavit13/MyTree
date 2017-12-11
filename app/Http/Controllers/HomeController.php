@@ -197,6 +197,7 @@ class HomeController extends Controller
                 }
                 
             }
+            $trees->Tree_imgFull= $full;  
         }
 
 
