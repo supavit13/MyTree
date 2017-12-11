@@ -188,8 +188,9 @@ class HomeController extends Controller
                 foreach ($tree_id->Tree_imgFull as $key) {
                     if($value == $key){
                         $test = $this->indexof($full,$value);
-                        dd($test);
+                        // dd($test);
                         unlink('images/uploads/'.$value);
+                        $full[0][$test] = "";
                         
                     }
 
