@@ -493,7 +493,6 @@ class HomeController extends Controller
 
     public function editdetail(Request $request,$id){
         $this->lastCheck($request);
-        $checkedit = "checkButton";
         $trees = Tree::find($id);
         $treeall = Tree::find($id);
         if($request->session()->has('login_name')){
@@ -506,7 +505,7 @@ class HomeController extends Controller
 
             return redirect('/')->with('message', 'คุณไม่ได้รับอนุญาต');
         }
-        return view('form', compact('treeall','trees','userlogin','login_name','checkedit'));
+        return view('form', compact('treeall','trees','userlogin','login_name'));
     }
     public function treedel(Request $request){
         $this->lastCheck($request);

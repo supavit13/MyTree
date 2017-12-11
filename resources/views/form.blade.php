@@ -2,11 +2,6 @@
 
 @section('content')
 
-<script>
-  if($checkedit == "checkButton"){
-    $("#buttonDel").show();
-  }
-</script>
 
 
 <?php 
@@ -16,6 +11,7 @@
 if(!empty($trees)){
   $tree=$trees;
   $update=1;
+  $("#buttonDel").show();
 }else{
   $tree=NULL;
   $update=0;
