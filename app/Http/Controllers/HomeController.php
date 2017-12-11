@@ -119,12 +119,12 @@ class HomeController extends Controller
     }
 
 
-    function indexof($arr,$value){
+    public function indexof($full,$value){
   
-      $list_count=count($arr);
+      $list_count=count($full);
       for($i=0;$i<$list_count;$i++)
       {
-              if($arr[$i]==$value){
+              if($full[$i]==$value){
                         $position=$i;
               }
       
