@@ -1510,7 +1510,7 @@ function getData($tree,$type='',$name='',$var=NULL){
   
   <h4></h4>
 </div>
-<script>
+<!-- <script>
     var checkedit=0;
     <?php if($update==1): ?>
       checkedit += parseInt({{ $update }}); 
@@ -1518,7 +1518,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     if(checkedit>0){
       $("#buttonDel").show();
     }
-</script>
+</script> -->
 <script type="text/javascript">
     
             var i=1;
