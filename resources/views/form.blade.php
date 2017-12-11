@@ -1511,8 +1511,8 @@ function getData($tree,$type='',$name='',$var=NULL){
   <h4></h4>
 </div>
 <script type="text/javascript">
-
-    var checkedit = parseInt({{$update}});
+    var checkedit = 0;
+    checkedit = parseInt({{$update}});
     if(checkedit == 1){
       $("#buttonDel").show();
     }
