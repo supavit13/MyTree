@@ -170,6 +170,7 @@ class HomeController extends Controller
             foreach ($request->fulltree as $value) {
                 foreach ($tree_id->Tree_imgFull as $key) {
                     if($value == $key){
+                        dd(array_search($value,$full));
                         unlink('images/uploads/'.$value);
 
                         $full[array_search($value,$full)] = "";
