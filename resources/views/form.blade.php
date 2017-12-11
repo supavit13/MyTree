@@ -1396,8 +1396,9 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <script>
                               $(document).on('click', '#delete_imgfull', function() {
                                   var imgfullId = $(this).data('id');
-                                  alert(imgfullId);
+                                  alert("ยืนยันการลบรูปภาพ");
                                   $('#imagefull[data-id="'+imgfullId+'"]').remove();
+                                  $('#delete_imgfull[data-id="'+imgfullId+'"]').remove();
                                 
 
                               });
