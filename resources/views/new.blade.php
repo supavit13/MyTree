@@ -108,12 +108,12 @@
 
     var mymap = L.map('mapid').setView([13.1192, 100.92066], 16);
 
-    // mymap = bounds[],
+    // mymap = bounds[],s
       mymap.setMaxBounds([
-          [13.12594, 100.9111],
-          [13.12567, 100.9264],
-          [13.11329, 100.92717],
-          [13.11342, 100.91028]
+          [21.22794, 90.79102],
+          [21.30985, 115.00488],
+          [3.73271, 90.79102],
+          [4.82826, 115.00488]
         ]);
     var sum = 0;
     var countTree=0;
@@ -125,7 +125,7 @@
 
     L.esri.basemapLayer("Topographic",{
       maxZoom: 18,
-      minZoom: 16,
+      minZoom: 6,
       attribution: 'Develop by MyTreeTeam.'
     }).addTo(mymap);
     
@@ -174,17 +174,6 @@
         fillColor: colorRisk,
         fillOpacity: 0.3
       }).addTo(mymap).on('mouseover click',function(){
-              // mouseover: function(){
-              // $("#mapid").css({"width": "65%"});
-              // $("#sideid").css({"display": "inline-block"});
-              // drawChart(parseInt({{ $tree{'vehDamageAppear'} }})
-              //          ,parseInt({{ $tree{'builDamageAppear'} }})
-              //          ,parseInt({{ $tree{'manDamangeArea'} }})
-              //          ,parseInt({{ $tree{'pillDamageAppear'} }})
-              //          ,sum );
-              // },
-                
-                // mouseover: function(){
                 var detail="<div class='detail'><label>ชื่อต้นไม้</label> : {{ $tree{'Tree_name'} }}<br> <label>ชื่อวิทยาศาสตร์</label> : {{ $tree{'Tree_sci_name'} }}<br><label>ชนิดต้นไม้</label> : {{ $tree{'Tree_type'} }}<br><label>เส้นผ่านศูนย์กลาง</label> : {{ $tree{'Tree_diameter_Trunk'} }} นิ้ว <br><label>ที่อยู่</label> : {{ $tree{'Tree_address'} }}<br><label>พิกัด</label>({{ $tree{'Tree_lat'} }}, {{ $tree{'Tree_long'} }})<br> <label>โดย</label> <a href='/profiles/{{$tree['UserID']}}'>{{$tree['User_name']}}</a><hr><div align='center' class='showPic'><h2>รูปถ่ายต้นไม้</h2></div></div></div>";
                 if(marker){
                   marker.remove();
