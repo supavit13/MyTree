@@ -120,9 +120,9 @@ class HomeController extends Controller
 
 
     public function indexof($full,$value){
-        dd("in");
-      $list_count=count($full);
-      for($i=0;$i<$list_count;$i++)
+        // dd("in");
+
+      for($i=0;$i<sizeof($full);$i++)
       {
               if($full[$i]==$value){
                         $position=$i;
