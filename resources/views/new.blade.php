@@ -168,7 +168,7 @@
                 <?php if ($tree['listDamage']!=NULL): ?>
                   <?php for($i=0; $i<sizeof($tree['damageArea']); $i++): ?>
                     var first = {{ $tree['listDamage'][$i] }};
-                    arrayGraph.push([first.toString(),parseInt({{ $tree['damageArea'][$i] }})]);
+                    arrayGraph.push([first + "",parseInt({{ $tree['damageArea'][$i] }})]);
                   <?php endfor ?>
                   drawChart();
                 <?php else: ?>
