@@ -170,6 +170,7 @@
                     value[1] = parseInt({{ $tree['damageArea'][$i] }});
                     console.log(value);
                     arrayGraph.push(value);
+                    console.log(arrayGraph);
                   <?php endfor ?>
                   console.log(arrayGraph);
                   drawChart();
