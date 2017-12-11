@@ -10,6 +10,11 @@
 if(!empty($trees)){
   $tree=$trees;
   $update=1;
+  ?>
+  <script>
+    $("#buttonDel").show();
+  </script>
+  <?php
 }else{
   $tree=NULL;
   $update=0;

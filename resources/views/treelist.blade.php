@@ -88,7 +88,7 @@
 					<?php
 						if($_SESSION['login']!="Guest"){
 							?>
-							<td><a href="/editdetail/{{$tree['_id']}}" class="ui green button">แก้ไข</a></td>
+							<td><a href="/editdetail/{{$tree['_id']}}" id="editbutton" class="ui green button">แก้ไข</a></td>
 							<td><button class="ui blue button" onclick="printDocs('/print/{{$tree['_id']}}')">สั่งพิมพ์</button></td>
 							<td>
 								<form action="{{ url('treedel') }}" method="post" enctype="multipart/form-data" onsubmit="return confirm('คุณต้องการลบข้อมูลต้นไม้นี้ถาวรใช่หรือไม่?');">{{ csrf_field() }}
