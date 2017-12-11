@@ -364,11 +364,11 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">สภาพภูมิประเทศ</span>
   <span>
-        <input disabled type="radio" name="radioSlope" >
+        <input disabled type="radio" class="ui radio checkbox" name="radioSlope" >
         <span>&nbspราบ&nbsp</span>
   </span>
 
-  <input disabled type="radio" name="radioSlope" >
+  <input disabled type="radio" class="ui radio checkbox" name="radioSlope" >
   <span style="font-weight: bold;">ลาดเอียง</span>
     <span>
       <input readonly type="text" class="hideme" id="input1" style="width: 5cm;" value="<?php getData($tree,'text','slope'); ?>">
@@ -385,12 +385,12 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">การเปลี่ยนแปลงสภาพพื้นที่</span>
   
   <span>
-    <input disabled type="radio" name="changeArea" value="ไม่มี" <?php getData($tree,'radio','changeArea','ไม่มี'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="changeArea" value="ไม่มี" <?php getData($tree,'radio','changeArea','ไม่มี'); ?>>
   </span>
   <span>ไม่มี</span>
 
   <span>
-    <input disabled type="radio" name="changeArea" value="มี" <?php getData($tree,'radio','changeArea','มี'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="changeArea" value="มี" <?php getData($tree,'radio','changeArea','มี'); ?>>
   </span>
   <span>มี</span> 
 
@@ -469,17 +469,17 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ความแข็งแรงโดยรวม</span>
   <span>
-    <input disabled type="radio" name="strong" value="ต่ำ" <?php getData($tree,'radio','strong','ต่ำ'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="strong" value="ต่ำ" <?php getData($tree,'radio','strong','ต่ำ'); ?>>
   </span>
   <span>ต่ำ</span>
 
   <span>
-    <input disabled type="radio" name="strong" value="ปานกลาง" <?php getData($tree,'radio','strong','ปานกลาง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="strong" value="ปานกลาง" <?php getData($tree,'radio','strong','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input disabled type="radio" name="strong" value="สูง" <?php getData($tree,'radio','strong','สูง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="strong" value="สูง" <?php getData($tree,'radio','strong','สูง'); ?>>
   </span>
   <span>สูง</span>
 
@@ -561,22 +561,22 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <span style="font-weight: bold;">การรับลม</span>
 <span>
-  <input disabled type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','มีการป้องกัน'); ?> >
+  <input disabled type="radio" class="ui radio checkbox" name="windImpact" <?php getData($tree,'radio','windImpact','มีการป้องกัน'); ?> >
 </span>
 <span>มีการป้องกัน</span>
 
 <span>
-  <input disabled type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','บางส่วน'); ?>>
+  <input disabled type="radio" class="ui radio checkbox" name="windImpact" <?php getData($tree,'radio','windImpact','บางส่วน'); ?>>
 </span>
 <span>บางส่วน</span>
 
 <span>
-  <input disabled type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','เต็มที่'); ?>>
+  <input disabled type="radio" class="ui radio checkbox" name="windImpact" <?php getData($tree,'radio','windImpact','เต็มที่'); ?>>
 </span>
 <span>เต็มที่</span>
 
 <span>
-  <input disabled type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','อุโมงค์ลม'); ?>>
+  <input disabled type="radio" class="ui radio checkbox" name="windImpact" <?php getData($tree,'radio','windImpact','อุโมงค์ลม'); ?>>
 </span>
 <span>อุโมงค์ลม</span>
 
@@ -584,17 +584,17 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - -  -->
   <span id="tab" style="font-weight: bold;">ขนาดเรือนยอดสัมพัทธ์</span>
   <span>
-    <input disabled type="radio" name="topSize" <?php getData($tree,'radio','topSize','เล็ก'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topSize" <?php getData($tree,'radio','topSize','เล็ก'); ?>>
   </span>
   <span>เล็ก</span>
 
   <span>
-    <input disabled type="radio" name="topSize" <?php getData($tree,'radio','topSize','กลาง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topSize" <?php getData($tree,'radio','topSize','กลาง'); ?>>
   </span>
   <span>กลาง</span>
 
   <span>
-    <input disabled type="radio" name="topSize" <?php getData($tree,'radio','topSize','ใหญ่'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topSize" <?php getData($tree,'radio','topSize','ใหญ่'); ?>>
   </span>
   <span>ใหญ่</span>
 
@@ -603,17 +603,17 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
   <span style="font-weight: bold;">ความหนาแน่นเรือนยอด</span>
   <span>
-    <input disabled type="radio" name="topThick" <?php getData($tree,'radio','topThick','โปร่ง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topThick" <?php getData($tree,'radio','topThick','โปร่ง'); ?>>
   </span>
   <span>โปร่ง</span>
 
   <span>
-    <input disabled type="radio" name="topThick" <?php getData($tree,'radio','topThick','ปานกลาง'); ?> >
+    <input disabled type="radio" class="ui radio checkbox" name="topThick" <?php getData($tree,'radio','topThick','ปานกลาง'); ?> >
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input disabled type="radio" name="topThick" <?php getData($tree,'radio','topThick','ทึบ'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topThick" <?php getData($tree,'radio','topThick','ทึบ'); ?>>
   </span>
   <span>ทึบ</span>
 
@@ -621,22 +621,22 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
   <span id="tab" style="font-weight: bold;">กาฝาก/เถาวัลย์</span>
   <span>
-    <input disabled type="radio" name="parasite" <?php getData($tree,'radio','parasite','ไม่มี'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="parasite" <?php getData($tree,'radio','parasite','ไม่มี'); ?>>
   </span>
   <span>ไม่มี</span>
 
   <span>
-    <input disabled type="radio" name="parasite" <?php getData($tree,'radio','parasite','มาก'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="parasite" <?php getData($tree,'radio','parasite','มาก'); ?>>
   </span>
   <span>มาก</span>
 
   <span>
-    <input disabled type="radio" name="parasite" <?php getData($tree,'radio','parasite','ปานกลาง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="parasite" <?php getData($tree,'radio','parasite','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input disabled type="radio" name="parasite" <?php getData($tree,'radio','parasite','น้อย'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="parasite" <?php getData($tree,'radio','parasite','น้อย'); ?>>
   </span>
   <span>น้อย</span>
 
@@ -644,29 +644,29 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 <span style="font-weight: bold;">ปริมาณกิ่งในเรือนยอด</span>
 <span>
-  <input disabled type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','มาก'); ?>>
+  <input disabled type="radio" class="ui radio checkbox" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','มาก'); ?>>
 </span>
 <span>มาก</span>
 
 <span>
-  <input disabled type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','ปานกลาง'); ?>>
+  <input disabled type="radio" class="ui radio checkbox" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','ปานกลาง'); ?>>
 </span>
 <span>ปานกลาง</span>
 
 <span>
-  <input disabled type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','น้อย'); ?>>
+  <input disabled type="radio" class="ui radio checkbox" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','น้อย'); ?>>
 </span>
 <span>น้อย</span>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 <span id="tab" style="font-weight: bold;">การเปลี่ยนแปลงพื้นที่ในอนาคตที่มีผลต่อแรงลม</span>
 <span>
-  <input disabled type="radio" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','มี'); ?>>
+  <input disabled type="radio" class="ui radio checkbox" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','มี'); ?>>
 </span>
 <span>มี</span>
 
 <span>
-  <input disabled type="radio" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','ไม่มี'); ?>>
+  <input disabled type="radio" class="ui radio checkbox" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','ไม่มี'); ?>>
 </span>
 <span>ไม่มี</span>
 
@@ -689,12 +689,12 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ความสมดุลของเรือนยอด</span>
   <span>
-    <input disabled type="radio" name="topBalance" <?php getData($tree,'radio','topBalance','ดี'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topBalance" <?php getData($tree,'radio','topBalance','ดี'); ?>>
   </span>
   <span>ดี</span>
 
   <span>
-    <input disabled type="radio" name="topBalance" <?php getData($tree,'radio','topBalance','ไม่ดี'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topBalance" <?php getData($tree,'radio','topBalance','ไม่ดี'); ?>>
   </span>
   <span>ไม่ดี</span>
 
@@ -777,12 +777,12 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">ประวัติการลิดกิ่ง</span>
   
   <span>
-    <input disabled type="radio" name="limbLit" <?php getData($tree,'radio','limbLit','เหมาะสม'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="limbLit" <?php getData($tree,'radio','limbLit','เหมาะสม'); ?>>
   </span>
   <span>เหมาะสม</span>
 
   <span>
-    <input disabled type="radio" name="limbLit" <?php getData($tree,'radio','limbLit','ไม่เหมาะสม'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="limbLit" <?php getData($tree,'radio','limbLit','ไม่เหมาะสม'); ?>>
   </span>
   <span>ไม่เหมาะสม</span>
 
@@ -804,22 +804,22 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">โอกาสในการเกิดอันตราย</span>
   
   <span>
-    <input disabled type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','น้อย'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','น้อย'); ?>>
   </span>
   <span>น้อย</span>
 
   <span>
-    <input disabled type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','ปานกลาง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input disabled type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','มาก'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','มาก'); ?>>
   </span>
   <span>มาก</span>
 
   <span>
-    <input disabled type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','มากที่สุด'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','มากที่สุด'); ?>>
   </span>
   <span>มากที่สุด</span>
 
@@ -912,21 +912,21 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">โอกาสในการเกิดอันตราย</span>
   <span>
-    <input disabled type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','น้อย'); ?> >
+    <input disabled type="radio" class="ui radio checkbox" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','น้อย'); ?> >
   </span>
   <span>น้อย</span>
 
   <span>
-    <input disabled type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','ปานกลาง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input disabled type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','มาก'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','มาก'); ?>>
   </span><span>มาก</span>
 
   <span>
-    <input disabled type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','มากที่สุด'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','มากที่สุด'); ?>>
   </span>
   <span>มากที่สุด</span>
 
@@ -999,22 +999,22 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">โอกาสในการเกิดอันตราย</span>
   
   <span>
-    <input disabled type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','น้อย'); ?> >
+    <input disabled type="radio" class="ui radio checkbox" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','น้อย'); ?> >
   </span>
   <span>น้อย</span>
 
   <span>
-    <input disabled type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','ปานกลาง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','ปานกลาง'); ?>>
   </span>
   <span>มีโอกาสปานกลาง</span>
 
   <span>
-    <input disabled type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','มาก'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','มาก'); ?>>
   </span>
   <span>มาก</span>
 
   <span>
-    <input disabled type="radio" name="rootHarmChance"  <?php getData($tree,'radio','strong','มากที่สุด'); ?> >
+    <input disabled type="radio" class="ui radio checkbox" name="rootHarmChance"  <?php getData($tree,'radio','strong','มากที่สุด'); ?> >
   </span>
   <span>มากที่สุด</span>
 
@@ -1312,22 +1312,22 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">ผลการประเมินความเสี่ยงอันตรายจากต้นไม้ในภาพรวม</span>
   
   <span>
-    <input disabled type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','ต่ำ'); ?> >
+    <input disabled type="radio" class="ui radio checkbox" name="totalDamage" <?php getData($tree,'radio','totalDamage','ต่ำ'); ?> >
   </span>
   <span>ต่ำ</span>
 
   <span>
-    <input disabled type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','ปานกลาง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="totalDamage" <?php getData($tree,'radio','totalDamage','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input disabled type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','สูง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="totalDamage" <?php getData($tree,'radio','totalDamage','สูง'); ?>>
   </span>
   <span>สูง</span>
 
   <span>
-    <input disabled type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','สูงที่สุด'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="totalDamage" <?php getData($tree,'radio','totalDamage','สูงที่สุด'); ?>>
   </span>
   <span>สูงที่สุด</span>
 
@@ -1337,22 +1337,22 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ความเร่งด่วนในการดำเนินงาน</span>
   <span>
-    <input disabled type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ทันที'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="operateTime" <?php getData($tree,'radio','operateTime','ทันที'); ?>>
   </span>
   <span>ทันที</span>
 
   <span>
-    <input disabled type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน1เดือน'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน1เดือน'); ?>>
   </span>
   <span>ภายใน1เดือน</span>
 
   <span>
-    <input disabled type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน3-5เดือน'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน3-5เดือน'); ?>>
   </span>
   <span>ภายใน3-5เดือน</span>
 
   <span>
-    <input disabled type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน6-12เดือน'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน6-12เดือน'); ?>>
   </span>
   <span>ภายใน6-12เดือน</span>
   
@@ -1360,12 +1360,12 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">การประเมินเพิ่มเติม</span>
   <span>
-    <input disabled type="radio" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ไม่ต้องการ'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ไม่ต้องการ'); ?>>
   </span>
   <span>ไม่ต้องการ</span>
 
   <span>
-    <input disabled type="radio" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ต้องการ เรื่อง'); ?>>
+    <input disabled type="radio" class="ui radio checkbox" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ต้องการ เรื่อง'); ?>>
   </span>
   <span>ต้องการ</span>
   <span>เรื่อง</span>
