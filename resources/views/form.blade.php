@@ -106,11 +106,6 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                 <div class="ui grid">
 
-                  <!-- <div class="eight wide column">
-                    <span>ผู้ว่าจ้าง</span>
-                    <input  type="text" name="hire" value="<?php getData($tree,'text','hire'); ?>" class="form-control" >
-                  </div> -->
-
                  <div class="eight wide column">
                     <span>เจ้าของพื้นที่</span>
                     <input  type="text"  class="form-control input-md" name="ownerarea" value="<?php getData($tree,'text','ownerarea'); ?>">
@@ -1527,7 +1522,7 @@ function getData($tree,$type='',$name='',$var=NULL){
               $("#buttonDel").show();
 
              var data_dam = '<tr>'+
-                            '<td><input class="hideme" id="tree_num" type="text" value="'+i+'"></td>'+'<td><input class="form-control" type="text" name="listDamage['+i+']" required></td>'+'<td><center><select class="ui dropdown" name="protectTarget['+i+']" required><option type="hidden">เลือก</option><option value="1">มี</option><option value="2">ไม่มี</option></select></center></td>'+'<td><input type="hidden" name="ch1['+i+']" value="off"><input class="form-control" name="ch1['+i+']" type="checkbox" required></td>'+'<td><input type="hidden" name="ch2['+i+']" value="off"><input class="form-control" name="ch2['+i+']" type="checkbox" required></td>'+'<td><input type="hidden" name="ch3['+i+']" value="off"><input class="form-control" name="ch3['+i+']" type="checkbox" required></td>'+'<td><center><select class="ui dropdown" name="damageArea['+i+']" required><option type="hidden">เลือก</option><option value="1">1-ไม่ค่อยปรากฎ</option><option value="2">2-อยู่เป็นบางครั้ง</option><option value="3">3-ค่อนข้างบ่อย</option><option value="4">4-อยู่ตลอด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="moveArea['+i+']" required><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><center><select class="ui dropdown" name="noEntry['+i+']" required><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><input type="button" class="ui red button delete_tr" id="delete_tr" data-id="'+i+'" value="ลบ"></td>'+'</tr>';
+                            '<td><input class="hideme" id="tree_num" type="text" value="'+i+'"></td>'+'<td><input class="form-control" type="text" name="listDamage['+i+']" required></td>'+'<td><center><select class="ui dropdown" name="protectTarget['+i+']" required><option type="hidden">เลือก</option><option value="1">มี</option><option value="2">ไม่มี</option></select></center></td>'+'<td><input type="hidden" name="ch1['+i+']" value="off"><input class="form-control" name="ch1['+i+']" type="checkbox"></td>'+'<td><input type="hidden" name="ch2['+i+']" value="off"><input class="form-control" name="ch2['+i+']" type="checkbox"></td>'+'<td><input type="hidden" name="ch3['+i+']" value="off"><input class="form-control" name="ch3['+i+']" type="checkbox"></td>'+'<td><center><select class="ui dropdown" name="damageArea['+i+']" required><option type="hidden">เลือก</option><option value="1">1-ไม่ค่อยปรากฎ</option><option value="2">2-อยู่เป็นบางครั้ง</option><option value="3">3-ค่อนข้างบ่อย</option><option value="4">4-อยู่ตลอด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="moveArea['+i+']" required><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><center><select class="ui dropdown" name="noEntry['+i+']" required><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><input type="button" class="ui red button delete_tr" id="delete_tr" data-id="'+i+'" value="ลบ"></td>'+'</tr>';
               $('#table_damage').append(data_dam);
               i++;
             });
