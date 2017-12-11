@@ -124,7 +124,7 @@ class HomeController extends Controller
 
       for($i=0;$i<sizeof($full);$i++)
       {
-              if($full[0][$i]==$value){
+              if($full[$i]==$value){
                        
                         return $i;
                         break;
@@ -182,7 +182,6 @@ class HomeController extends Controller
             $tree_id = Tree::find($request->input('id'));
 
             $full = $request->fulltree;
-            dd($full);
     
             foreach ($request->fulltree as $value) {
                 foreach ($tree_id->Tree_imgFull as $key) {
@@ -190,7 +189,7 @@ class HomeController extends Controller
                         $test = $this->indexof($full,$value);
                         // dd($test);
                         unlink('images/uploads/'.$value);
-                        $full[0][$test] = "";
+                        $full[$test] = "";
                         
                     }
 
