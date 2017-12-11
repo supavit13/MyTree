@@ -190,22 +190,22 @@ function getData($tree,$type='',$name='',$var=NULL){
   </div></center> 
   <span style="font-weight: bold;">เจ้าของพื้นที่</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 5cm;" value="<?php getData($tree,'text','ownerarea'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 5cm;" value="<?php getData($tree,'text','ownerarea'); ?>">
     </span>
   
   <span style="font-weight: bold;">ที่อยู่</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 7cm;" value="<?php getData($tree,'text','Tree_address'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 7cm;" value="<?php getData($tree,'text','Tree_address'); ?>">
     </span>
   
   <span style="font-weight: bold;">วันที่</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 3cm;" value="<?php getData($tree,'text','Tree_date'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 3cm;" value="<?php getData($tree,'text','Tree_date'); ?>">
     </span>
 
   <span style="font-weight: bold;">&nbspเวลา</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 3cm;" value="<?php getData($tree,'text','Tree_time'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 3cm;" value="<?php getData($tree,'text','Tree_time'); ?>">
     </span>
   <span>น.</span>
 
@@ -213,47 +213,47 @@ function getData($tree,$type='',$name='',$var=NULL){
   
   <span style="font-weight: bold;">ต้นที่</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 2cm;" value="<?php getData($tree,'text','Tree_sequence'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 2cm;" value="<?php getData($tree,'text','Tree_sequence'); ?>">
     </span>
   
   <span style="font-weight: bold;">พิกัด</span>
   <span style="font-weight: bold;">X:</span>  
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 2.5cm;" value="<?php getData($tree,'text','Tree_lat'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 2.5cm;" value="<?php getData($tree,'text','Tree_lat'); ?>">
     </span>
   
   <span style="font-weight: bold;">Y:</span>  
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 2.5cm;" value="<?php getData($tree,'text','Tree_long'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 2.5cm;" value="<?php getData($tree,'text','Tree_long'); ?>">
     </span>
 
   <span style="font-weight: bold;">ชนิด</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 3.5cm;" value="<?php getData($tree,'text','Tree_name'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 3.5cm;" value="<?php getData($tree,'text','Tree_name'); ?>">
     </span>
 
   <span style="font-weight: bold;">ชื่อวิทยาศาสตร์</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 7cm;" value="<?php getData($tree,'text','Tree_sci_name'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 7cm;" value="<?php getData($tree,'text','Tree_sci_name'); ?>">
     </span>
 
   <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด -->
 
   <span style="font-weight: bold;">เส้นผ่านศูนย์กลางเพียงอก</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_diameter_Trunk'); ?>">
     </span>
   <span style="font-weight: bold;">เซนติเมตร</span>
 
   <span id="tab" style="font-weight: bold;">ความสูงทั้งหมด</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_height'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_height'); ?>">
     </span>
   <span style="font-weight: bold;">เมตร</span>
 
   <span id="tab" style="font-weight: bold;">เส้นผ่านศูนย์กลางเรือนยอด</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_diameter_Top'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','Tree_diameter_Top'); ?>">
     </span>
   <span style="font-weight: bold;">เมตร</span>
 
@@ -261,17 +261,17 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ผู้ประเมิน</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 6.5cm;" value="<?php echo $userlogin['username'] ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 6.5cm;" value="<?php echo $userlogin['username'] ?>">
     </span>
 
   <span style="font-weight: bold;">หน่วยงาน</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 10cm;" value="<?php getData($tree,'text','agency'); ?>">
+      <input readonly type="text" class="hideme"  id="input" style="width: 10cm;" value="<?php getData($tree,'text','agency'); ?>">
     </span>
 
   <span style="font-weight: bold;">&nbspโทรศัพท์</span>
     <span>
-      <input type="text" class="hideme"  id="input" style="width: 3.5cm;" value="<?php getData($tree,'text','Tree_phone'); ?> ">
+      <input readonly type="text" class="hideme"  id="input" style="width: 3.5cm;" value="<?php getData($tree,'text','Tree_phone'); ?> ">
     </span>
 
 <!-- - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -313,7 +313,7 @@ function getData($tree,$type='',$name='',$var=NULL){
         @foreach($tree['listDamage'] as $value)
           <tr>
             <td style="text-align: center;"><?php echo $i+5; ?></td>
-            <td ><input class="hideme" name="listDamage[<?php echo $i; ?>]" type="text" value="<?php echo $tree['listDamage'][$i]; ?>"></td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
+            <td ><input readonly class="hideme" name="listDamage[<?php echo $i; ?>]" type="text" value="<?php echo $tree['listDamage'][$i]; ?>"></td> <!-- รายละเอียดของสิ่งที่จะเกิดความเสียหาย -->            
             
             <td style="text-align: center;">  <!-- การปรากฎอยู่ของสิ่งที่จะเสียหาย -->
               <select id="arrow">   
@@ -324,17 +324,17 @@ function getData($tree,$type='',$name='',$var=NULL){
             </td> 
             <td>
               <div style="text-align: center;">
-                <input type="checkbox" name="ch1[<?php echo $i; ?>]" <?php if($tree['ch1'][$i]=="on"){ echo "checked=''";}?>>
+                <input readonly type="checkbox" name="ch1[<?php echo $i; ?>]" <?php if($tree['ch1'][$i]=="on"){ echo "checked=''";}?>>
               </div>
             </td>
             <td>
               <div style="text-align: center;">
-                <input type="checkbox" name="ch2[<?php echo $i; ?>]" <?php if($tree['ch2'][$i]=="on"){ echo "checked=''";}?>>
+                <input readonly type="checkbox" name="ch2[<?php echo $i; ?>]" <?php if($tree['ch2'][$i]=="on"){ echo "checked=''";}?>>
               </div>
             </td>
             <td>
               <div style="text-align: center;">
-                <input type="checkbox" name="ch3[<?php echo $i; ?>]" <?php if($tree['ch3'][$i]=="on"){ echo "checked=''";}?>>
+                <input readonly type="checkbox" name="ch3[<?php echo $i; ?>]" <?php if($tree['ch3'][$i]=="on"){ echo "checked=''";}?>>
               </div>
             </td>                          
                         
@@ -386,27 +386,27 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ประวัติการล้มเหลวของต้นไม้ในอดีต</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 20cm;" value="<?php getData($tree,'text','damageInArea'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 20cm;" value="<?php getData($tree,'text','damageInArea'); ?>">
     </span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span style="font-weight: bold;">สภาพภูมิประเทศ</span>
   <span>
-        <input type="radio" name="radioSlope" >
+        <input readonly type="radio" name="radioSlope" >
         <span>&nbspราบ&nbsp</span>
   </span>
 
-  <input type="radio" name="radioSlope" >
+  <input readonly type="radio" name="radioSlope" >
   <span style="font-weight: bold;">ลาดเอียง</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 5cm;" value="<?php getData($tree,'text','slope'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 5cm;" value="<?php getData($tree,'text','slope'); ?>">
     </span>
   <span style="font-weight: bold;">%</span>
 
   <span id="tab" style="font-weight: bold;">ทิศด้านลาด</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 4.75cm;" value="<?php getData($tree,'text','slopeDirection'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 4.75cm;" value="<?php getData($tree,'text','slopeDirection'); ?>">
     </span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
@@ -414,18 +414,18 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">การเปลี่ยนแปลงสภาพพื้นที่</span>
   
   <span>
-    <input type="radio" name="changeArea" value="ไม่มี" <?php getData($tree,'radio','changeArea','ไม่มี'); ?>>
+    <input readonly type="radio" name="changeArea" value="ไม่มี" <?php getData($tree,'radio','changeArea','ไม่มี'); ?>>
   </span>
   <span>ไม่มี</span>
 
   <span>
-    <input type="radio" name="changeArea" value="มี" <?php getData($tree,'radio','changeArea','มี'); ?>>
+    <input readonly type="radio" name="changeArea" value="มี" <?php getData($tree,'radio','changeArea','มี'); ?>>
   </span>
   <span>มี</span> 
 
   <span>รายละเอียด</span> 
     <span>
-      <input type="text" class="hideme" id="input" style="width: 13cm;" value="<?php getData($tree,'text','changeAreaDetail'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 13cm;" value="<?php getData($tree,'text','changeAreaDetail'); ?>">
     </span>               
 
 
@@ -434,55 +434,55 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">สภาพดิน</span>
   
   <span>
-    <input type="checkbox" name="soilCh2" <?php getData($tree,'checkbox','soilCh2');?>>
+    <input readonly type="checkbox" name="soilCh2" <?php getData($tree,'checkbox','soilCh2');?>>
   </span>
   <span>เนื้อดินจำกัด</span>
 
   <span>
-    <input type="checkbox" name="soilCh3" <?php getData($tree,'checkbox','soilCh3');?>>
+    <input readonly type="checkbox" name="soilCh3" <?php getData($tree,'checkbox','soilCh3');?>>
   </span>
   <span>น้ำแช่ขัง</span>
 
   <span>
-    <input type="checkbox" name="soilCh5" <?php getData($tree,'checkbox','soilCh5');?>>
+    <input readonly type="checkbox" name="soilCh5" <?php getData($tree,'checkbox','soilCh5');?>>
   </span>
   <span>ดินตื้น</span>
 
   <span>
-    <input type="checkbox" name="soilCh4" <?php getData($tree,'checkbox','soilCh4');?>>
+    <input readonly type="checkbox" name="soilCh4" <?php getData($tree,'checkbox','soilCh4');?>>
   </span>
   <span>ดินแน่นแข็ง</span>
 
   <span>
-    <input type="checkbox" name="soilCh6" <?php getData($tree,'checkbox','soilCh6');?>>
+    <input readonly type="checkbox" name="soilCh6" <?php getData($tree,'checkbox','soilCh6');?>>
   </span>
   <span>มีวัสดุปิดทับ</span> 
 
   <span>
-    <input type="checkbox" name="soilCh7" <?php getData($tree,'checkbox','soilCh7');?>>
+    <input readonly type="checkbox" name="soilCh7" <?php getData($tree,'checkbox','soilCh7');?>>
   </span>
   <span>อื่นๆ รายละเอียดเพิ่มเติม</span> 
     <span>
-      <input type="text" class="hideme" id="input" style="width: 9.5cm;" value="<?php getData($tree,'text','soilDetail'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 9.5cm;" value="<?php getData($tree,'text','soilDetail'); ?>">
     </span> 
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span style="font-weight: bold;" >สภาพอากาศ</span> 
     <span>
-      <input type="checkbox" name="weather1" <?php getData($tree,'checkbox','weather1');?>>
+      <input readonly type="checkbox" name="weather1" <?php getData($tree,'checkbox','weather1');?>>
     </span>
     <span  >ลมแรง</span>
     <span>
-      <input type="checkbox" name="weather2" <?php getData($tree,'checkbox','weather2');?>>
+      <input readonly type="checkbox" name="weather2" <?php getData($tree,'checkbox','weather2');?>>
     </span>
     <span>ฝนตกหนัก</span>
     <span>
-      <input type="checkbox" name="weather3" <?php getData($tree,'checkbox','weather3');?>>
+      <input readonly type="checkbox" name="weather3" <?php getData($tree,'checkbox','weather3');?>>
     </span>
     <span>อื่นๆ รายละเอียดเพิ่มเติม</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 28%;" value="<?php getData($tree,'text','weather_other'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 28%;" value="<?php getData($tree,'text','weather_other'); ?>">
     </span> 
 
 <!-- - - - - - - - - - - - - สุขภาพของต้นไม้ - - - - - -  - - - - - - - - - - -  -->
@@ -498,17 +498,17 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ความแข็งแรงโดยรวม</span>
   <span>
-    <input type="radio" name="strong" value="ต่ำ" <?php getData($tree,'radio','strong','ต่ำ'); ?>>
+    <input readonly type="radio" name="strong" value="ต่ำ" <?php getData($tree,'radio','strong','ต่ำ'); ?>>
   </span>
   <span>ต่ำ</span>
 
   <span>
-    <input type="radio" name="strong" value="ปานกลาง" <?php getData($tree,'radio','strong','ปานกลาง'); ?>>
+    <input readonly type="radio" name="strong" value="ปานกลาง" <?php getData($tree,'radio','strong','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input type="radio" name="strong" value="สูง" <?php getData($tree,'radio','strong','สูง'); ?>>
+    <input readonly type="radio" name="strong" value="สูง" <?php getData($tree,'radio','strong','สูง'); ?>>
   </span>
   <span>สูง</span>
 
@@ -516,44 +516,44 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span id="tab" style="font-weight: bold;">สภาพใบ</span>
     <span>
-      <input type="checkbox" name="leafCh1" <?php getData($tree,'checkbox','leafCh1');?>>
+      <input readonly type="checkbox" name="leafCh1" <?php getData($tree,'checkbox','leafCh1');?>>
     </span>
     <span>ปกติ</span>
   
     <span>
-      <input type="checkbox" name="leafCh2" <?php getData($tree,'checkbox','leafCh2');?>>
+      <input readonly type="checkbox" name="leafCh2" <?php getData($tree,'checkbox','leafCh2');?>>
     </span>
     <span>ผลัดใบ</span>
   
     <span>
-      <input type="checkbox" name="leafCh3" <?php getData($tree,'checkbox','leafCh3');?>>
+      <input readonly type="checkbox" name="leafCh3" <?php getData($tree,'checkbox','leafCh3');?>>
     </span>
     <span>ผิดปกติ</span>
   
     <span>
-      <input type="checkbox" name="leafCh4" <?php getData($tree,'checkbox','leafCh4');?>>
+      <input readonly type="checkbox" name="leafCh4" <?php getData($tree,'checkbox','leafCh4');?>>
     </span>
     <span>ร่วง</span>
     <span>
-      <input type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh4_text'); ?>">
+      <input readonly type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh4_text'); ?>">
     </span>
     <span>%</span>
 
     <span>
-      <input type="checkbox" name="leafCh5" <?php getData($tree,'checkbox','leafCh5');?>>
+      <input readonly type="checkbox" name="leafCh5" <?php getData($tree,'checkbox','leafCh5');?>>
     </span>
     <span>ซีดเหลือง</span>
     <span>
-      <input type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh5_text'); ?>">
+      <input readonly type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh5_text'); ?>">
     </span>
     <span>%</span>
 
     <span>
-      <input type="checkbox" name="leafCh5_5" <?php getData($tree,'checkbox','leafCh5_5');?>>
+      <input readonly type="checkbox" name="leafCh5_5" <?php getData($tree,'checkbox','leafCh5_5');?>>
     </span>
     <span>แห้ง</span>
     <span>
-      <input type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh6_text'); ?>">
+      <input readonly type="text"  class="hideme" id="input" style="width: 4%;" value="<?php getData($tree,'text','leafCh6_text'); ?>">
     </span>
     <span>%</span>
 
@@ -561,21 +561,21 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ตัวการที่มีชีวิต</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 7cm;" value="<?php getData($tree,'text','monster1'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 7cm;" value="<?php getData($tree,'text','monster1'); ?>">
     </span>
   <span>อาการ</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 14cm;" value="<?php getData($tree,'text','symptom1'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 14cm;" value="<?php getData($tree,'text','symptom1'); ?>">
     </span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
   <span style="font-weight: bold;">ตัวการที่ไม่มีชีวิต</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 7cm;" value="<?php getData($tree,'text','monster2'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 7cm;" value="<?php getData($tree,'text','monster2'); ?>">
     </span>
   <span>อาการ</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 14cm;" value="<?php getData($tree,'text','symptom2'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 14cm;" value="<?php getData($tree,'text','symptom2'); ?>">
     </span>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -590,22 +590,22 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <span style="font-weight: bold;">การรับลม</span>
 <span>
-  <input type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','มีการป้องกัน'); ?> >
+  <input readonly type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','มีการป้องกัน'); ?> >
 </span>
 <span>มีการป้องกัน</span>
 
 <span>
-  <input type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','บางส่วน'); ?>>
+  <input readonly type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','บางส่วน'); ?>>
 </span>
 <span>บางส่วน</span>
 
 <span>
-  <input type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','เต็มที่'); ?>>
+  <input readonly type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','เต็มที่'); ?>>
 </span>
 <span>เต็มที่</span>
 
 <span>
-  <input type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','อุโมงค์ลม'); ?>>
+  <input readonly type="radio" name="windImpact" <?php getData($tree,'radio','windImpact','อุโมงค์ลม'); ?>>
 </span>
 <span>อุโมงค์ลม</span>
 
@@ -613,17 +613,17 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - -  -->
   <span id="tab" style="font-weight: bold;">ขนาดเรือนยอดสัมพัทธ์</span>
   <span>
-    <input type="radio" name="topSize" <?php getData($tree,'radio','topSize','เล็ก'); ?>>
+    <input readonly type="radio" name="topSize" <?php getData($tree,'radio','topSize','เล็ก'); ?>>
   </span>
   <span>เล็ก</span>
 
   <span>
-    <input type="radio" name="topSize" <?php getData($tree,'radio','topSize','กลาง'); ?>>
+    <input readonly type="radio" name="topSize" <?php getData($tree,'radio','topSize','กลาง'); ?>>
   </span>
   <span>กลาง</span>
 
   <span>
-    <input type="radio" name="topSize" <?php getData($tree,'radio','topSize','ใหญ่'); ?>>
+    <input readonly type="radio" name="topSize" <?php getData($tree,'radio','topSize','ใหญ่'); ?>>
   </span>
   <span>ใหญ่</span>
 
@@ -632,17 +632,17 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
   <span style="font-weight: bold;">ความหนาแน่นเรือนยอด</span>
   <span>
-    <input type="radio" name="topThick" <?php getData($tree,'radio','topThick','โปร่ง'); ?>>
+    <input readonly type="radio" name="topThick" <?php getData($tree,'radio','topThick','โปร่ง'); ?>>
   </span>
   <span>โปร่ง</span>
 
   <span>
-    <input type="radio" name="topThick" <?php getData($tree,'radio','topThick','ปานกลาง'); ?> >
+    <input readonly type="radio" name="topThick" <?php getData($tree,'radio','topThick','ปานกลาง'); ?> >
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input type="radio" name="topThick" <?php getData($tree,'radio','topThick','ทึบ'); ?>>
+    <input readonly type="radio" name="topThick" <?php getData($tree,'radio','topThick','ทึบ'); ?>>
   </span>
   <span>ทึบ</span>
 
@@ -650,22 +650,22 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
   <span id="tab" style="font-weight: bold;">กาฝาก/เถาวัลย์</span>
   <span>
-    <input type="radio" name="parasite" <?php getData($tree,'radio','parasite','ไม่มี'); ?>>
+    <input readonly type="radio" name="parasite" <?php getData($tree,'radio','parasite','ไม่มี'); ?>>
   </span>
   <span>ไม่มี</span>
 
   <span>
-    <input type="radio" name="parasite" <?php getData($tree,'radio','parasite','มาก'); ?>>
+    <input readonly type="radio" name="parasite" <?php getData($tree,'radio','parasite','มาก'); ?>>
   </span>
   <span>มาก</span>
 
   <span>
-    <input type="radio" name="parasite" <?php getData($tree,'radio','parasite','ปานกลาง'); ?>>
+    <input readonly type="radio" name="parasite" <?php getData($tree,'radio','parasite','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input type="radio" name="parasite" <?php getData($tree,'radio','parasite','น้อย'); ?>>
+    <input readonly type="radio" name="parasite" <?php getData($tree,'radio','parasite','น้อย'); ?>>
   </span>
   <span>น้อย</span>
 
@@ -673,29 +673,29 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 <span style="font-weight: bold;">ปริมาณกิ่งในเรือนยอด</span>
 <span>
-  <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','มาก'); ?>>
+  <input readonly type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','มาก'); ?>>
 </span>
 <span>มาก</span>
 
 <span>
-  <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','ปานกลาง'); ?>>
+  <input readonly type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','ปานกลาง'); ?>>
 </span>
 <span>ปานกลาง</span>
 
 <span>
-  <input type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','น้อย'); ?>>
+  <input readonly type="radio" name="amount_of_branch" <?php getData($tree,'radio','amount_of_branch','น้อย'); ?>>
 </span>
 <span>น้อย</span>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 <span id="tab" style="font-weight: bold;">การเปลี่ยนแปลงพื้นที่ในอนาคตที่มีผลต่อแรงลม</span>
 <span>
-  <input type="radio" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','มี'); ?>>
+  <input readonly type="radio" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','มี'); ?>>
 </span>
 <span>มี</span>
 
 <span>
-  <input type="radio" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','ไม่มี'); ?>>
+  <input readonly type="radio" name="changeAreaFuture" <?php getData($tree,'radio','changeAreaFuture','ไม่มี'); ?>>
 </span>
 <span>ไม่มี</span>
 
@@ -718,23 +718,23 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ความสมดุลของเรือนยอด</span>
   <span>
-    <input type="radio" name="topBalance" <?php getData($tree,'radio','topBalance','ดี'); ?>>
+    <input readonly type="radio" name="topBalance" <?php getData($tree,'radio','topBalance','ดี'); ?>>
   </span>
   <span>ดี</span>
 
   <span>
-    <input type="radio" name="topBalance" <?php getData($tree,'radio','topBalance','ไม่ดี'); ?>>
+    <input readonly type="radio" name="topBalance" <?php getData($tree,'radio','topBalance','ไม่ดี'); ?>>
   </span>
   <span>ไม่ดี</span>
 
 
   <span id="tab" style="font-weight: bold;">Live-Crown ration</span>
     <span>
-      <input type="text" class="hideme" name="liveCrownPercen" id="input" style="width: 3cm;" value="<?php getData($tree,'text','liveCrownPercen'); ?>">
+      <input readonly type="text" class="hideme" name="liveCrownPercen" id="input" style="width: 3cm;" value="<?php getData($tree,'text','liveCrownPercen'); ?>">
     </span>
   <span style="font-weight: bold;">%</span>
   <span>
-    <input type="checkbox">
+    <input readonly type="checkbox">
   </span>
   <span>มีร่องรอยความเสียหายของกิ่ง</span>
 
@@ -742,62 +742,62 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span>
-    <input type="checkbox" name="dryBranches" <?php getData($tree,'checkbox','dryBranches');?>>
+    <input readonly type="checkbox" name="dryBranches" <?php getData($tree,'checkbox','dryBranches');?>>
   </span>
   <span>กิ่งแห้ง</span>
    <span>
-      <input type="text" name="limbDie" class="hideme" id="input" style="width: 1cm;" value="<?php getData($tree,'text','limbDie'); ?>">
+      <input readonly type="text" name="limbDie" class="hideme" id="input" style="width: 1cm;" value="<?php getData($tree,'text','limbDie'); ?>">
     </span>
   <span>%</span>
 
   <span>ขนาดใหญ่สุด</span>
    <span>
-      <input type="text" class="hideme" name="limbDieSize" id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','limbDieSize'); ?>">
+      <input readonly type="text" class="hideme" name="limbDieSize" id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','limbDieSize'); ?>">
     </span>
   <span>ซม.</span>
 
 
   <span id="tab">
-    <input type="checkbox" name="brokenBranches" <?php getData($tree,'checkbox','brokenBranches');?>>
+    <input readonly type="checkbox" name="brokenBranches" <?php getData($tree,'checkbox','brokenBranches');?>>
   </span>
   <span>กิ่งหักแขวน</span>
 
   <span id="tab">จำนวน</span>
    <span>
-      <input type="text" class="hideme" name="limbBroke" id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','limbBroke'); ?>">
+      <input readonly type="text" class="hideme" name="limbBroke" id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','limbBroke'); ?>">
     </span>
   <span>กิ่ง</span>
 
   <span id="tab">ขนาดใหญ่สุด</span>
    <span>
-      <input type="text" class="hideme" name="limbBrokeSize" id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','limbBrokeSize'); ?>">
+      <input readonly type="text" class="hideme" name="limbBrokeSize" id="input" style="width: 1.5cm;" value="<?php getData($tree,'text','limbBrokeSize'); ?>">
     </span>
   <span>ซม.</span>
 
     <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด -->
 
   <span>
-    <input type="checkbox" name="limbLesion" <?php getData($tree,'checkbox','limbLesion');?>>
+    <input readonly type="checkbox" name="limbLesion" <?php getData($tree,'checkbox','limbLesion');?>>
   </span>
   <span>รอยแผลกิ่ง</span>
 
   <span>
-    <input type="checkbox" name="limbHole" <?php getData($tree,'checkbox','limbHole');?>>
+    <input readonly type="checkbox" name="limbHole" <?php getData($tree,'checkbox','limbHole');?>>
   </span>
   <span>รอยผุโพรงหรือรู</span>
 
   <span>
-    <input type="checkbox" name="limbNode" <?php getData($tree,'checkbox','limbNode');?>>
+    <input readonly type="checkbox" name="limbNode" <?php getData($tree,'checkbox','limbNode');?>>
   </span>
   <span>ปุ่มปม</span>
 
   <span>
-    <input type="checkbox" name="limbRotten" <?php getData($tree,'checkbox','limbRotten');?>>
+    <input readonly type="checkbox" name="limbRotten" <?php getData($tree,'checkbox','limbRotten');?>>
   </span>
   <span>เน่า</span>
 
   <span>
-    <input type="checkbox" name="limbFungus" <?php getData($tree,'checkbox','limbFungus');?>>
+    <input readonly type="checkbox" name="limbFungus" <?php getData($tree,'checkbox','limbFungus');?>>
   </span>
   <span>เชื้อราเห็ด</span>
 
@@ -806,18 +806,18 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">ประวัติการลิดกิ่ง</span>
   
   <span>
-    <input type="radio" name="limbLit" <?php getData($tree,'radio','limbLit','เหมาะสม'); ?>>
+    <input readonly type="radio" name="limbLit" <?php getData($tree,'radio','limbLit','เหมาะสม'); ?>>
   </span>
   <span>เหมาะสม</span>
 
   <span>
-    <input type="radio" name="limbLit" <?php getData($tree,'radio','limbLit','ไม่เหมาะสม'); ?>>
+    <input readonly type="radio" name="limbLit" <?php getData($tree,'radio','limbLit','ไม่เหมาะสม'); ?>>
   </span>
   <span>ไม่เหมาะสม</span>
 
   <span>&nbspรายละเอียด</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 10cm;" value="<?php getData($tree,'text','limbLitOther'); ?>" >
+      <input readonly type="text" class="hideme" id="input" style="width: 10cm;" value="<?php getData($tree,'text','limbLitOther'); ?>" >
     </span> 
 
 
@@ -825,7 +825,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">สิ่งที่ต้องเฝ้าระวัง</span>
     <span>
-      <input type="text" class="hideme" name="topStayAlert" id="input" style="width: 15cm;" value="<?php getData($tree,'text','topStayAlert'); ?>">
+      <input readonly type="text" class="hideme" name="topStayAlert" id="input" style="width: 15cm;" value="<?php getData($tree,'text','topStayAlert'); ?>">
     </span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
@@ -833,22 +833,22 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">โอกาสในการเกิดอันตราย</span>
   
   <span>
-    <input type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','น้อย'); ?>>
+    <input readonly type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','น้อย'); ?>>
   </span>
   <span>น้อย</span>
 
   <span>
-    <input type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','ปานกลาง'); ?>>
+    <input readonly type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','มาก'); ?>>
+    <input readonly type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','มาก'); ?>>
   </span>
   <span>มาก</span>
 
   <span>
-    <input type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','มากที่สุด'); ?>>
+    <input readonly type="radio" name="topHarmChance" <?php getData($tree,'radio','topHarmChance','มากที่สุด'); ?>>
   </span>
   <span>มากที่สุด</span>
 
@@ -861,72 +861,72 @@ function getData($tree,$type='',$name='',$var=NULL){
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkTwin');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkTwin');?>>
   </span>
   <span>&nbspแตก2นาง</span>
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkTogather');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkTogather');?>>
   </span>
   <span>&nbspมีเปลือกร่วม</span>
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkDie');?>> 
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkDie');?>> 
   </span>
   <span>&nbspเปลือกแห้ง/หลุดร่อน</span>
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkAbnormal');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkAbnormal');?>>
   </span>
   <span>&nbspเปลือกผิดปกติ</span>
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkBroke');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkBroke');?>>
   </span>
   <span>&nbspมีรอยแตก</span>
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkHole');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkHole');?>>
   </span>
   <span>&nbspโพรง</span>
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkDecay');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkDecay');?>>
   </span>
   <span>&nbspผุ</span>
 
   <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkLiquid');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkLiquid');?>>
   </span>
   <span>&nbspมีน้ำยางหรือของเหลวไหลออกจากเปลือก</span>
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkNode');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkNode');?>>
   </span>
   <span>มีปุ่มปมหรือตา</span>
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkDecayDamage');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkDecayDamage');?>>
   </span>
   <span>&nbspเนื้อไม้ผุเสียหาย</span>
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkFungus');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkFungus');?>>
   </span>
   <span>&nbspมีเชื้อราเห็ด</span>
 
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkThin');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkThin');?>>
   </span>
   <span>&nbspความเรียวผิดปกติ</span>
 
   <span>
-    <input type="checkbox" <?php getData($tree,'checkbox','trunkSlope_checkbox');?>>
+    <input readonly type="checkbox" <?php getData($tree,'checkbox','trunkSlope_checkbox');?>>
   </span>
   <span>&nbspเอียง</span>
     <span>
-      <input type="text" class="hideme" name="trunkSlope" id="input" style="width: 2cm;" value="<?php getData($tree,'text','trunkSlope'); ?>">
+      <input readonly type="text" class="hideme" name="trunkSlope" id="input" style="width: 2cm;" value="<?php getData($tree,'text','trunkSlope'); ?>">
     </span>
   <span>องศา</span>
 
@@ -934,28 +934,28 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">สิ่งที่ต้องเฝ้าระวัง</span>
     <span>
-      <input type="text" class="hideme" name="trunkStayAlert" id="input" style="width: 15cm;" value="<?php getData($tree,'text','trunkStayAlert'); ?>">
+      <input readonly type="text" class="hideme" name="trunkStayAlert" id="input" style="width: 15cm;" value="<?php getData($tree,'text','trunkStayAlert'); ?>">
     </span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span style="font-weight: bold;">โอกาสในการเกิดอันตราย</span>
   <span>
-    <input type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','น้อย'); ?> >
+    <input readonly type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','น้อย'); ?> >
   </span>
   <span>น้อย</span>
 
   <span>
-    <input type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','ปานกลาง'); ?>>
+    <input readonly type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','มาก'); ?>>
+    <input readonly type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','มาก'); ?>>
   </span><span>มาก</span>
 
   <span>
-    <input type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','มากที่สุด'); ?>>
+    <input readonly type="radio" name="trunkHarmChance" <?php getData($tree,'radio','trunkHarmChance','มากที่สุด'); ?>>
   </span>
   <span>มากที่สุด</span>
 
@@ -966,61 +966,61 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
   <span>
-    <input type="checkbox" name="rootDown" <?php getData($tree,'checkbox','rootDown');?> >
+    <input readonly type="checkbox" name="rootDown" <?php getData($tree,'checkbox','rootDown');?> >
     <span>โคนต้นฝังดิน</span>
   </span> 
   
   <span>
-    <input type="checkbox" name="rootWrap" <?php getData($tree,'checkbox','rootWrap');?> >
+    <input readonly type="checkbox" name="rootWrap" <?php getData($tree,'checkbox','rootWrap');?> >
     <span>รากพันโคนต้น</span>
   </span>
 
   <span>
-    <input type="checkbox" name="rootUp" <?php getData($tree,'checkbox','rootUp');?>></span>
+    <input readonly type="checkbox" name="rootUp" <?php getData($tree,'checkbox','rootUp');?>></span>
     <span>โผล่พ้นดิน</span>
   </span>
   
   <span>
-    <input type="checkbox" name="rootBroke" <?php getData($tree,'checkbox','rootBroke');?>>
+    <input readonly type="checkbox" name="rootBroke" <?php getData($tree,'checkbox','rootBroke');?>>
   </span>
   <span>แตกหักหรือถูกตัด</span>
 
   <span>
-    <input type="checkbox" name="rootLesion" <?php getData($tree,'checkbox','rootLesion');?>>
+    <input readonly type="checkbox" name="rootLesion" <?php getData($tree,'checkbox','rootLesion');?>>
   </span>
   <span>เสียดสี</span>
 
   <span>
-    <input type="checkbox" name="rootLiquid" <?php getData($tree,'checkbox','rootLiquid');?>>
+    <input readonly type="checkbox" name="rootLiquid" <?php getData($tree,'checkbox','rootLiquid');?>>
   </span>
   <span>มีของเหลวไหลจากเปลือก</span>
 
   <span>
-    <input type="checkbox" name="rootNode" <?php getData($tree,'checkbox','rootNode');?>>
+    <input readonly type="checkbox" name="rootNode" <?php getData($tree,'checkbox','rootNode');?>>
   </span>
   <span>มีปุ่มปมหรือตา</span>
 
   <span>
-    <input type="checkbox" name="rootDecay" <?php getData($tree,'checkbox','rootDecay');?>>
+    <input readonly type="checkbox" name="rootDecay" <?php getData($tree,'checkbox','rootDecay');?>>
   </span>
   <span>ผุ</span>
  
  <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 <span>
-  <input type="checkbox" name="rootCavity" <?php getData($tree,'checkbox','rootCavity');?>>
+  <input readonly type="checkbox" name="rootCavity" <?php getData($tree,'checkbox','rootCavity');?>>
   <span>โพรง</span>
 <span>
-  <input type="checkbox" name="rootFungus" <?php getData($tree,'checkbox','rootFungus');?> >
+  <input readonly type="checkbox" name="rootFungus" <?php getData($tree,'checkbox','rootFungus');?> >
   <span>เชื้อรา เห็ด</span>
 <span>
-  <input type="checkbox" name="rootWater" <?php getData($tree,'checkbox','rootWater');?> >
+  <input readonly type="checkbox" name="rootWater" <?php getData($tree,'checkbox','rootWater');?> >
   <span>น้ำแช่ขัง</span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
 
   <span style="font-weight: bold;">สิ่งที่ต้องเฝ้าระวัง</span>
     <span>
-      <input type="text" class="hideme" name="rootStayAlert" id="input" style="width: 15cm;" value="<?php getData($tree,'text','rootStayAlert'); ?>">
+      <input readonly type="text" class="hideme" name="rootStayAlert" id="input" style="width: 15cm;" value="<?php getData($tree,'text','rootStayAlert'); ?>">
     </span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
@@ -1028,22 +1028,22 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">โอกาสในการเกิดอันตราย</span>
   
   <span>
-    <input type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','น้อย'); ?> >
+    <input readonly type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','น้อย'); ?> >
   </span>
   <span>น้อย</span>
 
   <span>
-    <input type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','ปานกลาง'); ?>>
+    <input readonly type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','ปานกลาง'); ?>>
   </span>
   <span>มีโอกาสปานกลาง</span>
 
   <span>
-    <input type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','มาก'); ?>>
+    <input readonly type="radio" name="rootHarmChance" <?php getData($tree,'radio','rootHarmChance','มาก'); ?>>
   </span>
   <span>มาก</span>
 
   <span>
-    <input type="radio" name="rootHarmChance"  <?php getData($tree,'radio','strong','มากที่สุด'); ?> >
+    <input readonly type="radio" name="rootHarmChance"  <?php getData($tree,'radio','strong','มากที่สุด'); ?> >
   </span>
   <span>มากที่สุด</span>
 
@@ -1176,7 +1176,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                     <!-- ระดับความอันตราย(matrix2) -->
                       <!-- <p class="bigtable_wordwrap1">ปานกลาง</p> -->
                     <td style="text-align: center;">
-                    <input class="hideme" id="input" type="text" name="treeDamage[<?php echo $n; ?>]" value="<?php echo $tree['treeDamage'][$n]; ?>" >
+                    <input readonly class="hideme" id="input" type="text" name="treeDamage[<?php echo $n; ?>]" value="<?php echo $tree['treeDamage'][$n]; ?>" >
                     </td>
                   </tr> <!-- end ราก -->
                   <?php $i++; ?>
@@ -1313,27 +1313,27 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">คำอธิบายเพิ่มเติม</span>
     <span>
-      <input type="text" class="hideme" name="moreDetail" id="input" style="width: 25cm;" value="<?php getData($tree,'text','moreDetail'); ?>">
+      <input readonly type="text" class="hideme" name="moreDetail" id="input" style="width: 25cm;" value="<?php getData($tree,'text','moreDetail'); ?>">
     </span>
     
     <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
   <span style="font-weight: bold;">วิธีแก้ไข</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 10cm;" value=" <?php getData($tree,'text','Solution1'); ?> ">
+      <input readonly type="text" class="hideme" id="input" style="width: 10cm;" value=" <?php getData($tree,'text','Solution1'); ?> ">
     </span>
   <span style="font-weight: bold;">ปัญหาที่เหลือ</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 11cm;" value=" <?php getData($tree,'text','problem1'); ?> ">
+      <input readonly type="text" class="hideme" id="input" style="width: 11cm;" value=" <?php getData($tree,'text','problem1'); ?> ">
     </span>
 
         <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
   <span style="font-weight: bold;">วิธีแก้ไข</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 10cm;" value=" <?php getData($tree,'text','Solution2'); ?> ">
+      <input readonly type="text" class="hideme" id="input" style="width: 10cm;" value=" <?php getData($tree,'text','Solution2'); ?> ">
     </span>
   <span style="font-weight: bold;">ปัญหาที่เหลือ</span>
     <span>
-      <input type="text" class="hideme" id="input" style="width: 11cm;" value=" <?php getData($tree,'text','problem2'); ?> ">
+      <input readonly type="text" class="hideme" id="input" style="width: 11cm;" value=" <?php getData($tree,'text','problem2'); ?> ">
     </span>
 
 <!-- เว้นบรรทัด --> <div style="margin-top: 1%;"></div> <!-- เว้นบรรทัด --> 
@@ -1341,22 +1341,22 @@ function getData($tree,$type='',$name='',$var=NULL){
   <span style="font-weight: bold;">ผลการประเมินความเสี่ยงอันตรายจากต้นไม้ในภาพรวม</span>
   
   <span>
-    <input type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','ต่ำ'); ?> >
+    <input readonly type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','ต่ำ'); ?> >
   </span>
   <span>ต่ำ</span>
 
   <span>
-    <input type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','ปานกลาง'); ?>>
+    <input readonly type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','ปานกลาง'); ?>>
   </span>
   <span>ปานกลาง</span>
 
   <span>
-    <input type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','สูง'); ?>>
+    <input readonly type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','สูง'); ?>>
   </span>
   <span>สูง</span>
 
   <span>
-    <input type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','สูงที่สุด'); ?>>
+    <input readonly type="radio" name="totalDamage" <?php getData($tree,'radio','totalDamage','สูงที่สุด'); ?>>
   </span>
   <span>สูงที่สุด</span>
 
@@ -1366,22 +1366,22 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">ความเร่งด่วนในการดำเนินงาน</span>
   <span>
-    <input type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ทันที'); ?>>
+    <input readonly type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ทันที'); ?>>
   </span>
   <span>ทันที</span>
 
   <span>
-    <input type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน1เดือน'); ?>>
+    <input readonly type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน1เดือน'); ?>>
   </span>
   <span>ภายใน1เดือน</span>
 
   <span>
-    <input type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน3-5เดือน'); ?>>
+    <input readonly type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน3-5เดือน'); ?>>
   </span>
   <span>ภายใน3-5เดือน</span>
 
   <span>
-    <input type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน6-12เดือน'); ?>>
+    <input readonly type="radio" name="operateTime" <?php getData($tree,'radio','operateTime','ภายใน6-12เดือน'); ?>>
   </span>
   <span>ภายใน6-12เดือน</span>
   
@@ -1389,21 +1389,21 @@ function getData($tree,$type='',$name='',$var=NULL){
 
   <span style="font-weight: bold;">การประเมินเพิ่มเติม</span>
   <span>
-    <input type="radio" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ไม่ต้องการ'); ?>>
+    <input readonly type="radio" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ไม่ต้องการ'); ?>>
   </span>
   <span>ไม่ต้องการ</span>
 
   <span>
-    <input type="radio" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ต้องการ เรื่อง'); ?>>
+    <input readonly type="radio" name="moreEvaluate" <?php getData($tree,'radio','moreEvaluate','ต้องการ เรื่อง'); ?>>
   </span>
   <span>ต้องการ</span>
   <span>เรื่อง</span>
     <span>
-      <input type="text" class="hideme" name="needMore" id="input" style="width: 20%;" value="<?php getData($tree,'text','needMore'); ?>">
+      <input readonly type="text" class="hideme" name="needMore" id="input" style="width: 20%;" value="<?php getData($tree,'text','needMore'); ?>">
     </span>
 
   <span style="font-weight: bold;">ระยะเวลาที่ควรมีการตรวจสอบ(ทุกๆ)</span>
   <span>
-      <input type="text" class="hideme" id="input" style="width: 15%;" value="<?php getData($tree,'text','validTime'); ?>">
+      <input readonly type="text" class="hideme" id="input" style="width: 15%;" value="<?php getData($tree,'text','validTime'); ?>">
     </span>
 @stop
