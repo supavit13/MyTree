@@ -169,7 +169,7 @@
                     value[0] = String({{ $tree['listDamage'][$i] }});
                     value[1] = parseInt({{ $tree['damageArea'][$i] }});
                     console.log(value);
-                    arrayGraph.push(value);
+                    arrayGraph.push([String({{ $tree['listDamage'][$i] }}),parseInt({{ $tree['damageArea'][$i] }})]);
                     console.log(arrayGraph);
                   <?php endfor ?>
                   console.log(arrayGraph);
