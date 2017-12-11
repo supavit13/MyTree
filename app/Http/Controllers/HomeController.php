@@ -181,8 +181,7 @@ class HomeController extends Controller
         if($request->fulltree!=NULL){
             $tree_id = Tree::find($request->input('id'));
 
-            dd($request->fulltree);
-            $full[] = $request->fulltree;
+            $fulls = $request->fulltree;
     
             foreach ($request->fulltree as $value) {
                 foreach ($tree_id->Tree_imgFull as $key) {
