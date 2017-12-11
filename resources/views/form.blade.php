@@ -11,7 +11,7 @@
 if(!empty($trees)){
   $tree=$trees;
   $update=1;
-  $("#buttonDel").show();
+
 }else{
   $tree=NULL;
   $update=0;
