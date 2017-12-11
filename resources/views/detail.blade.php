@@ -161,7 +161,7 @@ function getData($tree,$type='',$name='',$var=NULL){
   </div></center> 
   <span style="font-weight: bold;">เจ้าของพื้นที่</span>
     <span>
-      <input readonly type="text" class="hideme" id="input" style="width: 5cm;" value="<?php getData($tree,'text','ownerarea'); ?>">
+      <input readonly type="text" class="hideme form-control" id="input" style="width: 5cm;" value="<?php getData($tree,'text','ownerarea'); ?>">
     </span>
   
   <span style="font-weight: bold;">ที่อยู่</span>
