@@ -193,7 +193,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                  <div class="five wide column">
                     <span>โทรศัพท์</span>
-                    <input  type="number"  class="form-control input-md" value="<?php getData($tree,'text','Tree_phone'); ?>" name="Tree_phone" required>
+                    <input  type="text"  class="form-control input-md" value="<?php echo $userlogin['phone'] ?>" name="Tree_phone" required>
                   </div>
 
              

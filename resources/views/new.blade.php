@@ -60,7 +60,7 @@
   <div id="sideid" class="ui raised segment" style="overflow:scroll;">
     <a href="#close" style="color: #000;"><i class="remove icon" id="close"></i></a>
     <hr>
-    <h2>อัตราความเสี่ยงอันตราย</h2>
+    <h2 id="headpiechart">อัตราความเสี่ยงอันตราย</h2>
     <div align="center" id='piechart'></div>
     <hr>
       <h2>ข้อมูลต้นไม้</h2>
@@ -73,7 +73,7 @@
 <!-- .....................................  444    .............................. --><!-- ติดต่อ -->
 
 <div id="444" style="background-color:#e6ffee; width: 100%;">
-
+<br><br>
 <div  class="ui centered grid">       
           <div class="one wide column"> 
               <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
@@ -158,21 +158,24 @@
                 marker=L.marker([{{ $tree{'Tree_lat'} }}, {{ $tree{'Tree_long'} }}]).addTo(mymap);
                 
                 $(".detail").remove();
+                $("#piechart").show();
+                $("#headpiechart").show();
                 $("#mapid").css({"width": "65%"});
                 $("#sideid").css({"display": "inline-block"});
                 $("#sideid").append(detail);
 
                 arrayGraph = [['Task', 'the risk per a tree']];
+                
                 <?php if ($tree['listDamage']!=NULL): ?>
-                  var value = ["none" , 0]; 
                   <?php for($i=0; $i<sizeof($tree['damageArea']); $i++): ?>
-                    value[0] = String({{ $tree['listDamage'][$i] }});
-                    value[1] = parseInt({{ $tree['damageArea'][$i] }});
-                    console.log(value);
-                    arrayGraph.push(value);
+                    var first = "<?php echo $tree['listDamage'][$i]; ?>";
+                    arrayGraph.push([first ,parseInt({{ $tree['damageArea'][$i] }})]);
                   <?php endfor ?>
-                  console.log(arrayGraph);
                   drawChart();
+                <?php else: ?>
+                    $("#piechart").hide();
+                    $("#headpiechart").hide();
+                    
                 <?php endif ?>
 
 
