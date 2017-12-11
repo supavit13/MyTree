@@ -158,6 +158,7 @@
                 marker=L.marker([{{ $tree{'Tree_lat'} }}, {{ $tree{'Tree_long'} }}]).addTo(mymap);
                 
                 $(".detail").remove();
+                $("#piechart").show();
                 $("#mapid").css({"width": "65%"});
                 $("#sideid").css({"display": "inline-block"});
                 $("#sideid").append(detail);
@@ -169,7 +170,7 @@
                   <?php endfor ?>
                   drawChart();
                 <?php else: ?>
-                    $("svg").remove();
+                    $("#piechart").hide();
                 <?php endif ?>
 
 
