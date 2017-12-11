@@ -1404,7 +1404,17 @@ function getData($tree,$type='',$name='',$var=NULL){
                          <br>
                          <br>
                         <label style="">ลำต้น : </label><br>
-                        <div id="truck_tree"></div>
+                        <div id="truck_tree">
+                            
+                          <?php if($update==1): ?>
+                              @if($img['Tree_imgTruck']!=NULL)
+                                @foreach($img['Tree_imgTruck'] as $imgTruck)
+                                  <img class='ui large image' src='{{asset('images/uploads/'.$imgTruck)}}'>
+                                @endforeach
+                              @endif
+                          <?php endif ?>
+
+                        </div>
                         <br>
                         <button class="ui teal button" id="addtruck_img">เพิ่ม</button>
                         <!-- <input class="ui teal button" type="file" accept="image/*" name="Tree_imgTruck" capture="camera" id="imgTruck" > -->
@@ -1416,7 +1426,15 @@ function getData($tree,$type='',$name='',$var=NULL){
                         <br>
                         <br>
                         <label style="">ใบ : </label><br>
-                        <div id="leaf_tree"></div>
+                        <div id="leaf_tree">
+                          <?php if($update==1): ?>
+                              @if($img['Tree_imgLeaf']!=NULL)
+                                @foreach($img['Tree_imgLeaf'] as $imgLeaf)
+                                  <img class='ui large image' src='{{asset('images/uploads/'.$imgLeaf)}}'>
+                                @endforeach
+                              @endif
+                          <?php endif ?>
+                        </div>
                         <br>
                         <button class="ui teal button" id="addleaf_img">เพิ่ม</button>
                         <!-- <input class="ui teal button" type="file" accept="image/*" name="Tree_imgLeaf" capture="camera" id="imgLeft" > -->
@@ -1427,7 +1445,15 @@ function getData($tree,$type='',$name='',$var=NULL){
                         <br>
                         <br>
                         <label style="">เรือนยอด : </label><br>
-                        <div id="top_tree"></div>
+                        <div id="top_tree">
+                          <?php if($update==1): ?>
+                              @if($img['Tree_imgTop']!=NULL)
+                                @foreach($img['Tree_imgTop'] as $imgTop)
+                                  <img class='ui large image' src='{{asset('images/uploads/'.$imgTop)}}'>
+                                @endforeach
+                              @endif
+                          <?php endif ?>
+                        </div>
                         <br>
                         <button class="ui teal button" id="addtop_img">เพิ่ม</button>
                         <!-- <input class="ui teal button" type="file" accept="image/*" name="Tree_imgTop" capture="camera" id="imgTop" > -->
@@ -1438,7 +1464,15 @@ function getData($tree,$type='',$name='',$var=NULL){
                         <br>
                         <br>
                         <label style="">ราก : </label><br>
-                        <div id="root_tree"></div>
+                        <div id="root_tree">
+                          <?php if($update==1): ?>
+                              @if($img['Tree_imgRoot']!=NULL)
+                                @foreach($img['Tree_imgRoot'] as $imgRoot)
+                                  <img class='ui large image' src='{{asset('images/uploads/'.$imgRoot)}}'>
+                                @endforeach
+                              @endif
+                          <?php endif ?>
+                        </div>
                         <br>
                         <button class="ui teal button" id="addroot_img">เพิ่ม</button>
                         <!-- <input class="ui teal button" type="file" accept="image/*" name="Tree_imgRoot" capture="camera" id="imgRoot" > -->
