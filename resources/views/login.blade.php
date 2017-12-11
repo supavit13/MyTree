@@ -25,7 +25,7 @@
 <script>
       $("#signin_forever").click(function(event){
           event.preventDefault();
-          // $("#333").css("display", "block");
+          $("#333").css("display", "block");
       });
 
 </script> 
@@ -36,9 +36,9 @@
 <div id="333" style="display: none; margin-top: 1em;"><!--  333  -->
 
   <center>
-          <br><a href="{{ url('auth/login/facebook') }}" class="ui disabled facebook button" ><i class="facebook icon"></i>เข้าสู่ระบบโดย Facebook</a>
+          <br><a href="{{ url('auth/login/facebook') }}" class="ui facebook button" ><i class="facebook icon"></i>เข้าสู่ระบบโดย Facebook</a>
           <div class="column" style="width: 10%; height: 0.1cm;"></div>
-          <a href="{{ url('auth/login/google') }}" class="ui disabled google plus button"><i class="mail icon"></i>เข้าสู่ระบบโดย G-Mail</a>
+          <a href="{{ url('auth/login/google') }}" class="ui google plus button"><i class="mail icon"></i>เข้าสู่ระบบโดย G-Mail</a>
           <br><a style="color:gray;">-------------------or-------------------</a></br> 
           <form action="{{ url('auth/login/mytree') }}" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_token" value="{!! csrf_token() !!}">
