@@ -2,6 +2,12 @@
 
 @section('content')
 
+<script>
+  if($checkedit == "checkButton"){
+    $("#buttonDel").show();
+  }
+</script>
+
 
 <?php 
     $_SESSION['login']=$login_name;
