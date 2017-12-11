@@ -1382,7 +1382,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                         <br>
                         <label>เต็มต้น : </label><br>                       
                         <div id="full_tree">
-                          <?php if($update==1)?>
+                          <?php if($update==1): ?>
                           @if($img['Tree_imgFull']!=NULL)
                             @foreach($img['Tree_imgFull'] as $imgFull)
                               <img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'>
