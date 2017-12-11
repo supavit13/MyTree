@@ -1412,8 +1412,8 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgTruck']!=NULL)
                                 @foreach($img['Tree_imgTruck'] as $imgTruck)
-                                  <img class='ui large image' data-id="{{ $imgTruck }}" src='{{asset('images/uploads/'.$imgTruck)}}'>
-                                  <input type="button" id="imagetruck" data-id="{{ $imgTruck }}" class="ui red button delete_imgtruck" id="delete_imgtruck" value="ลบ">
+                                  <img class='ui large image' id="imagetruck" data-id="{{ $imgTruck }}" src='{{asset('images/uploads/'.$imgTruck)}}'>
+                                  <input type="button" data-id="{{ $imgTruck }}" class="ui red button delete_imgtruck" id="delete_imgtruck" value="ลบ">
                                 @endforeach
                               @endif
                           <?php endif ?>
