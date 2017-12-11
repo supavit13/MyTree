@@ -1511,11 +1511,12 @@ function getData($tree,$type='',$name='',$var=NULL){
   <h4></h4>
 </div>
 <script type="text/javascript">
-    var checkedit = 0;
-    checkedit += parseInt({{ $update }});
-    if(checkedit == 1){
+    <?php if($update==1){ ?>
       $("#buttonDel").show();
-    }
+    <?php } ?>
+</script>
+<script type="text/javascript">
+    
             var i=1;
             $("#add_table").click(function(event){
               event.preventDefault();
