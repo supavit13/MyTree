@@ -163,16 +163,20 @@ class HomeController extends Controller
 
         if($request->fulltree!=NULL){
             $tree_id = Tree::find($request->input('id'));
+
+            $full = [];
+            $full[] = $request->fulltree;
     
             foreach ($request->fulltree as $value) {
                 foreach ($tree_id->Tree_imgFull as $key) {
                     if($value == $key){
-                        dd(unlink('images/uploads/'.$value));
-                        Storage::delete('images/uploads/'.$value);
-                    }
-       
-                }
+                        unlink('images/uploads/'.$value);
 
+                        $full[array_search($value,$full)] = "";
+                        
+                    }
+
+                }
                 
             }
         }

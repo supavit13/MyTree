@@ -1511,7 +1511,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                                   $('#imagetruck[data-id="'+imgtruckId+'"]').remove();
                                   $('#delete_imgtruck[data-id="'+imgtruckId+'"]').remove();
 
-                                  var addtruck = '<input type="hidden" name="fulltree[]" value="'+imgtruckId+'">';
+                                  var addtruck = '<input type="hidden" name="trucktree[]" value="'+imgtruckId+'">';
 
                                   $('#truck_tree').append(addtruck);    
 
@@ -1523,7 +1523,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                                   $('#imageleaf[data-id="'+imgleafId+'"]').remove();
                                   $('#delete_imgleaf[data-id="'+imgleafId+'"]').remove();
 
-                                  var addleaf = '<input type="hidden" name="fulltree[]" value="'+imgleafId+'">';
+                                  var addleaf = '<input type="hidden" name="leaftree[]" value="'+imgleafId+'">';
 
                                   $('#leaf_tree').append(addleaf);    
 
@@ -1535,7 +1535,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                                   $('#imagetop[data-id="'+imgtopId+'"]').remove();
                                   $('#delete_imgtop[data-id="'+imgtopId+'"]').remove();
 
-                                  var addtop = '<input type="hidden" name="fulltree[]" value="'+imgtopId+'">';
+                                  var addtop = '<input type="hidden" name="toptree[]" value="'+imgtopId+'">';
 
                                   $('#top_tree').append(addtop);    
 
@@ -1547,7 +1547,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                                   $('#imageroot[data-id="'+imgrootId+'"]').remove();
                                   $('#delete_imgroot[data-id="'+imgrootId+'"]').remove();
 
-                                  var addroot = '<input type="hidden" name="fulltree[]" value="'+imgrootId+'">';
+                                  var addroot = '<input type="hidden" name="roottree[]" value="'+imgrootId+'">';
 
                                   $('#root_tree').append(addroot);    
 
