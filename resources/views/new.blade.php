@@ -181,27 +181,37 @@
 
                 @if($tree['Tree_imgFull']!=NULL)
                   @foreach($tree['Tree_imgFull'] as $imgFull)
-                  $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>เต็มต้น</span><div class='ui divider'></div>");
+                   @if($imgFull !="")
+                    $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>เต็มต้น</span><div class='ui divider'></div>");
+                   @endif
                   @endforeach
                 @endif
                 @if($tree['Tree_imgTruck']!=NULL)
                   @foreach($tree['Tree_imgTruck'] as $imgFull)
-                  $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>ลำต้น</span><div class='ui divider'></div>");
+                    @if($imgFull !="")
+                     $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>ลำต้น</span><div class='ui divider'></div>");
+                     @endif
                   @endforeach
                 @endif
                 @if($tree['Tree_imgLeaf']!=NULL)
                   @foreach($tree['Tree_imgLeaf'] as $imgFull)
-                  $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>ใบ</span><div class='ui divider'></div>");
+                    @if($imgFull !="")
+                      $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>ใบ</span><div class='ui divider'></div>");
+                    @endif
                   @endforeach
                 @endif
                 @if($tree['Tree_imgTop']!=NULL)
                   @foreach($tree['Tree_imgTop'] as $imgFull)
-                  $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>เรือนยอด</span><div class='ui divider'></div>");
+                    @if($imgFull !="")
+                      $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>เรือนยอด</span><div class='ui divider'></div>");
+                    @endif
                   @endforeach
                 @endif
                 @if($tree['Tree_imgRoot']!=NULL)
                   @foreach($tree['Tree_imgRoot'] as $imgFull)
-                  $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>ราก</span><div class='ui divider'></div>");
+                    @if($imgFull !="")
+                      $(".showPic").append("<img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'><span>ราก</span><div class='ui divider'></div>");
+                    @endif
                   @endforeach
                 @endif
             });
