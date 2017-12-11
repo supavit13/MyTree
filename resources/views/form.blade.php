@@ -1383,13 +1383,24 @@ function getData($tree,$type='',$name='',$var=NULL){
                         <label>เต็มต้น : </label><br>                       
                         <div id="full_tree">
 
+
                           <?php if($update==1): ?>
                             @if($img['Tree_imgFull']!=NULL)
                               @foreach($img['Tree_imgFull'] as $imgFull)
                                 <img class='ui large image' src='{{asset('images/uploads/'.$imgFull)}}'>
+                                <input type="button" class="ui red button delete_tr" id="delete_imgfull" data-id="{{ $imgFull }}" value="ลบ">
                               @endforeach
                             @endif 
                           <?php endif ?>
+
+                          <script>
+                              $(document).on('click', '#delete_imgfull', function() {
+                                  var imgfullId = $(this).data('id');
+                                  $('.img[data-id="'+imgfullId+'"]').remove();
+                                
+
+                              });
+                          </script>
 
                             
 
@@ -1469,6 +1480,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                               @if($img['Tree_imgRoot']!=NULL)
                                 @foreach($img['Tree_imgRoot'] as $imgRoot)
                                   <img class='ui large image' src='{{asset('images/uploads/'.$imgRoot)}}'>
+                                  <button>ลบ</button>
                                 @endforeach
                               @endif
                           <?php endif ?>
