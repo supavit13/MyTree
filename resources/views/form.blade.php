@@ -1512,7 +1512,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 </div>
 <script type="text/javascript">
     var checkedit = 0;
-    checkedit = parseInt({{ $update }});
+    checkedit += parseInt({{ $update }});
     if(checkedit == 1){
       $("#buttonDel").show();
     }
