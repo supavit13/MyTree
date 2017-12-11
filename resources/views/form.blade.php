@@ -1510,10 +1510,10 @@ function getData($tree,$type='',$name='',$var=NULL){
   
   <h4></h4>
 </div>
-<script type="text/javascript">
-    <?php if($update==1){ ?>
+<script>
+    <?php if($update==1): ?>
       $("#buttonDel").show();
-    <?php } ?>
+    <?php endif ?>
 </script>
 <script type="text/javascript">
     
