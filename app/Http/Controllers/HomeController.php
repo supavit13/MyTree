@@ -125,11 +125,13 @@ class HomeController extends Controller
       for($i=0;$i<sizeof($full);$i++)
       {
               if($full[$i]==$value){
-                        $position=$i;
+                       
+                        return $i;
+                        break;
               }
       
       }
-      return $position;
+      
     }
 
     public function store(Request $request){
