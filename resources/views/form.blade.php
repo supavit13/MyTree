@@ -1509,10 +1509,10 @@ function getData($tree,$type='',$name='',$var=NULL){
   
   <h4></h4>
 </div>
-<?php $sizeofList =  sizeof($tree['listDamage']) ;?>
+<!-- <?php $sizeofList =  sizeof($tree['listDamage']) ;?>
 <script type="text/javascript">
-            var i=0;
-            // var i = parseInt("<?php echo $sizeofList; ?>") ;
+            // var i=0;
+            var i = parseInt("<?php echo $sizeofList; ?>") ;
             var ii=parseInt(i)+1;
             $("#add_table").click(function(event){
               event.preventDefault();
@@ -1527,8 +1527,8 @@ function getData($tree,$type='',$name='',$var=NULL){
           </script>
 <?php $sizeofList1 =  sizeof($tree['treePartName']) ;?>
 <script type="text/javascript">
-    var n=0;
-    // var n="<?php echo $sizeofList1; ?>" ;
+    // var n=0;
+    var n="<?php echo $sizeofList1; ?>" ;
     var nn=parseInt(n)+1;
             $("#add_table_risk").click(function(event){
               event.preventDefault();
@@ -1552,7 +1552,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
     </script>
-
+ -->
 
 
 
