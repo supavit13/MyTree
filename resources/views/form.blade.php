@@ -1389,25 +1389,15 @@ function getData($tree,$type='',$name='',$var=NULL){
                               @foreach($img['Tree_imgFull'] as $imgFull)
                                 <img class='ui large image' id="imagefull" data-id="{{ $imgFull }}" src='{{asset('images/uploads/'.$imgFull)}}'>
                                 <input type="button" data-id="{{ $imgFull }}" class="ui red button delete_imgfull" id="delete_imgfull" value="ลบ">
+
                               @endforeach
                             @endif 
-                          <?php endif ?>
+                          <?php endif ?>                                
 
-                          <script>
-                              $(document).on('click', '#delete_imgfull', function() {
-                                  var imgfullId = $(this).data('id');
-                                  alert("ยืนยันการลบรูปภาพ");
-                                  $('#imagefull[data-id="'+imgfullId+'"]').remove();
-                                  $('#delete_imgfull[data-id="'+imgfullId+'"]').remove();
-                                
+                        </div> 
 
-                              });
-                          </script>
+                         
 
-                            
-
-
-                        </div>                       
                         <br>
                         <button class="ui teal button" id="addfull_img">เพิ่ม</button>
                         <!-- <div>
@@ -1422,12 +1412,14 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgTruck']!=NULL)
                                 @foreach($img['Tree_imgTruck'] as $imgTruck)
-                                  <img class='ui large image' src='{{asset('images/uploads/'.$imgTruck)}}'>
+                                  <img class='ui large image' data-id="{{ $imgTruck }}" src='{{asset('images/uploads/'.$imgTruck)}}'>
+                                  <input type="button" id="imagetruck" data-id="{{ $imgTruck }}" class="ui red button delete_imgtruck" id="delete_imgtruck" value="ลบ">
                                 @endforeach
                               @endif
                           <?php endif ?>
 
                         </div>
+
                         <br>
                         <button class="ui teal button" id="addtruck_img">เพิ่ม</button>
                         <!-- <input class="ui teal button" type="file" accept="image/*" name="Tree_imgTruck" capture="camera" id="imgTruck" > -->
@@ -1443,11 +1435,13 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgLeaf']!=NULL)
                                 @foreach($img['Tree_imgLeaf'] as $imgLeaf)
-                                  <img class='ui large image' src='{{asset('images/uploads/'.$imgLeaf)}}'>
+                                  <img class='ui large image' id="imageleaf" data-id="{{ $imgLeaf }}" src='{{asset('images/uploads/'.$imgLeaf)}}'>
+                                  <input type="button" data-id="{{ $imgLeaf }}" class="ui red button delete_imgleaf" id="delete_imgleaf" value="ลบ">
                                 @endforeach
                               @endif
                           <?php endif ?>
                         </div>
+
                         <br>
                         <button class="ui teal button" id="addleaf_img">เพิ่ม</button>
                         <!-- <input class="ui teal button" type="file" accept="image/*" name="Tree_imgLeaf" capture="camera" id="imgLeft" > -->
@@ -1462,11 +1456,13 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgTop']!=NULL)
                                 @foreach($img['Tree_imgTop'] as $imgTop)
-                                  <img class='ui large image' src='{{asset('images/uploads/'.$imgTop)}}'>
+                                  <img class='ui large image' id="imagetop" data-id="{{ $imgTop }}" src='{{asset('images/uploads/'.$imgTop)}}'>
+                                  <input type="button" data-id="{{ $imgTop }}" class="ui red button delete_imgtop" id="delete_imgtop" value="ลบ">
                                 @endforeach
                               @endif
                           <?php endif ?>
                         </div>
+
                         <br>
                         <button class="ui teal button" id="addtop_img">เพิ่ม</button>
                         <!-- <input class="ui teal button" type="file" accept="image/*" name="Tree_imgTop" capture="camera" id="imgTop" > -->
@@ -1481,8 +1477,8 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgRoot']!=NULL)
                                 @foreach($img['Tree_imgRoot'] as $imgRoot)
-                                  <img class='ui large image' src='{{asset('images/uploads/'.$imgRoot)}}'>
-                                  <button>ลบ</button>
+                                  <img class='ui large image' id="imageroot" data-id="{{ $imgRoot }}" src='{{asset('images/uploads/'.$imgRoot)}}'>
+                                  <input type="button" data-id="{{ $imgRoot }}" class="ui red button delete_imgroot" id="delete_imgroot" value="ลบ">
                                 @endforeach
                               @endif
                           <?php endif ?>
@@ -1494,6 +1490,70 @@ function getData($tree,$type='',$name='',$var=NULL){
                         <!-- <div>
                           <img style="border: solid; margin-top: 3%; display: none;" id="Root" src="#" width="50%"/>
                         </div> -->
+
+
+                        <script>
+                              $(document).on('click', '#delete_imgfull', function() {
+                                  var imgfullId = $(this).data('id');
+                                  // alert("ยืนยันการลบรูปภาพ");
+                                  $('#imagefull[data-id="'+imgfullId+'"]').remove();
+                                  $('#delete_imgfull[data-id="'+imgfullId+'"]').remove();
+
+                                  var addfull = '<input type="hidden" name="fulltree[]" value="'+imgfullId+'">';
+
+                                  $('#full_tree').append(addfull);    
+
+                              });
+
+                              $(document).on('click', '#delete_imgtruck', function() {
+                                  var imgtruckId = $(this).data('id');
+                                  // alert("ยืนยันการลบรูปภาพ");
+                                  $('#imagetruck[data-id="'+imgtruckId+'"]').remove();
+                                  $('#delete_imgtruck[data-id="'+imgtruckId+'"]').remove();
+
+                                  var addtruck = '<input type="hidden" name="fulltree[]" value="'+imgtruckId+'">';
+
+                                  $('#truck_tree').append(addtruck);    
+
+                              });
+
+                              $(document).on('click', '#delete_imgleaf', function() {
+                                  var imgleafId = $(this).data('id');
+                                  // alert("ยืนยันการลบรูปภาพ");
+                                  $('#imageleaf[data-id="'+imgleafId+'"]').remove();
+                                  $('#delete_imgleaf[data-id="'+imgleafId+'"]').remove();
+
+                                  var addleaf = '<input type="hidden" name="fulltree[]" value="'+imgleafId+'">';
+
+                                  $('#leaf_tree').append(addleaf);    
+
+                              });
+
+                              $(document).on('click', '#delete_imgtop', function() {
+                                  var imgtopId = $(this).data('id');
+                                  // alert("ยืนยันการลบรูปภาพ");
+                                  $('#imagetop[data-id="'+imgtopId+'"]').remove();
+                                  $('#delete_imgtop[data-id="'+imgtopId+'"]').remove();
+
+                                  var addtop = '<input type="hidden" name="fulltree[]" value="'+imgtopId+'">';
+
+                                  $('#top_tree').append(addtop);    
+
+                              });
+
+                              $(document).on('click', '#delete_imgroot', function() {
+                                  var imgrootId = $(this).data('id');
+                                  // alert("ยืนยันการลบรูปภาพ");
+                                  $('#imageroot[data-id="'+imgrootId+'"]').remove();
+                                  $('#delete_imgroot[data-id="'+imgrootId+'"]').remove();
+
+                                  var addroot = '<input type="hidden" name="fulltree[]" value="'+imgrootId+'">';
+
+                                  $('#root_tree').append(addroot);    
+
+                              });
+
+                          </script>
                         
                 </div>  
                 
