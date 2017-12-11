@@ -182,7 +182,7 @@ class HomeController extends Controller
         if($request->fulltree!=NULL){
             $tree_id = Tree::find($request->input('id'));
 
-            $full = [];
+
             $full[] = $request->fulltree;
     
             foreach ($request->fulltree as $value) {
