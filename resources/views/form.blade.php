@@ -10,7 +10,7 @@
 <?php 
 if(!empty($trees)){
   $tree=$trees;
-  $update=1
+  $update=1;
 }else{
   $tree=NULL;
   $update=0;
@@ -1510,7 +1510,15 @@ function getData($tree,$type='',$name='',$var=NULL){
   
   <h4></h4>
 </div>
-
+<script>
+    var checkedit=0;
+    <?php if($update==1): ?>
+      checkedit += parseInt({{ $update }}); 
+    <?php endif ?>
+    if(checkedit>0){
+      $("#buttonDel").show();
+    }
+</script>
 <script type="text/javascript">
     
             var i=1;
