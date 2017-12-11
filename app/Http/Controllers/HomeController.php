@@ -6,6 +6,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Socialite;
 
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Input;
 use Auth;
 use Redirect;
@@ -156,6 +157,25 @@ class HomeController extends Controller
         $trees->Tree_phone=$request->input('Tree_phone');
         // $trees->hire=$request->input('hire');
         $trees->agency=$request->input('agency');
+
+
+
+
+        if($request->fulltree!=NULL){
+            $tree_id = Tree::find($request->input('id'));
+            $count = 0;
+            foreach ($request->fulltree as $value) {
+                foreach ($tree_id->Tree_imgFull as $key) {
+                    if($value == $key){
+                        Storage::delete('images/uploads/'.$value);
+                        $trees->Tree_imgFull[$count]= null;
+                    }
+                    $count++;
+                }
+
+                
+            }
+        }
 
 
         // part 2
