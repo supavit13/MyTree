@@ -164,9 +164,10 @@
                 $("#sideid").append(detail);
 
                 arrayGraph = [['Task', 'the risk per a tree']];
+                var first = {{ $tree['listDamage'][$i] }};
                 <?php if ($tree['listDamage']!=NULL): ?>
                   <?php for($i=0; $i<sizeof($tree['damageArea']); $i++): ?>
-                    arrayGraph.push([String({{ $tree['listDamage'][$i] }}),parseInt({{ $tree['damageArea'][$i] }})]);
+                    arrayGraph.push([first+"",parseInt({{ $tree['damageArea'][$i] }})]);
                   <?php endfor ?>
                   drawChart();
                 <?php else: ?>
