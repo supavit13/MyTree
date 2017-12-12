@@ -1649,7 +1649,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </div>
     <center>
     <div class="actions">
-      <div class="ui positive right labeled icon button">
+      <div class="ui blue right labeled icon button">
         OK
         <i class="checkmark icon"></i>
       </div>
