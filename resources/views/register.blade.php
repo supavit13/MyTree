@@ -54,12 +54,12 @@
 
                   <div class="field">
                     <label>รหัสผ่าน</label>
-                    <input type="password" name="password" id="password" placeholder="ไม่น้อยกว่า8ตัว" required="">
+                    <input type="password" name="password" id="password" placeholder="ไม่น้อยกว่า8ตัว" required>
                   </div>
 
                   <div class="field" id="divPass">
                     <label>ยืนยันรหัสผ่าน</label>
-                    <input type="password" name="confirmPassword" id="conpwd" required="">
+                    <input type="password" name="confirmPassword" id="conpwd" required>
                   </div>
 
                   <div class="field" id="policy">
