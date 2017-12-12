@@ -1640,7 +1640,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
 <div class="ui small modal" id="uisubmit" style="margin-top: -92.5px; height: 250px;">
-    <div class="header" style="background-color: #0A0A2A; ">
+    <div class="header" style="background-color: #088A29; ">
       <p style="color: white;">***คำเตือน***</p>
     </div>
     <div class="content">
@@ -1649,7 +1649,7 @@ function getData($tree,$type='',$name='',$var=NULL){
     </div>
     <center>
     <div class="actions">
-      <div class="ui blue right labeled icon button">
+      <div class="ui positive right labeled icon button">
         OK
         <i class="checkmark icon"></i>
       </div>
