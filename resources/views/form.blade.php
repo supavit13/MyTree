@@ -1387,9 +1387,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                             @if($img['Tree_imgFull']!=NULL)
                               @foreach($img['Tree_imgFull'] as $imgFull)
+                                @if($imgFull !="")
                                 <img class='ui large image' id="imagefull" data-id="{{ $imgFull }}" src='{{asset('images/uploads/'.$imgFull)}}'>
                                 <input type="button" data-id="{{ $imgFull }}" class="ui red button delete_imgfull" id="delete_imgfull" value="ลบ">
-
+                                @endif 
                               @endforeach
                             @endif 
                           <?php endif ?>                                
@@ -1412,8 +1413,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgTruck']!=NULL)
                                 @foreach($img['Tree_imgTruck'] as $imgTruck)
+                                @if($imgTruck !="")
                                   <img class='ui large image' id="imagetruck" data-id="{{ $imgTruck }}" src='{{asset('images/uploads/'.$imgTruck)}}'>
                                   <input type="button" data-id="{{ $imgTruck }}" class="ui red button delete_imgtruck" id="delete_imgtruck" value="ลบ">
+                                  @endif 
                                 @endforeach
                               @endif
                           <?php endif ?>
@@ -1435,8 +1438,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgLeaf']!=NULL)
                                 @foreach($img['Tree_imgLeaf'] as $imgLeaf)
+                                @if($imgLeaf !="")
                                   <img class='ui large image' id="imageleaf" data-id="{{ $imgLeaf }}" src='{{asset('images/uploads/'.$imgLeaf)}}'>
                                   <input type="button" data-id="{{ $imgLeaf }}" class="ui red button delete_imgleaf" id="delete_imgleaf" value="ลบ">
+                                  @endif 
                                 @endforeach
                               @endif
                           <?php endif ?>
@@ -1456,8 +1461,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgTop']!=NULL)
                                 @foreach($img['Tree_imgTop'] as $imgTop)
+                                @if($imgTop !="")
                                   <img class='ui large image' id="imagetop" data-id="{{ $imgTop }}" src='{{asset('images/uploads/'.$imgTop)}}'>
                                   <input type="button" data-id="{{ $imgTop }}" class="ui red button delete_imgtop" id="delete_imgtop" value="ลบ">
+                                  @endif 
                                 @endforeach
                               @endif
                           <?php endif ?>
@@ -1477,8 +1484,10 @@ function getData($tree,$type='',$name='',$var=NULL){
                           <?php if($update==1): ?>
                               @if($img['Tree_imgRoot']!=NULL)
                                 @foreach($img['Tree_imgRoot'] as $imgRoot)
+                                @if($imgRoot !="")
                                   <img class='ui large image' id="imageroot" data-id="{{ $imgRoot }}" src='{{asset('images/uploads/'.$imgRoot)}}'>
                                   <input type="button" data-id="{{ $imgRoot }}" class="ui red button delete_imgroot" id="delete_imgroot" value="ลบ">
+                                  @endif 
                                 @endforeach
                               @endif
                           <?php endif ?>
