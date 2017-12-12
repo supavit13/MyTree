@@ -54,28 +54,7 @@
 
 
 
-<!-- <div class="ui standard test modal transition visible active" style="margin-top: -205.969px; display: block !important;">
-    <div class="header">
-      Select a Photo
-    </div>
-    <div class="image content">
-      <div class="ui medium image">
-        <img src="/images/avatar2/large/rachel.png">
-      </div>
-      <div class="description">
-        <div class="ui header">Default Profile Image</div>
-        <p>We've found the following <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your e-mail address.</p>
-        <p>Is it okay to use this photo?</p>
-      </div>
-    </div>
-    
-    <div class="actions">
-      <div class="ui black deny button">
-        Nope
-      </div>
-    </div>
-  
-</div> -->
+
 <br><br><br><br><br><br>
 
 <div class="ui grid centered">
@@ -151,55 +130,6 @@
 	</table>	
   	</center><br><br>
 
-  <!-- <div class="ui segment">
-   	<div class="ui grid">
-	  	
-	  	<div class="seven wide column">   
-	  		<center><div class="ui card">
-	  			<a class="image" href="#">
-	    			<img src="bg.jpg">
-	  			</a>
-			</div></center>
-	    </div>
-	    
-	    <div class="nine wide column">
-	    	<div class="ui grid">
-	    		<div class="four wide column">
-					<span style="font-weight: bold;">ชื่อ</span>
-	    		</div>
-	    		<div class="twelve wide column">
-	    			<span>ธนัชชา</span>
-	    		</div>
-	    		<div class="four wide column">
-					<span style="font-weight: bold;">นามสกุล</span>
-	    		</div>
-	    		<div class="twelve wide column">
-	    			<span>สุระขันต์</span>
-	    		</div>
-	    		<div class="five wide column">
-					<span style="font-weight: bold;">เบอร์โทรศัพท์</span>
-	    		</div>
-	    		<div class="eleven wide column">
-	    			<span>0991327444</span>
-	    		</div>
-	    		<div class="four wide column">
-					<span style="font-weight: bold;">อีเมล</span>
-	    		</div>
-	    		<div class="twelve wide column">
-	    			<span>thanatcha.chanom@gmail.com</span>
-	    		</div>
-	    		<div class="four wide column">
-					<span style="font-weight: bold;">สถานะ</span>
-	    		</div>
-	    		<div class="twelve wide column">
-	    			<span>บุคคลทั่วไป</span>
-	    		</div>
-		  	</div>
-	    </div>
-
-	</div>
-  </div> -->
-  
 
   <div  class="ui segment">
   		<center><div class="ui blue button" onclick="window.location='/gohome'">ปิด</div></center>

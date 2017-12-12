@@ -56,7 +56,7 @@
 
 <div class="ui grid centered">
 <section class="fourteen wide column">
-<!-- <div style="width: 80%;"> -->
+
 
 
 <div class="ui attached message">
@@ -105,7 +105,7 @@
   <div class="two fields">
     <div class="field">
       <label>เบอร์โทรศัพท์</label>
-      <input placeholder="เบอร์โทรศัพท์" type="text" name="phone" value="{{ $userlogin['phone'] }}">
+      <input placeholder="เบอร์โทรศัพท์" type="number" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" name="phone" value="{{ $userlogin['phone'] }}">
     </div>
     <div class="field">
       <label>ยืนยันรหัสผ่าน</label>
