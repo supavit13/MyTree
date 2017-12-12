@@ -1637,25 +1637,27 @@ function getData($tree,$type='',$name='',$var=NULL){
       </div>
 
     </div>
-  
-<div class="ui small modal">
-  <i class="close icon"></i>
-  <div class="header">
-    ***โปรดอ่าน***
-  </div>
 
-    <div class="description">
+
+
+<div class="ui small test modal transition visible active" style="margin-top: -92.5px; display: block !important;">
+    <div class="header">
+      Delete Your Account
+    </div>
+    <div class="content">
       <p>กรุณากรอกข้อมูลแบบประเมินความเสี่ยงอันตรายจากต้นไม้เบื้องต้นและการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายให้ครบถ้วน</p>
       <p>หากกรอกข้อมูลข้างต้นไม่ครบจะไม่สามารถบันทึกข้อมูลได้</p>
     </div>
-
-  <div class="actions">
-    <div class="ui blue button">
-      OK
-      <i class="checkmark icon"></i>
+    <div class="actions">
+      <div class="ui positive right labeled icon button">
+        OK
+        <i class="checkmark icon"></i>
+      </div>
     </div>
   </div>
-</div>
+
+  
+
 
   <h4></h4>
 </div>
@@ -1672,7 +1674,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
           $("#buttonDel").click(function(event){
-              $('.ui.modal').modal('show');
+              $('.small.modal').modal('show');
           });
     
             var i=1;
