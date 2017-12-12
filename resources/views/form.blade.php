@@ -1640,7 +1640,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
 
-<div class="ui small test modal transition visible active" style="margin-top: -92.5px; display: block !important;">
+<div class="ui small test modal transition visible active" id="uisubmit" style="margin-top: -92.5px; display: block !important;">
     <div class="header">
       Delete Your Account
     </div>
@@ -1674,7 +1674,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
           $("#buttonDel").click(function(event){
-              $('.small.modal').modal('show');
+              $('#uisubmit').modal('show');
           });
     
             var i=1;
