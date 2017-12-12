@@ -109,7 +109,7 @@
     // L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{
 
     L.esri.basemapLayer("Topographic",{
-      maxZoom: 25,
+      maxZoom: 20,
       minZoom: 6,
       attribution: 'Develop by MyTreeTeam.'
     }).addTo(mymap);
