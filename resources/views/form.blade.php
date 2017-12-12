@@ -1638,27 +1638,20 @@ function getData($tree,$type='',$name='',$var=NULL){
 
     </div>
   
-<div class="ui modal">
+<div class="ui small modal">
   <i class="close icon"></i>
   <div class="header">
-    Profile Picture
+    ***โปรดอ่าน***
   </div>
-  <div class="image content">
-    <div class="ui medium image">
-      <img src="/images/avatar/large/chris.jpg">
-    </div>
+
     <div class="description">
-      <div class="ui header">We've auto-chosen a profile image for you.</div>
-      <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-      <p>Is it okay to use this photo?</p>
+      <p>กรุณากรอกข้อมูลแบบประเมินความเสี่ยงอันตรายจากต้นไม้เบื้องต้นและการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายให้ครบถ้วน</p>
+      <p>หากกรอกข้อมูลข้างต้นไม่ครบจะไม่สามารถบันทึกข้อมูลได้</p>
     </div>
-  </div>
+
   <div class="actions">
-    <div class="ui black deny button">
-      Nope
-    </div>
-    <div class="ui positive right labeled icon button">
-      Yep, that's me
+    <div class="ui blue button">
+      OK
       <i class="checkmark icon"></i>
     </div>
   </div>
@@ -1678,7 +1671,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 <script type="text/javascript">
 
 
-          $("#add_table").click(function(event){
+          $("#buttonDel").click(function(event){
               $('.ui.modal').modal('show');
           });
     
