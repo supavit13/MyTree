@@ -1263,7 +1263,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   
                   <br>
                 <div class="sixteen wide column">
-                  <button class="ui teal button" id="add_edit">เพิ่ม</button> 
+                  <!-- <button class="ui teal button" id="add_edit">เพิ่ม</button>  -->
                   <div class="ten wide column">
                     <span>วิธีแก้ไข</span>
                     <input type="text" class="form-control" name="Solution1" value="<?php getData($tree,'text','Solution1'); ?>" >
