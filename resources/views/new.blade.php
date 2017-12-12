@@ -245,7 +245,7 @@
                     "<b>สีของจุดแบ่งตามความเสี่ยง</b> มี 3 ระดับดังนี้<br>",
                     '<b><font color="green"> ปลอดภัย </font></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="orange"> เสี่ยง </font></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="red"> อันตราย </font></b><br>',
                     '<font size="6" color="blue">•</font> ตำแหน่งของคุณ<br>',
-                    '<b>จำนต้นไม้ : <font id="countTree"></font> ต้น</b><br>',
+                    '<b>จำนวนต้นไม้ : <font id="countTree"></font> ต้น</b><br>',
                     "<a style='float:left;' onclick='dialog.freeze()'><font size='4' color='gray'><i class='lock icon'></i></font></a>",
                     "<a style='float:right;' onclick='dialog.unfreeze()'><font size='4' color='gray'><i class='unlock alternate icon'></i></font></a>",
                     ].join('');
