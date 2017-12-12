@@ -1640,7 +1640,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
 
-<div class="ui small modal" id="uisubmit" style="margin-top: -92.5px; height: 200px;">
+<div class="ui small modal" id="uisubmit" style="margin-top: -92.5px; height: 250px;">
     <div class="header">
       ***คำเตือน***
     </div>
