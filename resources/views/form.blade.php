@@ -128,7 +128,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>เวลา</span>
-                    <input class="form-control" type="text" value="<?php getData($tree,'text','Tree_time'); ?>" name="Tree_time" id="example-time-input" > 
+                    <input class="form-control" type="time" value="<?php getData($tree,'text','Tree_time'); ?>" name="Tree_time" id="example-time-input" > 
                   </div>
 
 
@@ -193,7 +193,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                  <div class="five wide column">
                     <span>โทรศัพท์</span>
-                    <input  type="text"  class="form-control input-md" value="<?php echo $userlogin['phone'] ?>" name="Tree_phone" required>
+                    <input  type="text" min="10" max="10" class="form-control input-md" value="<?php echo $userlogin['phone'] ?>" name="Tree_phone" required>
                   </div>
 
              
@@ -297,7 +297,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <tr>
                     <td>
-                      <input class="hideme" id="tree_num" type="text" value="<?php echo $i+1; ?>">
+                      <input class="hideme" id="tree_num" type="number" min="1" value="<?php echo $i+1; ?>">
                     </td>
                     <td><input class="form-control" type="text" name="listDamage[<?php echo $i; ?>]" value="<?php echo $tree['listDamage'][$i]; ?>">
                     </td>
@@ -413,7 +413,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <div class="four wide column">
                     <input type="radio" name="radioslope" >
                     <span>ลาดเอียง (%)</span>
-                    <input type="text"  class="form-control" value="<?php getData($tree,'text','slope'); ?>" name="slope" >
+                    <input type="number" min="1" max="100"  class="form-control" value="<?php getData($tree,'text','slope'); ?>" name="slope" >
                   </div>
 
                   <div class="four wide column">
@@ -565,19 +565,19 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <div class="two wide column">
                     <input type="checkbox" name="leafCh4" <?php getData($tree,'checkbox','leafCh4');?>>
                     <span>ร่วง (%)</span>
-                    <input type="text"  class="form-control" value="<?php getData($tree,'text','leafCh4_text'); ?>"  name="leafCh4_text" >
+                    <input type="number" min="1" max="100"  class="form-control" value="<?php getData($tree,'text','leafCh4_text'); ?>"  name="leafCh4_text" >
                   </div>
 
                   <div class="three wide column">
                     <input type="checkbox" name="leafCh5" <?php getData($tree,'checkbox','leafCh5');?>>
                     <span>ซีดเหลือง (%)</span>
-                    <input type="text"  class="form-control" value="<?php getData($tree,'text','leafCh5_text'); ?>"  name="leafCh5_text" >
+                    <input type="number" min="1" max="100" class="form-control" value="<?php getData($tree,'text','leafCh5_text'); ?>"  name="leafCh5_text" >
                   </div>
 
                   <div class="three wide column">
                     <input type="checkbox" name="leafCh6" <?php getData($tree,'checkbox','leafCh6');?>>
                     <span>แห้ง (%)</span>
-                    <input type="text"  class="form-control" value="<?php getData($tree,'text','leafCh6_text'); ?>"  name="leafCh6_text" >
+                    <input type="number" min="1" max="100" class="form-control" value="<?php getData($tree,'text','leafCh6_text'); ?>"  name="leafCh6_text" >
                   </div>
 
                   <!-- - - - - - - - - - - - - - - - - - - -->
@@ -806,7 +806,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="five wide column">
                     <span>Live-Crown ration (เปอร์เซนต์)</span>
-                    <input type="text" name="liveCrownPercen" value="<?php getData($tree,'text','liveCrownPercen'); ?>" class="form-control" >
+                    <input type="number" min="1" max="100" name="liveCrownPercen" value="<?php getData($tree,'text','liveCrownPercen'); ?>" class="form-control" >
                   </div>
 
                 <!-- - - - - - - - - - - - - - - - - - - -->
@@ -814,23 +814,23 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <div class="four wide column">
                     <input type="checkbox" name="dryBranches" <?php getData($tree,'checkbox','dryBranches');?>>
                     <span>กิ่งแห้ง (เปอร์เซนต์)</span>
-                    <input type="text" name="limbDie" value="<?php getData($tree,'text','limbDie'); ?>" class="form-control" >
+                    <input type="number" min="1" max="100" name="limbDie" value="<?php getData($tree,'text','limbDie'); ?>" class="form-control" >
                   </div>
 
                   <div class="four wide column">  
                     <span>ขนาดใหญ่สุด (ซม.)</span>
-                    <input type="text" name="limbDieSize" value="<?php getData($tree,'text','limbDieSize'); ?>" class="form-control" >
+                    <input type="number" min="1" name="limbDieSize" value="<?php getData($tree,'text','limbDieSize'); ?>" class="form-control" >
                   </div>
 
                   <div class="four wide column">
                     <input type="checkbox" name="brokenBranches" <?php getData($tree,'checkbox','brokenBranches');?>>
                     <span>กิ่งหักแขวน (จำนวนกิ่ง)</span>
-                    <input type="text" name="limbBroke" value="<?php getData($tree,'text','limbBroke'); ?>" class="form-control" >
+                    <input type="number" min="1" name="limbBroke" value="<?php getData($tree,'text','limbBroke'); ?>" class="form-control" >
                   </div>
 
                   <div class="four wide column">  
                     <span>ขนาดใหญ่สุด (ซม.)</span>
-                    <input type="text" name="limbBrokeSize" value="<?php getData($tree,'text','limbBrokeSize'); ?>" class="form-control" >
+                    <input type="number" min="1" name="limbBrokeSize" value="<?php getData($tree,'text','limbBrokeSize'); ?>" class="form-control" >
                   </div>
 
                   <div class="three wide column">
@@ -989,7 +989,7 @@ function getData($tree,$type='',$name='',$var=NULL){
                   <div class="three wide column">
                     <input type="checkbox" name="trunkSlope_checkbox" <?php getData($tree,'checkbox','trunkSlope_checkbox');?> > 
                     <span>เอียง (องศา)</span>
-                    <input type="text" name="trunkSlope" value="<?php getData($tree,'text','trunkSlope'); ?>" class="form-control" >
+                    <input type="number" min="1" name="trunkSlope" value="<?php getData($tree,'text','trunkSlope'); ?>" class="form-control" >
                   </div>
 
                 <!-- - - - - - - - - - - - - - - - - - - -->
@@ -1182,7 +1182,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <tr id="table1st" class="trRow" data-id="<?php echo $n+1; ?>">
                             <td>
-                                  <input class="form-control" type="text" name="treePartSeq[<?php echo $n; ?>]" value="<?php echo $tree['treePartSeq'][$n]; ?>" ></td>
+                                  <input class="form-control" type="number" min="1"> name="treePartSeq[<?php echo $n; ?>]" value="<?php echo $tree['treePartSeq'][$n]; ?>" ></td>
                               <td><input class="form-control" type="text" name="treePartName[<?php echo $n; ?>]" value="<?php echo $tree['treePartName'][$n]; ?>"></td>
                               <td><input  type="text" class="form-control" name="treePartFactor[<?php echo $n; ?>]" value="<?php echo $tree['treePartFactor'][$n]; ?>"></td>
                               <td>
@@ -1684,7 +1684,7 @@ function getData($tree,$type='',$name='',$var=NULL){
               $("#buttonDel").show();
 
              var data_dam = '<tr>'+
-                            '<td><input class="hideme" id="tree_num" type="text" value="'+i+'"></td>'+'<td><input class="form-control" type="text" name="listDamage['+i+']" required></td>'+'<td><center><select class="ui dropdown" name="protectTarget['+i+']"><option type="hidden">เลือก</option><option value="1">มี</option><option value="2">ไม่มี</option></select></center></td>'+'<td><input type="hidden" name="ch1['+i+']" value="off"><input class="form-control" name="ch1['+i+']" type="checkbox"></td>'+'<td><input type="hidden" name="ch2['+i+']" value="off"><input class="form-control" name="ch2['+i+']" type="checkbox"></td>'+'<td><input type="hidden" name="ch3['+i+']" value="off"><input class="form-control" name="ch3['+i+']" type="checkbox"></td>'+'<td><center><select required class="ui dropdown" name="damageArea['+i+']"><option type="hidden" value="">เลือก</option><option value="1">1-ไม่ค่อยปรากฎ</option><option value="2">2-อยู่เป็นบางครั้ง</option><option value="3">3-ค่อนข้างบ่อย</option><option value="4">4-อยู่ตลอด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="moveArea['+i+']"><option type="hidden" value="">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><center><select class="ui dropdown" name="noEntry['+i+']"><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><input type="button" class="ui red button delete_tr" id="delete_tr" data-id="'+i+'" value="ลบ"></td>'+'</tr>';
+                            '<td><input class="hideme" id="tree_num" type="number" min="1" value="'+i+'"></td>'+'<td><input class="form-control" type="text" name="listDamage['+i+']" required></td>'+'<td><center><select class="ui dropdown" name="protectTarget['+i+']"><option type="hidden">เลือก</option><option value="1">มี</option><option value="2">ไม่มี</option></select></center></td>'+'<td><input type="hidden" name="ch1['+i+']" value="off"><input class="form-control" name="ch1['+i+']" type="checkbox"></td>'+'<td><input type="hidden" name="ch2['+i+']" value="off"><input class="form-control" name="ch2['+i+']" type="checkbox"></td>'+'<td><input type="hidden" name="ch3['+i+']" value="off"><input class="form-control" name="ch3['+i+']" type="checkbox"></td>'+'<td><center><select required class="ui dropdown" name="damageArea['+i+']"><option type="hidden" value="">เลือก</option><option value="1">1-ไม่ค่อยปรากฎ</option><option value="2">2-อยู่เป็นบางครั้ง</option><option value="3">3-ค่อนข้างบ่อย</option><option value="4">4-อยู่ตลอด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="moveArea['+i+']"><option type="hidden" value="">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><center><select class="ui dropdown" name="noEntry['+i+']"><option type="hidden">เลือก</option><option value="1">ได้</option><option value="2">ไม่ได้</option>></select></center></td>'+'<td><input type="button" class="ui red button delete_tr" id="delete_tr" data-id="'+i+'" value="ลบ"></td>'+'</tr>';
               $('#table_damage').append(data_dam);
               i++;
             });
@@ -1712,7 +1712,7 @@ function getData($tree,$type='',$name='',$var=NULL){
               event.preventDefault();
 
               var data_risk1 = '<tr id="table1st" class="trRow" data-id="'+n+'">'+
-                            '<td><input class="form-control" type="text" name="treePartSeq['+n+']" value="'+n+'"></td>'+'<td><input class="form-control" type="text" name="treePartName['+n+']"></td>'+'<td><input  type="text" class="form-control" name="treePartFactor['+n+']"></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">น้อย</option><option value="2">ปานกลาง</option><option value="3">มาก</option><option value="4">มากที่สุด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartImpact['+n+']"><option type="hidden">เลือก</option><option value="1">ต่ำมาก</option><option value="2">ต่ำ</option><option value="3">ปานกลาง</option><option value="4">สูง</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartPlus['+n+']"><option type="hidden">เลือก</option><option value="1">น้อย</option><option value="2">ค่อนข้างน้อย</option><option value="3">มาก</option><option value="4">มากที่สุด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartRank['+n+']"><option type="hidden">เลือก</option><option value="1">ต่ำ</option><option value="2">ปานกลาง</option><option value="3">รุนแรง</option><option value="4">รุนแรงมาก</option></select></center></td>'+'<td><input class="form-control" type="text" name="treeDamage['+n+']"></td>'+'<td><input type="button" class="ui red button delete_tr1" id="delete_tr1" data-id="'+n+'" value="ลบ"></td>'+'</tr>';
+                            '<td><input class="form-control" type="number" min="1" name="treePartSeq['+n+']" value="'+n+'"></td>'+'<td><input class="form-control" type="text" name="treePartName['+n+']"></td>'+'<td><input  type="text" class="form-control" name="treePartFactor['+n+']"></td>'+'<td><center><select class="ui dropdown" name="treePartDamage['+n+']"><option type="hidden">เลือก</option><option value="1">น้อย</option><option value="2">ปานกลาง</option><option value="3">มาก</option><option value="4">มากที่สุด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartImpact['+n+']"><option type="hidden">เลือก</option><option value="1">ต่ำมาก</option><option value="2">ต่ำ</option><option value="3">ปานกลาง</option><option value="4">สูง</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartPlus['+n+']"><option type="hidden">เลือก</option><option value="1">น้อย</option><option value="2">ค่อนข้างน้อย</option><option value="3">มาก</option><option value="4">มากที่สุด</option></select></center></td>'+'<td><center><select class="ui dropdown" name="treePartRank['+n+']"><option type="hidden">เลือก</option><option value="1">ต่ำ</option><option value="2">ปานกลาง</option><option value="3">รุนแรง</option><option value="4">รุนแรงมาก</option></select></center></td>'+'<td><input class="form-control" type="text" name="treeDamage['+n+']"></td>'+'<td><input type="button" class="ui red button delete_tr1" id="delete_tr1" data-id="'+n+'" value="ลบ"></td>'+'</tr>';
               $('#table1_risk').append(data_risk1);
               n++;
 
