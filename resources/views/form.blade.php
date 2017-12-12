@@ -1614,7 +1614,7 @@ function getData($tree,$type='',$name='',$var=NULL){
         </div>
 
         <div>
-          <p style="color: red;">*หมายเหตุ&nbsp;&nbsp; &nbsp;- &nbsp;หากไม่ทำการเพิ่มตารางการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายปุ่มบันทึกข้อมูลจะไม่แสดง</p>
+          <p style="color: red; font-size: 20px;">*หมายเหตุ&nbsp;&nbsp; &nbsp;- &nbsp;หากไม่ทำการเพิ่มตารางการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายปุ่มบันทึกข้อมูลจะไม่แสดง</p>
 
         </div>
 
@@ -1640,7 +1640,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
 <div class="ui small modal" id="uisubmit" style="margin-top: -92.5px; height: 250px;">
-    <div class="header" style="background-color: blue;">
+    <div class="header" style="background-color: #0A0A2A; font-color: white;">
       ***คำเตือน***
     </div>
     <div class="content">
