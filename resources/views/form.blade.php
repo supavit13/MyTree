@@ -1614,8 +1614,7 @@ function getData($tree,$type='',$name='',$var=NULL){
         </div>
 
         <div>
-          <p style="color: red;">*หมายเหตุ</p>
-          <p style="color: red;">&nbsp;&nbsp; &nbsp;&nbsp;- &nbsp;หากไม่ทำการเพิ่มตารางการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายปุ่มบันทึกข้อมูลจะไม่แสดง</p>
+          <p style="color: red;">*หมายเหตุ&nbsp;&nbsp; &nbsp;- &nbsp;หากไม่ทำการเพิ่มตารางการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายปุ่มบันทึกข้อมูลจะไม่แสดง</p>
 
         </div>
 
@@ -1648,7 +1647,7 @@ function getData($tree,$type='',$name='',$var=NULL){
       <p>-กรุณากรอกข้อมูลแบบประเมินความเสี่ยงอันตรายจากต้นไม้เบื้องต้นและการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายให้ครบถ้วน</p>
       <p>-หากกรอกข้อมูลข้างต้นไม่ครบจะไม่สามารถบันทึกข้อมูลได้</p>
     </div>
-    <div class="actions">
+    <div class="actions" align="center">
       <div class="ui positive right labeled icon button">
         OK
         <i class="checkmark icon"></i>
