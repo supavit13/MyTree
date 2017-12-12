@@ -1640,9 +1640,9 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
 
-<div class="ui small modal" id="uisubmit" style="margin-top: -92.5px; display: block !important;">
+<div class="ui small modal" id="uisubmit" style="margin-top: -92.5px;">
     <div class="header">
-      Delete Your Account
+      ***โปรดอ่าน***
     </div>
     <div class="content">
       <p>กรุณากรอกข้อมูลแบบประเมินความเสี่ยงอันตรายจากต้นไม้เบื้องต้นและการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายให้ครบถ้วน</p>
