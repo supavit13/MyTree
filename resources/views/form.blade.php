@@ -1640,13 +1640,13 @@ function getData($tree,$type='',$name='',$var=NULL){
 
 
 
-<div class="ui small modal" id="uisubmit" style="margin-top: -92.5px;">
+<div class="ui small modal" id="uisubmit" style="margin-top: -92.5px; height: 50px;">
     <div class="header">
-      ***โปรดอ่าน***
+      ***คำเตือน***
     </div>
     <div class="content">
-      <p>กรุณากรอกข้อมูลแบบประเมินความเสี่ยงอันตรายจากต้นไม้เบื้องต้นและการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายให้ครบถ้วน</p>
-      <p>หากกรอกข้อมูลข้างต้นไม่ครบจะไม่สามารถบันทึกข้อมูลได้</p>
+      <p>-กรุณากรอกข้อมูลแบบประเมินความเสี่ยงอันตรายจากต้นไม้เบื้องต้นและการประเมินความเสียหายที่จะเกิดขึ้นกับเป้าหมายให้ครบถ้วน</p>
+      <p>-หากกรอกข้อมูลข้างต้นไม่ครบจะไม่สามารถบันทึกข้อมูลได้</p>
     </div>
     <div class="actions">
       <div class="ui positive right labeled icon button">
