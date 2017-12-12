@@ -193,7 +193,7 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                  <div class="five wide column">
                     <span>โทรศัพท์</span>
-                    <input  type="text" min="10" max="10" class="form-control input-md" value="<?php echo $userlogin['phone'] ?>" name="Tree_phone" required>
+                    <input  type="number" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" class="form-control input-md" value="<?php echo $userlogin['phone'] ?>" name="Tree_phone" required>
                   </div>
 
              
