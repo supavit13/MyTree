@@ -365,9 +365,9 @@
       integrity="sha512-ECQqaYZke9cSdqlFG08zSkudgrdF6I1d8ViSa7I3VIszJyVqw4ng1G8sehEXlumdMnFYfzY0tMgdQa4WCs9IUw=="
       crossorigin=""></script>
 
-  <link rel="stylesheet" href="https://domoritz.github.io/leaflet-locatecontrol/dist/L.Control.Locate.min.css" />
+  <link rel="stylesheet" href="{{asset('/css/L.Control.Locate.min.css')}}" />
 
-<script src="https://domoritz.github.io/leaflet-locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+<script src="{{asset('/js/L.Control.Locate.min.js')}}" charset="utf-8"></script>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <script src="{{asset('Leaflet.Dialog.js')}}"></script>
