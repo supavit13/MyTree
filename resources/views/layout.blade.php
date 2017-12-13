@@ -42,7 +42,7 @@
 		  }  
 		  #mapid {
 		  	margin: 0%;
-			height: 90%;
+			height: 100%;
 			background-color: white;
 			width: 100%;
 			display: inline-block;
