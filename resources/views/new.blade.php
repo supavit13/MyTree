@@ -74,7 +74,6 @@
 
 <div id="444" class="navbar navbar-default navbar-fixed-bottom" id="footer">
 <br><br>
-  <div class="container">
         <div  class="ui centered grid">       
           <div class="one wide column"> 
               <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
@@ -82,10 +81,9 @@
 
           <div class="ten wide column"> 
             <h4>จัดทำโดย คณะวิศวกรรมศาสตร์ศรีราชา สาขาวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์</h4>  
-            199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230 &nbsp;&nbsp;©2017
+            <p>199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230 &nbsp;&nbsp;©2017</p>
           </div>     
         </div>
-    </div>
 </div>
 <!-- .....................................  444    .............................. -->
 
