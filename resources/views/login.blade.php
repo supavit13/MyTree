@@ -57,9 +57,21 @@
           <div class="column" style="width: 10%; height: 0.2cm;"></div>
           <div > คุณเป็นสมาชิกหรือยัง <a href="{{ route('regist') }}" >สมัครสมาชิก</a></div>
 
-          
-          
+                 
   </center>
+
+  <div class="navbar-fixed-bottom" id="footer" style="width: 100%; background-color: white;">
+        <div  class="ui centered grid">       
+          <div class="one wide column"> 
+              <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
+          </div>
+
+          <div class="ten wide column"> 
+            <h4>จัดทำโดย คณะวิศวกรรมศาสตร์ศรีราชา สาขาวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์</h4>  
+            <p>199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230 &nbsp;&nbsp;©2017</p>
+          </div>     
+        </div>
+  </div>
 
 </div><!-- 333
 
