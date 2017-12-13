@@ -110,10 +110,13 @@
     // L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{
       // var googleLayer = new L.Google('ROADMAP');
       // Window.mymap.addLayer(googleLayer);
-    L.esri.basemapLayer("Topographic",{
-      maxZoom: 20,
-      minZoom: 6,
-      attribution: 'Develop by MyTreeTeam.'
+    // L.esri.basemapLayer("Topographic",{
+    //   maxZoom: 20,
+    //   minZoom: 6,
+    //   attribution: 'Develop by MyTreeTeam.'
+    // }).addTo(mymap);
+    L.gridLayer.googleMutant({
+        type: 'roadmap' // valid values are 'roadmap', 'satellite', 'terrain' and 'hybrid'
     }).addTo(mymap);
 
 
