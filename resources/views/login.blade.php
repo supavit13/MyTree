@@ -67,7 +67,7 @@
   <div class="navbar-fixed-bottom" id="footer" style="width: 100%; background-color: #e6ffee;">
         <div  class="ui centered grid">       
           <div class="one wide column"> 
-              <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
+              <img style="width: 1.5cm; height: 1.5cm; " src="edu_kasetsart.jpg">  
           </div>
 
           <div class="ten wide column"> 
