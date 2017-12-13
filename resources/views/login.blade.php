@@ -60,6 +60,10 @@
                  
   </center>
 
+
+
+</div>
+
   <div class="navbar-fixed-bottom" id="footer" style="width: 100%; background-color: white;">
         <div  class="ui centered grid">       
           <div class="one wide column"> 
@@ -72,8 +76,5 @@
           </div>     
         </div>
   </div>
-
-</div><!-- 333
-
 
 @stop
