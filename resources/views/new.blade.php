@@ -56,7 +56,23 @@
 <!-- .....................................  222    .............................. --><!-- แผนที่ -->
 <div id="222" style="width: 100%;  margin-top: 4em;">
 
-  <div id="mapid" ></div>
+  <div id="mapid" >
+      <div id="444" class="footer-bottom" id="footer">
+        <br><br>
+          <div class="container">
+                <div  class="ui centered grid">       
+                  <div class="one wide column"> 
+                      <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
+                  </div>
+
+                  <div class="ten wide column"> 
+                    <h4>จัดทำโดย คณะวิศวกรรมศาสตร์ศรีราชา สาขาวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์</h4>  
+                    199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230 &nbsp;&nbsp;©2017
+                  </div>     
+                </div>
+            </div>
+        </div>
+  </div>
   <div id="sideid" class="ui raised segment" style="overflow:scroll;">
     <a href="#close" style="color: #000;"><i class="remove icon" id="close"></i></a>
     <hr>
@@ -65,22 +81,6 @@
     <hr>
       <h2>ข้อมูลต้นไม้</h2>
   </div>
-
-  <div id="444" class="footer-bottom" id="footer">
-    <br><br>
-      <div class="container">
-            <div  class="ui centered grid">       
-              <div class="one wide column"> 
-                  <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
-              </div>
-
-              <div class="ten wide column"> 
-                <h4>จัดทำโดย คณะวิศวกรรมศาสตร์ศรีราชา สาขาวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์</h4>  
-                199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230 &nbsp;&nbsp;©2017
-              </div>     
-            </div>
-        </div>
-    </div>
 
 </div>
 <!-- .....................................  222    .............................. -->
