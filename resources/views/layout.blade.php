@@ -300,11 +300,7 @@
 				width: 1em;
 			}
 			
-      		#footer {
-			    width: 100%;
-			    background-color:#e6ffee;
-			    font-family: 'THSarabunNew' !important;
-			}
+
 
 
 	</style>
