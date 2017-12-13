@@ -91,7 +91,7 @@
   <script>
 
     var mymap = L.map('mapid', {center: new L.LatLng(13.1192, 100.92066), zoom: 16});
-    // var googleLayer = new L.Google('ROADMAP');
+    var googleLayer = new L.Google('ROADMAP');
     //   mymap.addLayer(googleLayer);
 
     // mymap = bounds[],s
@@ -116,7 +116,7 @@
     //   attribution: 'Develop by MyTreeTeam.'
     // }).addTo(mymap);
 
-    L.Google('ROADMAP').addTo(mymap);
+    googleLayer.addTo(mymap);
 
     
 
