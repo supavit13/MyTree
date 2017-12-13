@@ -300,11 +300,12 @@
 				width: 1em;
 			}
 			
-      		footer {
+      		#footer {
 			    position: fixed;
 			    height: 100px;
 			    bottom: 0;
 			    width: 100%;
+			    background-color:#e6ffee;
 			}
 
 

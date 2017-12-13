@@ -66,28 +66,29 @@
       <h2>ข้อมูลต้นไม้</h2>
   </div>
 
+  <div id="444" class="footer-bottom" id="footer">
+    <br><br>
+      <div class="container">
+            <div  class="ui centered grid">       
+              <div class="one wide column"> 
+                  <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
+              </div>
+
+              <div class="ten wide column"> 
+                <h4>จัดทำโดย คณะวิศวกรรมศาสตร์ศรีราชา สาขาวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์</h4>  
+                199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230 &nbsp;&nbsp;©2017
+              </div>     
+            </div>
+        </div>
+    </div>
+
 </div>
 <!-- .....................................  222    .............................. -->
 
 
 <!-- .....................................  444    .............................. --><!-- ติดต่อ -->
-<footer class="fixed-bottom">
-<div id="444" style="background-color:#e6ffee; width: 100%;">
-<br><br>
 
-        <div  class="ui centered grid">       
-          <div class="one wide column"> 
-              <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
-          </div>
 
-          <div class="ten wide column"> 
-            <h4>จัดทำโดย คณะวิศวกรรมศาสตร์ศรีราชา สาขาวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์</h4>  
-            199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230 &nbsp;&nbsp;©2017
-          </div>     
-        </div>
-
-</div>
-</footer>
 <!-- .....................................  444    .............................. -->
 
 
