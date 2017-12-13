@@ -116,6 +116,7 @@
     //   attribution: 'Develop by MyTreeTeam.'
     // }).addTo(mymap);
     L.gridLayer.googleMutant({
+        minZoom: 6,
         type: 'roadmap' // valid values are 'roadmap', 'satellite', 'terrain' and 'hybrid'
     }).addTo(mymap);
 
