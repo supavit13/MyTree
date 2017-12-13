@@ -354,8 +354,8 @@
    integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
    crossorigin=""></script> -->
 
-   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.js"></script>
+   <link rel="stylesheet" href="leaflet.css" />
+    <script src="{{asset('leaflet.js')}}"></script>
 
 	<script
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
