@@ -89,8 +89,7 @@
 					<td><a href="/detail/{{$tree['_id']}}">{{$tree['Tree_name']}}</a></td>
 					<td>{{$tree['Tree_address']}}</td>
 					<td><a href="/profiles/{{$tree['UserID']}}">{{$tree['User_name']}}</a></td>
-					
-					<td><?php echo $date->format('Y'); ?></td>
+					<td><?php echo $date->format('Y-m-d H:i:s'); ?></td>
 					<?php
 						if($_SESSION['login']!="Guest"){
 							?>
