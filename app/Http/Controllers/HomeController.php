@@ -628,7 +628,7 @@ class HomeController extends Controller
                 if($pwd==NULL){
                     return redirect('/editprofiles/'.$id)->with('message', 'กรุณายืนยันรหัสผ่าน'); 
                 }
-                if(!Hash::check($pwd,$users['password'])){
+                if(!Hash::check(strtolower($pwd),$users['password'])){
                     // dd(Hash::check($pwd,$users['password']));
                     return redirect('/editprofiles/'.$id)->with('message', 'พาสเวิร์ดผิดพลาด'); 
                 }
@@ -640,7 +640,7 @@ class HomeController extends Controller
                         return redirect('/editprofiles/'.$id)->with('message', 'พาสเวิร์ดไม่ตรงกัน'); 
                     }
                     else{
-                        $newPwd = Hash::make($newPwd);
+                        $newPwd = Hash::make(strtolower($newPwd));
                         $users->password = $newPwd;
                     }
                 }
@@ -676,7 +676,7 @@ class HomeController extends Controller
         if($pwd!=$confirmpwd){
             return redirect('/register')->with('message', 'พาสเวิร์ดไม่ตรงกัน');
         }else{
-            $pwd = Hash::make($pwd);
+            $pwd = Hash::make(strtolower($pwd));
         }
         $users=new Userlogin;
         $users->username=$request->input('name');
@@ -719,7 +719,7 @@ class HomeController extends Controller
         $request->session()->put('login_with','email');
         $userlogin=Userlogin::Where('email', $email)->first();
         if($userlogin['email']!=NULL){
-            if(!Hash::check($rawpwd,$userlogin['password'])){
+            if(!Hash::check(strtolower($rawpwd),$userlogin['password'])){
                 $request->session()->flush();
                 return redirect('/')->with('message', 'พาสเวิร์ดผิดพลาด');
             }
