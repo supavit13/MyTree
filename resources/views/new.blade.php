@@ -91,7 +91,7 @@
   <script>
 
     var mymap = L.map('mapid', {center: new L.LatLng(13.1192, 100.92066), zoom: 16});
-    var googleLayer = new L.Google('ROADMAP');
+    // var googleLayer = new L.Google('ROADMAP');
     //   mymap.addLayer(googleLayer);
 
     // mymap = bounds[],s
@@ -108,15 +108,14 @@
       // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     // L.tileLayer('https://a.tiles.mapbox.com/v3/mi.0ad4304c/{z}/{x}/{y}.png', {
     // L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{
-      // var googleLayer = new L.Google('ROADMAP');
-      // mymap.addLayer(googleLayer);
+      var googleLayer = new L.Google('ROADMAP');
+      mymap.addLayer(googleLayer);
     // L.esri.basemapLayer("Topographic",{
     //   maxZoom: 20,
     //   minZoom: 6,
     //   attribution: 'Develop by MyTreeTeam.'
     // }).addTo(mymap);
 
-    googleLayer.addTo(mymap);
 
     
 
