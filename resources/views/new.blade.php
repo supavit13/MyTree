@@ -74,7 +74,8 @@
 
 <div id="444" class="footer-bottom" style="background-color:#e6ffee; width: 100%;">
 <br><br>
-<div  class="ui centered grid">       
+  <div class="container">
+        <div  class="ui centered grid">       
           <div class="one wide column"> 
               <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
           </div>
@@ -84,6 +85,7 @@
             199 หมู่ 6 ถนนสุขุมวิท ตำบลทุ่งสุขลา อำเภอศรีราชา จังหวัดชลบุรี 20230 &nbsp;&nbsp;©2017
           </div>     
         </div>
+    </div>
 </div>
 <!-- .....................................  444    .............................. -->
 
