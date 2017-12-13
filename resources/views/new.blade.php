@@ -72,7 +72,7 @@
 
 <!-- .....................................  444    .............................. --><!-- ติดต่อ -->
 
-<div id="444" class="navbar navbar-default navbar-fixed-bottom" id="footer">
+<div id="444" class="navbar-fixed-bottom" id="footer">
 <br><br>
         <div  class="ui centered grid">       
           <div class="one wide column"> 
