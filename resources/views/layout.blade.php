@@ -376,8 +376,8 @@
 <script src="{{asset('Leaflet.Dialog.js')}}"></script>
    <script src="{{asset('Leaflet.Control.Custom.js')}}"></script>
    <link rel="stylesheet" type="text/css" href="{{asset('Leaflet.Dialog.css')}}">
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqedlTtE73WTv5TUjrd7916oVBUZDXhGw&v=3.2&sensor=false"></script>
-    <script src="http://matchingnotes.com/javascripts/leaflet-google.js"></script>
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqedlTtE73WTv5TUjrd7916oVBUZDXhGw&v=3.2&sensor=false"></script> -->
+    <!-- <script src="http://matchingnotes.com/javascripts/leaflet-google.js"></script> -->
    
 
 
