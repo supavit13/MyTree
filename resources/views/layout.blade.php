@@ -374,7 +374,7 @@
    <script src="{{asset('Leaflet.Control.Custom.js')}}"></script>
    <link rel="stylesheet" type="text/css" href="{{asset('Leaflet.Dialog.css')}}">
    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
-    <script src="https://gist.github.com/raw/4504864/c9ef880071f959398b7cf0b687d4f37c352ea86d/leaflet-google.js"></script>
+    <script src="https://raw.githubusercontent.com/gam6itko/leaflet-plugins/to-8/layer/tile/Google.js"></script>
    
 
 
