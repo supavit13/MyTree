@@ -42,7 +42,7 @@
 		  }  
 		  #mapid {
 		  	margin: 0%;
-			height: 100%;
+			height: 90%;
 			background-color: white;
 			width: 100%;
 			display: inline-block;
@@ -302,9 +302,9 @@
 			
       		#footer {
 			    position: fixed;
-			    height: 100px;
-			    bottom: 0;
-			    width: 100%;
+			   	left: 0;
+			   	bottom: 0;
+			   	width: 100%;
 			    background-color:#e6ffee;
 			}
 

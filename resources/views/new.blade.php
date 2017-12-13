@@ -56,8 +56,8 @@
 <!-- .....................................  222    .............................. --><!-- แผนที่ -->
 <div id="222" style="width: 100%;  margin-top: 4em;">
 
-  <div id="mapid" >
-      <div id="444" class="footer-bottom" id="footer">
+  <div id="mapid" ></div>
+  <div id="444" class="footer-bottom" id="footer">
         <br><br>
           <div class="container">
                 <div  class="ui centered grid">       
@@ -71,8 +71,7 @@
                   </div>     
                 </div>
             </div>
-        </div>
-  </div>
+  </div> 
   <div id="sideid" class="ui raised segment" style="overflow:scroll;">
     <a href="#close" style="color: #000;"><i class="remove icon" id="close"></i></a>
     <hr>
