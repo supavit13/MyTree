@@ -373,8 +373,9 @@
 <script src="{{asset('Leaflet.Dialog.js')}}"></script>
    <script src="{{asset('Leaflet.Control.Custom.js')}}"></script>
    <link rel="stylesheet" type="text/css" href="{{asset('Leaflet.Dialog.css')}}">
-   <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+   <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false&callback=initMap"></script>
     <script src="http://matchingnotes.com/javascripts/leaflet-google.js"></script>
+   
 
 
 </head>
