@@ -72,7 +72,7 @@
 
 <!-- .....................................  444    .............................. --><!-- ติดต่อ -->
 
-<div id="444" class="navbar-fixed-bottom" id="footer" style="width: 100%; height: 50px; background-color:#e6ffee;">
+<div id="444" class="navbar-fixed-bottom" id="footer" style="width: 100%; margin: 0 !important; background-color:#e6ffee;">
 <br><br>
         <div  class="ui centered grid">       
           <div class="one wide column"> 
