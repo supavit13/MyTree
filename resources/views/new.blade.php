@@ -72,9 +72,8 @@
 
 <!-- .....................................  444    .............................. --><!-- ติดต่อ -->
 
-<div id="444" class="navbar-fixed-bottom" id="footer" style="width: 100%; margin: 0 !important; background-color:#e6ffee;">
-<br><br>
-        <div  class="ui centered grid" style="margin: 0 !important;">       
+<div id="444" class="navbar-fixed-bottom" id="footer" style="width: 100%; background-color:#e6ffee;">
+        <div  class="ui centered grid">       
           <div class="one wide column"> 
               <img style="width: 1.5cm; height: 1.5cm; " src="http://www.ku.ac.th/web2012/resources/upload/content/images/edu_kasetsart.jpg">  
           </div>
