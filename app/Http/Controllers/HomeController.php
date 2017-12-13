@@ -188,7 +188,7 @@ class HomeController extends Controller
                     if($value == $key){
                         $test = $this->indexof($full,$value);
                         // dd($test);
-                        unlink('images/uploads/'.$value);
+                        // unlink('images/uploads/'.$value);
                         $full[$test] = "";
                         
                     }
@@ -209,7 +209,7 @@ class HomeController extends Controller
                     if($value == $key){
                         $test = $this->indexof($full,$value);
                         // dd($test);
-                        unlink('images/uploads/'.$value);
+                        // unlink('images/uploads/'.$value);
                         $full[$test] = "";
                         
                     }
