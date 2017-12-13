@@ -219,6 +219,66 @@ class HomeController extends Controller
             }
             $trees->Tree_imgTruck= $full;  
         }
+        if($request->leaftree!=NULL){
+            $tree_id = Tree::find($request->input('id'));
+
+            $full = $tree_id->Tree_imgLeaf;
+    
+            foreach ($request->leaftree as $value) {
+                foreach ($tree_id->Tree_imgLeaf as $key) {
+                    if($value == $key){
+                        $test = $this->indexof($full,$value);
+                        // dd($test);
+                        // unlink('images/uploads/'.$value);
+                        $full[$test] = "";
+                        
+                    }
+
+                }
+                
+            }
+            $trees->Tree_imgLeaf= $full;  
+        }
+        if($request->toptree!=NULL){
+            $tree_id = Tree::find($request->input('id'));
+
+            $full = $tree_id->Tree_imgTop;
+    
+            foreach ($request->toptree as $value) {
+                foreach ($tree_id->Tree_imgTop as $key) {
+                    if($value == $key){
+                        $test = $this->indexof($full,$value);
+                        // dd($test);
+                        // unlink('images/uploads/'.$value);
+                        $full[$test] = "";
+                        
+                    }
+
+                }
+                
+            }
+            $trees->Tree_imgTop= $full;  
+        }
+        if($request->roottree!=NULL){
+            $tree_id = Tree::find($request->input('id'));
+
+            $full = $tree_id->Tree_imgRoot;
+    
+            foreach ($request->roottree as $value) {
+                foreach ($tree_id->Tree_imgRoot as $key) {
+                    if($value == $key){
+                        $test = $this->indexof($full,$value);
+                        // dd($test);
+                        // unlink('images/uploads/'.$value);
+                        $full[$test] = "";
+                        
+                    }
+
+                }
+                
+            }
+            $trees->Tree_imgRoot= $full;  
+        }
 
 
 
