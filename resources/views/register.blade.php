@@ -34,7 +34,7 @@
                  
                   <div class="field">
                     <label>เบอร์โทรศัพท์</label>
-                    <input type="number" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" name="phone" placeholder="000-9999999" required="">
+                    <input type="number" minlength="10" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" name="phone" placeholder="000-9999999" required="">
                   </div>
 
                   <div class="field">
@@ -49,7 +49,7 @@
 
                   <div class="field" id="divEmail">
                     <label>อีเมล</label>
-                    <input type="text" name="email" id="email" placeholder="example@gmail.com" value="<?php if($userlogin!='Guest'){ echo $userlogin->email; } ?>" required="">
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" value="<?php if($userlogin!='Guest'){ echo $userlogin->email; } ?>" required="">
                   </div>
 
                   <div class="field">
