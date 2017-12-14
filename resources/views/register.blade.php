@@ -34,7 +34,7 @@
                  
                   <div class="field">
                     <label>เบอร์โทรศัพท์</label>
-                    <input type="number" minlength="10" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" name="phone" placeholder="000-9999999" required="">
+                    <input type="phone" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" name="phone" placeholder="000-9999999" required="">
                   </div>
 
                   <div class="field">
