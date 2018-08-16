@@ -1,3 +1,12 @@
+## Installation
+- install laravel
+- install composer and run composer install
+- install mongodb
+- install mongodb driver
+- copy .env.example to .env
+- run web by php artisan serve
+- first register account and change position field to admin and approve field to 1
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
