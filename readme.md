@@ -1,8 +1,9 @@
 ## Installation
+- install PHP TS x64
 - install laravel
 - install composer and run composer install
 - install mongodb
-- install mongodb driver
+- install mongodb driver TS x64 version same PHP
 - copy .env.example to .env
 - run web by php artisan serve
 - first register account and change position field to admin and approve field to 1
