@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/supavit13/MyTree/blob/master/public/logoblack.png" width=30%><img src="http://www.src.ku.ac.th/info/images/LogoKU/KUSRC.png" width=30%><img src="http://soar.gistda.or.th/images/gistda-logo-png.png" width=30%></p>
+<p align="center"><img src="https://github.com/supavit13/MyTree/blob/master/public/logoblack.png" width=30%><img src="https://github.com/supavit13/MyTree/blob/master/public/KUSRC.png" width=30%><img src="http://soar.gistda.or.th/images/gistda-logo-png.png" width=30%></p>
 
 
 ## Installation
