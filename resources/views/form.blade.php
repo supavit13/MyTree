@@ -139,12 +139,12 @@ function getData($tree,$type='',$name='',$var=NULL){
 
                   <div class="three wide column">
                     <span>พิกัดละติจูด</span>
-                    <input id="Tree_lat" type="number" min="0" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" required>
+                    <input id="Tree_lat" type="text" min="0" step="0.000001" value="<?php if(!empty($lat)){ echo $lat; }else { getData($tree,'text','Tree_lat'); } ?>" class="form-control anti-Minus" name="Tree_lat" required>
                   </div>
 
                   <div class="three wide column">
                     <span>พิกัดลองจิจูด</span>
-                    <input id="Tree_long" type="number" min="0" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" required>
+                    <input id="Tree_long" type="text" min="0" step="0.000001" value="<?php if(!empty($lng)){ echo $lng; }else { getData($tree,'text','Tree_long'); } ?>" class="form-control anti-Minus" name="Tree_long" required>
                   </div>
 
                   <div class="two wide column">

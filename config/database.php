@@ -40,10 +40,8 @@ return [
         ],
         'mongodb' => [
             'driver'   => 'mongodb',
-            'host'     => 'ds259865.mlab.com',
-            'username' => 'admin',
-            'password' => 'admin',
-            'port'     => 59865,
+            'host'     => '127.0.0.1',
+            'port'     => 27017,
             'database' => 'mytree',
             'options'  => [
                 'database' => 'mytree' // sets the authentication database required by mongo 3
